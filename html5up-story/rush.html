@@ -6,9 +6,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/ionics.min.css" rel="stylesheet">
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/fonts.css" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
@@ -33,7 +36,7 @@
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarExample01">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<img src="images/ktplogo.png" width="60px" height="36px" id=logo alt="Logo image" style="margin-left: 75px; margin-top: 8px" />
+					<a href = "index.html"><img src="images/ktplogo.png" width="60px" height="36px" id=logo alt="Logo image" style="margin-left: 75px; margin-top: 8px" /></a>
 				</ul>
 		
 				<ul class="navbar-nav flex-row">
@@ -156,7 +159,10 @@
                                 <h3>Applications Due</h3>
                                 <p>September 24th</p>
                                </div>
- 
+                            
+                               <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
                     
                           
                    </div>
@@ -164,6 +170,72 @@
                 </div> 
             </section>
             <hr />
+
+            <section id="faq" class="faq wow fadeInUp">
+                <div class="container">
+                  <header class="section-header">
+                    <h3>Frequently Asked Questions</h3>
+                  </header>
+            
+                  <ul id="faq-list" class="wow fadeInUp">
+                    <li>
+                      <a data-toggle="collapse" class="collapsed" href="#faq1">Who can rush KTP?<i class = "ion-android-remove"></i></a>
+                      <div id="faq1" class="collapse" data-parent="#faq-list">
+                        <p>
+                          Anyone is allowed to rush — we gladly accept (and encourage) rushees from all disciplines! The only requirement is that you must have at least 3 semesters left in school after your pledging semester.            </p>
+                      </div>
+                    </li>
+            
+                    <li>
+                      <a data-toggle="collapse" href="#faq2" class="collapsed">What is KTP looking for? </a>
+                      <div id="faq2" class="collapse" data-parent="#faq-list">
+                        <p>
+                          There’s no cookie cutter “ideal” rushee — if there were, Kappa Theta Pi wouldn’t be the multi-talented, interdisciplinary organization that it is! In our experience, the qualities you’re looking for are often what we’d love to have in new members. In the end, we are an org united by our love for technology, and people who are truly passionate about tech are the ones who usually fit in the best.            </p>
+                      </div>
+                    </li>
+            
+                    <li>
+                      <a data-toggle="collapse" href="#faq3" class="collapsed">How would I benefit from KTP? </a>
+                      <div id="faq3" class="collapse" data-parent="#faq-list">
+                        <p>
+                          KTP offers a supportive community of undergraduates who are all passionate about technology! Among other things, we offer mentoring in areas such as career advising, interview prep, resume development, and coursework. Additionally, we have current members and alumni working everywhere from the brightest startups to the tech giants of the corporate world. We believe that networking is far more than just professionalism — it's a process built on friendship, trust, and brotherhood.
+                        </p>
+                      </div>
+                    </li>
+            
+                    <li>
+                      <a data-toggle="collapse" href="#faq4" class="collapsed">Which majors are represented in KTP?</a>
+                      <div id="faq4" class="collapse" data-parent="#faq-list">
+                        <p>
+                          KTP is made up of a diverse group of people from schools all across campus. Generally, our members tend to be computer science majors or in the School of Information, but we are proud to have actives with backgrounds in creative writing, philosophy, business, women’s studies, and entrepreneurship! We love (and encourage) rushees from all disciplines.
+                        </p>
+                      </div>
+                    </li>
+            
+                    <li>
+                      <a data-toggle="collapse" href="#faq5" class="collapsed">What types of social events does KTP have? </a>
+                      <div id="faq5" class="collapse" data-parent="#faq-list">
+                        <p>
+                          KTP aims to have at minimum one sober and one non-sober event per month. In the past, we have had barn dances, bowling nights, formals, Smash tournaments, and many more events.
+                        </p>
+                      </div>
+                    </li>
+            
+                    <li>
+                      <a data-toggle="collapse" href="#faq6" class="collapsed">How much of a time commitment is pledging?</a>
+                      <div id="faq6" class="collapse" data-parent="#faq-list">
+                        <p>
+                          As with all campus organizations, what you get out of the organization depends on what you put into it. We believe that our pledging process isn’t strenuous and could be accommodated by most schedules.</p>
+                        <p>
+                          If you have any further questions or want to learn more about KTP before rush, feel free to send us an email at ktp-board@umich.edu or stop by our booths at Festifall and Northfest.</p>
+                      </div>
+                    </li>
+            
+                  </ul>
+            
+                </div>
+              </section><!-- End FAQs Section -->
+              <hr/>
             <section class="wrapper style1 align-center">
                 <div class="inner medium">
                     <h2>Get in touch</h2>
@@ -190,6 +262,19 @@
                 </div>
             </section>
             <!-- partial -->
-              
+          
+            
+         
+            <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script src = "assets/js/wow.min.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
             </body>
 </html>

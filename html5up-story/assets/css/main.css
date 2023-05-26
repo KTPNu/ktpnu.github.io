@@ -55,6 +55,12 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+a:hover, a:active, a:focus {
+	color: var(--secondary-medium);
+	outline: none;
+	text-decoration: none;
+  }
+
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -168,7 +174,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		text-decoration: underline;
 	}
 
 		a:hover {
@@ -8630,6 +8635,8 @@ input, select, textarea {
   padding-bottom: 5px;
 }
 
+/*---------------------Timeline Section-------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 .design-section {
   display: flex;
@@ -8702,3 +8709,90 @@ input, select, textarea {
             transform: translateX(-50%);
   }
 }
+
+/*---------------------- Frequently Asked Questions Section--------------------------------*/
+#faq {
+	padding: 60px 0;
+	overflow: hidden;
+  }
+  
+  #faq #faq-list {
+	padding: 0;
+	list-style: none;
+  }
+  
+  #faq #faq-list li {
+	border-bottom: 1px solid #ebebeb;
+  }
+  
+  #faq #faq-list a {
+	padding: 22px 0;
+	display: block;
+	position: relative;
+	font-family: var(--font-body);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1;
+  }
+  
+  .faq-list a:hover, a:active, a:focus {
+	color: var(--primary-medium);
+	text-decoration: none;
+  }
+  
+  #faq #faq-list i {
+	font-size: 18px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+  }
+  
+  #faq #faq-list p {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-family: var(--font-body);
+  }
+  
+  #faq #faq-list a.collapsed {
+	color: #000;
+	font-family: var(--font-body);
+  }
+  
+  #faq #faq-list a.collapsed i::before {
+	content: "\f2c7" !important;
+  }
+
+ 
+/* Sections Header
+--------------------------------*/
+.section-header h3 {
+	font-size: 32px;
+	color: var(--primary-dark);
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	font-family: var(--font-title);
+	padding-bottom: 20px;
+  }
+  
+  .section-header p {
+	text-align: center;
+	margin: auto;
+	font-size: 15px;
+	padding-bottom: 60px;
+	color: var(--secondary-dark);
+	width: 50%;
+  }
+  
+  .section-header h4 {
+	color: var(--secondary-dark);
+	text-align: center;
+	padding-bottom: 40px;
+  }
+  
+  @media (max-width: 767px) {
+	.section-header p {
+	  width: 100%;
+	}
+  }
+  
