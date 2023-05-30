@@ -8765,6 +8765,16 @@ input, select, textarea {
  
 /* Sections Header
 --------------------------------*/
+.section-header h2 {
+	font-size: 32px;
+	color: var(--primary-dark);
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	font-family: var(--font-title);
+	padding-bottom: 20px;
+  }
+
 .section-header h3 {
 	font-size: 32px;
 	color: var(--primary-dark);
