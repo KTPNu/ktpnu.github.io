@@ -8631,20 +8631,29 @@ input, select, textarea {
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler .fa-bars {
-  color: rgb(0, 0, 0);
+	display: block;
+	position: relative;
+	color: var(--primary-dark);
+	padding: 10px 15px;
+	transition: 0.3s;
+	font-size: 14px;
+	font-family: var(--font-body);
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
-/* Color of the links AFTER scroll */
+/* Color of the links AFTER scroll 
 .navbar-scrolled .nav-link ,
 .navbar-scrolled .navbar-toggler .fa-bars {
   color: #6e6e73;
 }
+*/
 
-/* Color of the navbar AFTER scroll */
+/* Color of the navbar AFTER scroll 
 .navbar-scrolled {
   background-color: black;
 }
-
+*/
 /* An optional height of the navbar AFTER scroll */
 .navbar.navbar-scroll.navbar-scrolled {
   padding-top: 5px;
