@@ -1,0 +1,11 @@
+h1 {
+    color: black;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .vertical-center {
+    position: fixed;
+    top: 40%;
+    
+  }
