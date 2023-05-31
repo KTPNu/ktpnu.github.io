@@ -6,6 +6,22 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root {
+	--primary-light: #8bb9ff;
+	--primary-medium: #458fff;
+	--primary-dark: #234c8b;
+	--secondary-light: #baebba;
+	--secondary-medium: #8ddd8d;
+	--secondary-dark: #538a53;
+	--tertiary-light: #8fdaea;
+	--tertiary-medium: #69b6c6;
+	--tertiary-dark: #206463;
+	--white: #fff;
+	--gray: #9a9a9a;
+	--black: #2d2d2d;
+	--font-body: "Lato", sans-serif;
+	--font-title: "Futura", sans-serif;
+  }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -54,6 +70,12 @@ table {
 body {
 	-webkit-text-size-adjust: none;
 }
+
+a:hover, a:active, a:focus {
+	color: var(--secondary-medium);
+	outline: none;
+	text-decoration: none;
+  }
 
 mark {
 	background-color: transparent;
@@ -168,7 +190,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		text-decoration: underline;
 	}
 
 		a:hover {
@@ -8610,22 +8631,235 @@ input, select, textarea {
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler .fa-bars {
-  color: white;
+	display: block;
+	position: relative;
+	color: var(--primary-dark);
+	padding: 10px 15px;
+	transition: 0.3s;
+	font-size: 14px;
+	font-family: var(--font-body);
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
-/* Color of the links AFTER scroll */
-.navbar-scrolled .nav-link,
+/* Color of the links AFTER scroll 
+.navbar-scrolled .nav-link ,
 .navbar-scrolled .navbar-toggler .fa-bars {
   color: #6e6e73;
 }
+*/
 
-/* Color of the navbar AFTER scroll */
+/* Color of the navbar AFTER scroll 
 .navbar-scrolled {
   background-color: black;
 }
-
+*/
 /* An optional height of the navbar AFTER scroll */
 .navbar.navbar-scroll.navbar-scrolled {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+/*---------------------Timeline Section-------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #8BB9FF, -5px -5px 10px #458eff;
+          box-shadow: 5px 5px 10px #8BB9FF, -5px -5px 10px #458eff;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #458eff, #8BB9FF, #8dddd8);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #458eff, #8BB9FF, #8dddd8);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+/*---------------------- Frequently Asked Questions Section--------------------------------*/
+#faq {
+	padding: 60px 0;
+	overflow: hidden;
+  }
+  
+  #faq #faq-list {
+	padding: 0;
+	list-style: none;
+  }
+  
+  #faq #faq-list li {
+	border-bottom: 1px solid #ebebeb;
+  }
+  
+  #faq #faq-list a {
+	padding: 22px 0;
+	display: block;
+	position: relative;
+	font-family: var(--font-body);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1;
+  }
+  
+  .faq-list a:hover, a:active, a:focus {
+	color: var(--primary-medium);
+	text-decoration: none;
+  }
+  
+  #faq #faq-list i {
+	font-size: 18px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+  }
+  
+  #faq #faq-list p {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-family: var(--font-body);
+  }
+  
+  #faq #faq-list a.collapsed {
+	color: #000;
+	font-family: var(--font-body);
+  }
+  
+  #faq #faq-list a.collapsed i::before {
+	content: "\f2c7" !important;
+  }
+
+ 
+/* Sections Header
+--------------------------------*/
+.section-header h2 {
+	font-size: 40px;
+	color: var(--primary-dark);
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	font-family: var(--font-title);
+	padding-bottom: 20px;
+  }
+
+.section-header h3 {
+	font-size: 32px;
+	color: var(--primary-dark);
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	font-family: var(--font-title);
+	padding-bottom: 20px;
+  }
+  
+  .section-header p {
+	text-align: center;
+	margin: auto;
+	font-size: 15px;
+	padding-bottom: 60px;
+	color: var(--secondary-dark);
+	width: 50%;
+  }
+  
+  .section-header h4 {
+	color: var(--secondary-dark);
+	text-align: center;
+	padding-bottom: 40px;
+  }
+
+  
+  @media (max-width: 767px) {
+	.section-header p {
+	  width: 100%;
+	}
+  }
+
+  /*------Headers----*/
+  #header {
+	height: 110px;
+	transition: all 0.5s;
+	z-index: 997;
+	transition: all 0.5s;
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	transition: all 0.5s;
+	z-index: 997;
+  }
+  
+  #header.header-inner-pages {
+    height: 70px;
+    padding: 15px 0;
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+    height: 70px;
+    padding: 15px 0;
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+
+  
