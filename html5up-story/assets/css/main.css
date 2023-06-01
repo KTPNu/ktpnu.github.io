@@ -218,7 +218,6 @@ input, select, textarea {
 	h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
-		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
 	}
 
@@ -8638,7 +8637,7 @@ input, select, textarea {
 	padding: 10px 15px;
 	transition: 0.3s;
 	font-size: 14px;
-	font-family: var(--font-body);
+	/*font-family: var(--font-body);*/
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -8693,8 +8692,8 @@ input, select, textarea {
 .timeline-content {
   padding: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #8BB9FF, -5px -5px 10px #458eff;
-          box-shadow: 5px 5px 10px #8BB9FF, -5px -5px 10px #458eff;
+  -webkit-box-shadow: 5px 5px 10px var(--primary-dark), -5px -5px 10px var(--primary-dark);
+          box-shadow: 5px 5px 10px var(--primary-dark), -5px -5px 10px var(--primary-dark);
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
@@ -8716,7 +8715,7 @@ input, select, textarea {
   }
   .timeline-middle {
     position: relative;
-    background-image: linear-gradient(45deg, #458eff, #8BB9FF, #8dddd8);
+    background-image: linear-gradient(45deg, var(--primary-dark), var(--primary-medium), var(--primary-light));
     width: 3px;
     height: 100%;
   }
@@ -8730,7 +8729,7 @@ input, select, textarea {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-image: linear-gradient(45deg, #458eff, #8BB9FF, #8dddd8);
+    background-image: linear-gradient(45deg,var(--primary-dark), var(--primary-medium), var(--primary-light));
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -8739,6 +8738,7 @@ input, select, textarea {
 /*---------------------- Frequently Asked Questions Section--------------------------------*/
 #faq {
 	padding: 60px 0;
+	padding-bottom: 0;
 	overflow: hidden;
   }
   
@@ -8797,7 +8797,6 @@ input, select, textarea {
 	text-align: center;
 	font-weight: 700;
 	position: relative;
-	font-family: var(--font-title);
 	padding-bottom: 20px;
   }
 
@@ -8805,9 +8804,8 @@ input, select, textarea {
 	font-size: 32px;
 	color: var(--primary-dark);
 	text-align: center;
-	font-weight: 700;
+	font-weight: 600;
 	position: relative;
-	font-family: var(--font-title);
 	padding-bottom: 20px;
   }
   
@@ -8826,7 +8824,7 @@ input, select, textarea {
 	padding-bottom: 40px;
   }
 
-  
+
   @media (max-width: 767px) {
 	.section-header p {
 	  width: 100%;
@@ -8862,5 +8860,7 @@ input, select, textarea {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
-
-  
+/*Rush Div*/
+.rush-intro {
+	text-align: center;
+}
