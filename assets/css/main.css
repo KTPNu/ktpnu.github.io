@@ -8875,3 +8875,59 @@ input, select, textarea {
 	border-radius: 50%; /* Apply a circular shape to the headshot images */
   }
   
+
+  #shape-1,
+      #shape-2,
+      #shape-3 {
+        min-width: 400px;
+        height: 400px;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+      }
+
+      #shape-1 {
+        background-color: hsl(216, 100%, 77%);
+        left: 20px;
+      }
+      #shape-2 {
+        background-color: hsl(191, 68%, 74%);
+        right: 20px;
+      }
+      #shape-3 {
+        background-color: hsl(120, 57%, 83%);
+        left: 130px;
+        top: 50px;
+      }
+
+      .scale-up-center {
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1)
+          infinite both;
+      }
+      @keyframes scale-up-center {
+        0% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+      }
+      .fade-delay-2000 {
+        animation-delay: 2s;
+      }
+      .fade-delay-4000 {
+        animation-delay: 4s;
+      }
+      #featured-image {
+        z-index: 10;
+        margin-top: -70px;
+		justify-content: center;
+		border: none;
+		border-radius: 30px;
+	  }
+	
