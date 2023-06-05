@@ -8883,3 +8883,9 @@ input, select, textarea {
 	padding-left: 50px;
 	padding-right: 50px;
   }
+
+  /*Carousel*/
+  .carousel-inner > .carousel-item > img {
+	width:300px;
+	height:360px;
+  }
