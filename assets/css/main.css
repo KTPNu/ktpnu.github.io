@@ -8875,3 +8875,11 @@ input, select, textarea {
 	border-radius: 50%; /* Apply a circular shape to the headshot images */
   }
   
+  /*Rush Intro*/
+  .rush-intro p{
+	text-align: center;
+	position: relative;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
