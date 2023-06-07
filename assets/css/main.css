@@ -8861,18 +8861,22 @@ input, select, textarea {
 }
 
 .headshot-grid {
+	padding-top: 0;
+	background-color: #A2A4A3;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
 	grid-gap: 20px; /* Adjust the gap between headshots as needed */
   }
 
   .headshot-item {
+	background-color: #A2A4A3;
 	text-align: center; /* Center align the content within each headshot item */
   }
   .headshot-item img {
 	width: 100%; /* Adjust the size of the headshot images as needed */
 	max-width: 200px; /* Set a maximum width to maintain consistency */
 	border-radius: 50%; /* Apply a circular shape to the headshot images */
+	border: 3px solid black;
   }
   
   /*Rush Intro*/
@@ -8889,3 +8893,4 @@ input, select, textarea {
 	width: 450px;
 	height:500px;
   }
+
