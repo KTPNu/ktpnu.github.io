@@ -8887,10 +8887,8 @@ input, select, textarea {
   /*Carousel*/
   .carousel-inner > .carousel-item > img {
 	width: 450px;
-	height:500px;
-
+		height:500px;
   }
-
 
 /* Mobile Navigation */
 .mobile-nav {
@@ -8993,6 +8991,33 @@ input, select, textarea {
 	color: var(--black);
   }
   
-
+/*Desktop Navigation*/
+.navbar, .navbar * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
   
-
+  .navbar > ul > li {
+	position: relative;
+	white-space: nowrap;
+	float: left;
+  }
+  
+  .navbar a {
+	display: block;
+	position: relative;
+	color: var(--primary-dark);
+	padding: 5px 15px;
+	transition: 0.3s;
+	font-size: 14px;
+	font-family: var(--font-body);
+	text-transform: uppercase;
+	font-weight: 600;
+  }
+  
+  .navbar a:hover, .navbar .active > a, .navbar li:hover > a {
+	color: var(--primary-medium);
+	text-decoration: none;
+  }
+  
