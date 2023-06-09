@@ -9025,5 +9025,34 @@ input, select, textarea {
 	color: var(--primary-medium);
 	text-decoration: none;
   }
+
+  .tab {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  
+  
+  .Our_Story {
+    font-size: 10em;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .member {
+    position: relative;
+}
+
+.info-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.member:hover .info-btn {
+    opacity: 1;
+}
   
 
