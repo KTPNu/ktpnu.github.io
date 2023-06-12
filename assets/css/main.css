@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: none;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
@@ -3855,11 +3855,14 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
+		width: 100%;
+		height: 100%;
 	}
 
 		.banner.style3 .content {
 			width: 31.5rem;
 			max-width: 100%;
+			position: absolute;
 		}
 
 		.banner.style3 .image {
@@ -7366,6 +7369,87 @@ input, select, textarea {
 		background-color: #000000;
 	}
 
+/* Wrapper (style3) */
+
+.wrapper.style3 {
+	padding: 7rem;
+}
+
+	.wrapper.style3 > .inner {
+		padding: 5.25rem 3.5rem 3.25rem 3.5rem ;
+		border-radius: 0.5rem;
+		height: 700px;
+		margin: 0 auto;
+		max-width: 100%;
+		position: relative;
+		width: 64rem;
+		z-index: 1;
+		margin-top: -80px;
+	}
+
+		.wrapper.style3 > .inner.medium {
+			width: 48rem;
+		}
+
+		.wrapper.style3 > .inner.small {
+			width: 32rem;
+		}
+
+	@media screen and (max-width: 1680px) {
+
+		.wrapper.style3 {
+			padding: 5rem;
+		}
+
+			.wrapper.style3 > .inner {
+				padding: 3.75rem 2.5rem 1.75rem 2.5rem ;
+			}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.wrapper.style3 {
+			padding: 4rem;
+		}
+
+			.wrapper.style3 > .inner {
+				padding: 3rem 2rem 1rem 2rem ;
+			}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.wrapper.style3 {
+			padding: 2.25rem;
+		}
+
+			.wrapper.style3 > .inner {
+				padding: 3rem 2.25rem 1rem 2.25rem ;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.wrapper.style3 {
+			padding: 1.5rem;
+		}
+
+			.wrapper.style3 > .inner {
+				padding: 2rem 1.5rem 0.1rem 1.5rem ;
+			}
+
+	}
+
+#wrapper > .wrapper.style3.invert:not(.color1):not(.color2):not(.color3):not(.color4):not(.color5):not(.color6):not(.color7) {
+	background-color: var(--primary-dark);
+}
+
+#wrapper > .wrapper.style3.invert > .inner {
+	background-color: var(--primary-dark);
+}
 /* Items (transitions) */
 
 	.items.onload-fade-in > * > .inner {
@@ -8876,9 +8960,11 @@ input, select, textarea {
   }
   
 
-  #shape-1,
+  	  #shape-1,
       #shape-2,
-      #shape-3 {
+      #shape-3,
+	  #shape-4,
+	  #shape-5 {
         min-width: 400px;
         height: 400px;
         mix-blend-mode: multiply;
@@ -8897,6 +8983,14 @@ input, select, textarea {
         background-color: hsl(120, 57%, 83%);
         left: 130px;
         top: 50px;
+      }
+	  #shape-4 {
+        background-color: hsl(0, 0%, 100%);
+        left: 20px;
+      }
+      #shape-5 {
+        background-color: hsl(0, 0%, 100%);
+        right: 20px;
       }
 
       .scale-up-center {
@@ -8931,3 +9025,126 @@ input, select, textarea {
 		border-radius: 30px;
 	  }
 	
+	  .feather-32{
+		width: 32px;
+		height: 32px;
+	  }
+
+	  .headshot-info {
+		display: flex;
+  		justify-content: center;
+	  }
+
+
+	  .headshot-info .circle-crop {
+		width: 115px;
+		height: 115px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+	  }
+
+	  .headshot-info .circle-crop img {
+		display: inline;
+		margin: -25px 0 0 0;
+		height: 150%;
+		width: auto;
+		position: relative;
+	  }
+
+	  .headshot-info .headshot-text {
+		font-size: 1rem;
+		align-items: center;
+		color: var(--primary-dark);
+		font-weight: 500;
+		margin-top: 10px;
+		position: absolute;
+	  }
+
+	  .headshot-info .headshot-text .role {
+		font-size: small;
+		align-items: center;
+		color: #6e6e73;
+		font-weight: 400;
+		position: relative;
+	}
+
+
+	.infobox{
+		position: absolute;
+		max-width: 1100px;
+		height: 670px;
+		padding: 40px;
+		font-size: 14px;
+		line-height: 1.7;
+		margin: 50px auto;
+		box-sizing: border-box;
+		border-radius: 15px;
+		background-color: rgba(255, 255, 255, 0.05);
+		z-index: 1;
+		overflow: hidden;
+	  }
+
+	  .infobox .infobox-h {
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-size: 2.25rem;
+		color: white;
+		font-weight: bolder;
+		white-space: nowrap;
+	  }
+	  
+	  .info-box .infobox-p {
+		margin: 0;
+		padding: 0;
+		border: none;
+		font: inherit;
+		font-size: 3.5rem;
+		color: white;
+		font-weight: lighter;
+	  }
+
+	  .clipshit1 {
+		/* clip-path: polygon(21% 11%, 6% 70%, 33% 50%, 88% 55%, 56% 73%, 78% 83%);
+		background-color: white; */
+		width: 100%;
+  		height: 100%;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		margin-right: -800px;
+		z-index: 0;
+		filter: blur(70px);
+		overflow: hidden;
+	}
+
+	.clipshit2 {
+		/* clip-path: polygon(21% 11%, 6% 70%, 33% 50%, 88% 55%, 56% 73%, 78% 83%);
+		background-color: white; */
+		width: 100%;
+  		height: 100%;
+		top: 0;
+		left: 0;
+		margin-top: -600px;
+		margin-right: -900px;
+		z-index: 0;
+		filter: blur(70px);
+		overflow: hidden;
+	}
+
+	.circle-square-crop {
+		position: absolute;
+		border-radius: 15px;
+
+		
+	}
+
+	.container2 {
+		width: 100px;
+		height: 100px;
+		position: relative;
+	}
