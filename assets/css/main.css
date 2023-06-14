@@ -9329,3 +9329,16 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.about-us-h {
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-size: 3.5rem;
+		color: black;
+		font-weight: 500;
+		white-space: nowrap;
+		text-align: center;
+	  }
