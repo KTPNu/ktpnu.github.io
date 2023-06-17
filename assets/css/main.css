@@ -9329,20 +9329,26 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.about-us-h {
+		padding-top: 1cm;
+		padding-bottom: 1cm;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
 	.about-us-h h3{
 		font-size: 32px;
 		color: var(--primary-dark);
 		text-align: center;
 		font-weight: 600;
-		position: relative;
 		padding-bottom: 20px;
 	  }
 
 	.about-us-h p {
 		text-align: center;
-		margin: auto;
-		font-size: 15px;
-		padding-bottom: 60px;
-		color: darkgray;
-		width: 80%;
+		color: #6e6e73;
+	}
+
+	.history {
+		background-color: #F5F8FD;
 	}
