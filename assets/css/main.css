@@ -8968,7 +8968,7 @@ input, select, textarea {
 	text-align: center;
 	position: relative;
 	padding-bottom: 20px;
-	padding-left: 50px;
+	padding-left: 50px; 
 	padding-right: 50px;
   }
 
@@ -9329,3 +9329,26 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.about-us-h {
+		padding-top: 1cm;
+		padding-bottom: 1cm;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.about-us-h h3{
+		font-size: 32px;
+		color: var(--primary-dark);
+		text-align: center;
+		font-weight: 600;
+		padding-bottom: 20px;
+	  }
+
+	.about-us-h p {
+		text-align: center;
+		color: #6e6e73;
+	}
+
+	.history {
+		background-color: #F5F8FD;
+	}
