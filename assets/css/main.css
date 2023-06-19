@@ -8765,9 +8765,9 @@ input, select, textarea {
 }
 
 .timeline {
-  width: 80%;
+  width: 90%;
   height: auto;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
