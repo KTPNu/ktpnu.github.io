@@ -2212,10 +2212,11 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
 		/*box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);*/
-		color: #000000 !important;
+		color: #000000;
 	}
+
+
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2223,7 +2224,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			/*box-shadow: inset 0 0 0 1px #47D3E5;*/
-			color: #47D3E5 !important;
+			color: white !important;
 		}
 
 		input[type="submit"]:active,
@@ -2233,7 +2234,7 @@ input, select, textarea {
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
 			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			color: #47D3E5;
 		}
 
 		input[type="submit"].primary,
@@ -2241,17 +2242,60 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000000;
-			box-shadow: none;
-			color: #ffffff !important;
+			border: none;
+			outline: none;
+			position: absolute;
+			left:0;
+			right:0;
+			margin-left:auto;
+			margin-right:auto;
+			z-index: 1;
+			border-radius: 5px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			cursor: pointer;
 		}
 
+		button.primary,
+		.button.primary::before {
+			content: "";
+			position: absolute;
+			left: 1px;
+			right: 1px;
+			top: 1px;
+			bottom: 1px;
+			border-radius: 4px;
+			background-color: white;
+			z-index: -1;
+			transition: 200ms
+		}
+
+		button.primary,
+		.button.primary::after {
+			content: attr(data);
+			font-size: 16px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			-webkit-background-clip: text;
+			color: transparent;
+			transition: 200ms
+		}
+		
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			button.primary:hover,
-			.button.primary:hover {
-				background-color: #47D3E5;
+			.button.primary:hover::before {
+				opacity: 50%;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+			}
+
+
+			button.primary:hover,
+			.button.primary:hover::after {
+				color: white;
+
 			}
 
 			input[type="submit"].primary:active,
@@ -3482,6 +3526,7 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
+		overflow-y: hidden;
 	}
 
 		.banner.style1 .content {
@@ -9081,6 +9126,7 @@ input, select, textarea {
   
 
 /*Desktop Navigation*/
+
 .navbar, .navbar * {
 	margin: 0;
 	padding: 0;
@@ -9203,6 +9249,7 @@ input, select, textarea {
 		justify-content: center;
 		border: none;
 		border-radius: 30px;
+		
 	  }
 	
 	  .feather-32{
@@ -9286,6 +9333,55 @@ input, select, textarea {
 		font-size: 3.5rem;
 		color: white;
 		font-weight: lighter;
+	  }
+
+	  .infobox2{
+		position: absolute;
+		max-width: 800px;
+		height: 400px;
+		padding: 40px;
+		font-size: 14px;
+		line-height: 1.7;
+		margin: 50px auto;
+		box-sizing: border-box;
+		border-radius: 15px;
+		background-color: rgb(255, 255, 255, 0);
+		z-index: 1;
+		overflow: hidden;
+		left: 50%;
+		top: 40%;
+		transform: translate(-50%, -50%);
+	  }
+
+	  .infobox-h2 {
+		position: relative;
+		margin: 0;
+		border: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-size: 5.5rem;
+		color: white;
+		font-weight: bolder;
+		text-align: center;
+		z-index: 1;
+		top: -15px;
+	  }
+	  
+	  .infobox-p2 {
+		position: relative;
+		max-width: 900px;
+		margin: 0;
+		border: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-size: 1.5rem;
+		color: white;
+		font-weight: lighter;
+		text-align: center;
+		z-index: 1;
+		top: -10px;
 	  }
 
 	  .clipshit1 {
