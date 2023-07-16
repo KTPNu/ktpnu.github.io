@@ -8812,11 +8812,7 @@ input, select, textarea {
 .timeline {
   width: 80%;
   height: auto;
-<<<<<<< Updated upstream
-  max-width: 800px;
-=======
   max-width: 1600px;
->>>>>>> Stashed changes
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8825,8 +8821,8 @@ input, select, textarea {
 .timeline-content {
   padding: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px var(--primary-light), -5px -5px 10px var(--primary-dark);
-          box-shadow: 5px 5px 10px var(--secondary-medium), -5px -5px 10px var(--primary-dark);
+  -webkit-box-shadow: 4px 4px 8px var(--primary-dark), -4px -4px 8px var(--primary-dark);
+          box-shadow: 4px 4px 8px var(--primary-dark), -4px -4px 8px var(--primary-dark);
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
@@ -8931,6 +8927,7 @@ input, select, textarea {
 	font-weight: 700;
 	position: relative;
 	padding-bottom: 20px;
+	padding-top: 0%;
   }
 
 .section-header h3 {
@@ -9429,8 +9426,6 @@ input, select, textarea {
 		position: relative;
 	}
 
-<<<<<<< Updated upstream
-=======
 	.about-us-h {
 		padding-top: 1cm;
 		padding-bottom: 1cm;
@@ -9489,7 +9484,9 @@ input, select, textarea {
 		font-weight: 700;
 		position: relative;
 		padding-bottom: 20px;
-		background: radial-gradient(#00C9FF 25%, #92FE9D 75%);
+		max-height: fit-content;
+		overflow: hidden;
+		background: radial-gradient(var(--primary-medium) 25%, var(--primary-light) 75%);
 	}
 
 		.rush.style1 .content {
@@ -9526,4 +9523,3 @@ input, select, textarea {
 		.rush.style1.fullscreen {
 			min-height: 100vh;
 		}
->>>>>>> Stashed changes
