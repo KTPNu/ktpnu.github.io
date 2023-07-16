@@ -2224,7 +2224,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			/*box-shadow: inset 0 0 0 1px #47D3E5;*/
-			color: white !important;
+			color: black !important;
 		}
 
 		input[type="submit"]:active,
@@ -2294,8 +2294,8 @@ input, select, textarea {
 
 			button.primary:hover,
 			.button.primary:hover::after {
-				color: white;
-
+				color: black !important;
+				
 			}
 
 			input[type="submit"].primary:active,
@@ -8810,9 +8810,9 @@ input, select, textarea {
 }
 
 .timeline {
-  width: 90%;
+  width: 80%;
   height: auto;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -9013,7 +9013,7 @@ input, select, textarea {
 	text-align: center;
 	position: relative;
 	padding-bottom: 20px;
-	padding-left: 50px; 
+	padding-left: 50px;
 	padding-right: 50px;
   }
 
@@ -9425,26 +9425,3 @@ input, select, textarea {
 		position: relative;
 	}
 
-	.about-us-h {
-		padding-top: 1cm;
-		padding-bottom: 1cm;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-
-	.about-us-h h3{
-		font-size: 32px;
-		color: var(--primary-dark);
-		text-align: center;
-		font-weight: 600;
-		padding-bottom: 20px;
-	  }
-
-	.about-us-h p {
-		text-align: center;
-		color: #6e6e73;
-	}
-
-	.history {
-		background-color: #F5F8FD;
-	}
