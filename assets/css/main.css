@@ -8800,7 +8800,7 @@ input, select, textarea {
   background-color: #ffffff;
   min-height: 100vh;
   padding: 100px 0;
-  font-family: Jost;
+  font-family: (var(--font-title));
 }
 
 .design {
@@ -8812,7 +8812,11 @@ input, select, textarea {
 .timeline {
   width: 80%;
   height: auto;
+<<<<<<< Updated upstream
   max-width: 800px;
+=======
+  max-width: 1600px;
+>>>>>>> Stashed changes
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8821,8 +8825,8 @@ input, select, textarea {
 .timeline-content {
   padding: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px var(--primary-dark), -5px -5px 10px var(--primary-dark);
-          box-shadow: 5px 5px 10px var(--primary-dark), -5px -5px 10px var(--primary-dark);
+  -webkit-box-shadow: 5px 5px 10px var(--primary-light), -5px -5px 10px var(--primary-dark);
+          box-shadow: 5px 5px 10px var(--secondary-medium), -5px -5px 10px var(--primary-dark);
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
@@ -9425,3 +9429,101 @@ input, select, textarea {
 		position: relative;
 	}
 
+<<<<<<< Updated upstream
+=======
+	.about-us-h {
+		padding-top: 1cm;
+		padding-bottom: 1cm;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.about-us-h h3{
+		font-size: 32px;
+		color: var(--primary-dark);
+		text-align: center;
+		font-weight: 600;
+		padding-bottom: 20px;
+	  }
+
+	.about-us-h p {
+		text-align: center;
+		color: #6e6e73;
+	}
+
+	.history {
+		background-color: #F5F8FD;
+	}
+	.rush-landing {
+		background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+		font-style: var(--font-title);
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.rush.style1 {
+		-moz-align-items: -moz-stretch;
+		-webkit-align-items: -webkit-stretch;
+		-ms-align-items: -ms-stretch;
+		align-items: stretch;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-moz-justify-content: -moz-flex-end;
+		-webkit-justify-content: -webkit-flex-end;
+		-ms-justify-content: -ms-flex-end;
+		justify-content: flex-end;
+		position: relative;
+		text-align: center;
+		font-family: var(--font-title);
+		overflow-x: hidden;
+		font-size: 40px;
+		text-align: center;
+		font-weight: 700;
+		position: relative;
+		padding-bottom: 20px;
+		background: radial-gradient(#00C9FF 25%, #92FE9D 75%);
+	}
+
+		.rush.style1 .content {
+			padding: 7rem 7rem 5rem 7rem ;
+			-moz-align-self: center;
+			-webkit-align-self: center;
+			-ms-align-self: center;
+			align-self: center;
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			width: 50%;
+			max-width: 48rem;
+			margin: 0 auto;
+			font-size: 40px;
+	
+
+		}
+		.rush.style1 .content h2{
+			font-size: 75px;
+			color: white;
+			text-align: center;
+			font-weight: 200;
+			padding-bottom: 20px;
+	
+		}
+
+
+		.rush.style1.fullscreen {
+			min-height: 100vh;
+		}
+>>>>>>> Stashed changes
