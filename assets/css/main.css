@@ -21,6 +21,8 @@
 	--black: #2d2d2d;
 	--font-body: "Lato", sans-serif;
 	--font-title: "Futura", sans-serif;
+	--gradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+
   }
 
 html, body, div, span, applet, object,
@@ -2212,8 +2214,10 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		/*box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);*/
-		color: #000000;
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+		color: var(--primary-dark);
+		font-weight: bold;
+		font-size: 0.8rem;
 	}
 
 
@@ -2224,7 +2228,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			/*box-shadow: inset 0 0 0 1px #47D3E5;*/
-			color: white !important;
+			color: white;
 		}
 
 		input[type="submit"]:active,
@@ -8741,7 +8745,7 @@ input, select, textarea {
 		}
 
 		#wrapper.divided > * {
-			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
+			/* box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075); */
 		}
 
 			#wrapper.divided > *:first-child {
@@ -9245,8 +9249,9 @@ input, select, textarea {
       }
       #featured-image {
         z-index: 10;
-        margin-top: -70px;
-		justify-content: center;
+		top: 50%;
+		bottom: 50%;
+
 		border: none;
 		border-radius: 30px;
 		
@@ -9447,4 +9452,56 @@ input, select, textarea {
 
 	.history {
 		background-color: #F5F8FD;
+	}
+
+	.custom-shape-divider-bottom-1689539162 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		z-index: 3;
+		fill: white;
+	}
+	
+	.intro-section {
+		height: 90vh;
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation 10s infinite alternate;
+	}
+
+	@keyframes bg-animation {
+		0% {
+			background-position: left;
+		}
+		100% {
+			background-position: right;
+		}
+	}
+
+	.presidents-welcome-section {
+		position: relative;
+	}
+
+	.worked-at-section {
+		position: relative;
+		padding: 40px;
+	}
+
+	.container.president {
+		position: relative;
+		margin-top: 0vh;
+		margin-bottom: 10vh;
+		/* top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); */
+	  }
+
+
+
+	img.rounded-corners {
+		border-radius: 30px;
 	}
