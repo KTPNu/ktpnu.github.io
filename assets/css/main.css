@@ -2096,6 +2096,7 @@ input, select, textarea {
 		border: solid 1px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
+		background-color: white;
 	}
 
 		.box > :last-child,
@@ -9454,26 +9455,91 @@ input, select, textarea {
 		background-color: #F5F8FD;
 	}
 
-	.custom-shape-divider-bottom-1689539162 {
+	.custom-shape-divider-bottom-1689620053 {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
 		line-height: 0;
-		z-index: 3;
-		fill: white;
+		transform: rotate(180deg);
 	}
 	
+	.custom-shape-divider-bottom-1689620053 svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 154px;
+	}
+	
+	.custom-shape-divider-bottom-1689620053 .shape-fill {
+		fill: #FFFFFF;
+	}
+	
+
+	/* Custom shape for the top of the pillars section */
+
+	.custom-shape-divider-top-1689621122 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+	
+	.custom-shape-divider-top-1689621122 svg {
+		position: relative;
+		display: block;
+		width: calc(157% + 1.3px);
+		height: 150px;
+	}
+	
+	.custom-shape-divider-top-1689621122 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+	/* Custom shape for the bottom of the pillars section */
+
+	.custom-shape-divider-bottom-1689621078 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+	
+	.custom-shape-divider-bottom-1689621078 svg {
+		position: relative;
+		display: block;
+		width: calc(157% + 1.3px);
+		height: 150px;
+	}
+	
+	.custom-shape-divider-bottom-1689621078 .shape-fill {
+		fill: #FFFFFF;
+	}
+
 	.intro-section {
-		height: 90vh;
+		height: 100vh;
 		background: #fff;
 		background-image: var(--gradient);
 		background-size: 300%;
-		animation: bg-animation 10s infinite alternate;
+		animation: bg-animation-top 10s infinite alternate;
 	}
 
-	@keyframes bg-animation {
+	.worked-at-section {
+		position: relative;
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation-bottom 20s infinite alternate;
+		height: 50vh;
+	}
+
+	@keyframes bg-animation-top {
 		0% {
 			background-position: left;
 		}
@@ -9482,26 +9548,51 @@ input, select, textarea {
 		}
 	}
 
-	.presidents-welcome-section {
-		position: relative;
+	@keyframes bg-animation-bottom {
+		0% {
+			background-position: right;
+		}
+		100% {
+			background-position: left;
+		}
 	}
 
-	.worked-at-section {
+	.presidents-welcome-section {
 		position: relative;
-		padding: 40px;
+		height: 50vh;
 	}
 
 	.container.president {
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 15vh;
 		margin-bottom: 10vh;
 		/* top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%); */
 	  }
 
+	.container.values {
+		position: relative;
+		padding: 10vh;
+		margin-bottom: 10vh;
+	}
 
+	.container.worked-at {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-left: 0;
+	}
+
+	.values.section-bg {
+		height: 100vh;
+	}
 
 	img.rounded-corners {
 		border-radius: 30px;
+	}
+
+	.invert-photo { 
+		filter: invert(100%); 
 	}
