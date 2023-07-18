@@ -21,6 +21,8 @@
 	--black: #2d2d2d;
 	--font-body: "Lato", sans-serif;
 	--font-title: "Futura", sans-serif;
+	--gradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+
   }
 
 html, body, div, span, applet, object,
@@ -9450,7 +9452,10 @@ input, select, textarea {
 		background-color: #F5F8FD;
 	}
 	.rush-landing {
-		background:  var(--primary-medium);
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation-top 10s infinite alternate;
 		font-family: var(--font-title);
 		font-style: var(--font-title);
 		display: flex;
@@ -9461,7 +9466,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
    	 	width: 100%;
-    	min-height: 350px;
+    	min-height: 650px;
 	}
 
 	
@@ -9540,3 +9545,11 @@ input, select, textarea {
 			overflow: hidden;
 			line-height: 0;
 		}
+@keyframes bg-animation-top {
+		0% {
+			background-position: left;
+		}
+		100% {
+			background-position: right;
+		}
+	}
