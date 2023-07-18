@@ -2252,12 +2252,29 @@ input, select, textarea {
 			position: absolute;
 			left:0;
 			right:0;
-			margin-left: 17%;
+			margin-left: 20%;
 			margin-right: auto;
 			z-index: 1;
 			border-radius: 5px;
 			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 			cursor: pointer;
+		}
+
+		/* If the screen size is 601px wide or more, set the button to be aligned with the text */
+		@media screen and (min-width: 601px) {
+			button.primary,
+			.button.primary {
+				margin-left:17%;
+			}
+		}
+		
+		/* If the screen size is 600px wide or less, set the the button to be aligned to the left */
+		@media screen and (max-width: 600px) {
+			button.primary,
+			.button.primary {
+				margin-left:18px;
+				border-radius: 5px;
+			}
 		}
 
 		button.primary,
@@ -9372,8 +9389,25 @@ input, select, textarea {
 		text-align: left;
 		z-index: 1;
 		top: -15px;
+		line-height: 1;
+		padding: 10px;
 	  }
-	  
+
+			/* If the screen size is 601px wide or more, set the font-size of <div> to 5.5rem */
+			@media screen and (min-width: 601px) {
+				.infobox-h2 {
+				font-size: 5.5rem;
+				}
+			}
+			
+			/* If the screen size is 600px wide or less, set the font-size of <div> to 4.5rem */
+			@media screen and (max-width: 600px) {
+				.infobox-h2 {
+				font-size: 4.5rem;
+				margin-left: 10px;
+				}
+			}
+
 	  .infobox-p2 {
 		position: relative;
 		max-width: 900px;
@@ -9389,6 +9423,22 @@ input, select, textarea {
 		z-index: 1;
 		top: -10px;
 	  }
+
+			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+			@media screen and (min-width: 601px) {
+				.infobox-p2 {
+				font-size: 1.5rem;
+				}
+			}
+			
+			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+			@media screen and (max-width: 600px) {
+				.infobox-p2 {
+				font-size: 1.3rem;
+				margin-left: 10px;
+				padding: 10px;
+				}
+			}
 
 	  .clipshit1 {
 		/* clip-path: polygon(21% 11%, 6% 70%, 33% 50%, 88% 55%, 56% 73%, 78% 83%);
