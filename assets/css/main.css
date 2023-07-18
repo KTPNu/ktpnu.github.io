@@ -9450,14 +9450,21 @@ input, select, textarea {
 		background-color: #F5F8FD;
 	}
 	.rush-landing {
-		background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+		background:  var(--primary-medium);
+		font-family: var(--font-title);
 		font-style: var(--font-title);
-		height: 100%;
-		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		font-size: 40px;
+		text-align: center;
+		font-weight: 700;
+		margin: 0;
+   	 	width: 100%;
+    	min-height: 350px;
 	}
+
+	
 	.rush.style1 {
 		-moz-align-items: -moz-stretch;
 		-webkit-align-items: -webkit-stretch;
@@ -9476,7 +9483,7 @@ input, select, textarea {
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
 		position: relative;
-		text-align: center;
+		text-align: left;
 		font-family: var(--font-title);
 		overflow-x: hidden;
 		font-size: 40px;
@@ -9507,19 +9514,29 @@ input, select, textarea {
 			max-width: 48rem;
 			margin: 0 auto;
 			font-size: 40px;
-	
+			min-height: 75%;
+			position: fixed
 
 		}
-		.rush.style1 .content h2{
+		.rush-landing .content h2{
 			font-size: 75px;
 			color: white;
-			text-align: center;
+			text-align: left;
 			font-weight: 200;
 			padding-bottom: 20px;
 	
 		}
 
 
-		.rush.style1.fullscreen {
-			min-height: 100vh;
+		.rush-landing.fullscreen {
+			min-height: 75%;
+		}
+		
+		.rush-landing .curves svg{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+			line-height: 0;
 		}
