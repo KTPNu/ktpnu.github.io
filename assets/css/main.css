@@ -2252,8 +2252,8 @@ input, select, textarea {
 			position: absolute;
 			left:0;
 			right:0;
-			margin-left:auto;
-			margin-right:auto;
+			margin-left: 17%;
+			margin-right: auto;
 			z-index: 1;
 			border-radius: 5px;
 			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
@@ -9369,7 +9369,7 @@ input, select, textarea {
 		font-size: 5.5rem;
 		color: white;
 		font-weight: bolder;
-		text-align: center;
+		text-align: left;
 		z-index: 1;
 		top: -15px;
 	  }
@@ -9384,8 +9384,8 @@ input, select, textarea {
 		vertical-align: baseline;
 		font-size: 1.5rem;
 		color: white;
-		font-weight: lighter;
-		text-align: center;
+		font-weight: normal;
+		text-align: left;
 		z-index: 1;
 		top: -10px;
 	  }
@@ -9479,9 +9479,31 @@ input, select, textarea {
 
 	/* Custom shape for the top of the pillars section */
 
-	.custom-shape-divider-top-1689621122 {
+	.custom-shape-divider-top-1689639178 {
 		position: absolute;
 		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+	
+	.custom-shape-divider-top-1689639178 svg {
+		position: relative;
+		display: block;
+		width: calc(157% + 1.3px);
+		height: 150px;
+	}
+	
+	.custom-shape-divider-top-1689639178 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+	/* Custom shape for the bottom of the pillars section */
+
+	.custom-shape-divider-bottom-1689639136 {
+		position: absolute;
+		bottom: 0;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -9489,54 +9511,22 @@ input, select, textarea {
 		transform: rotate(180deg);
 	}
 	
-	.custom-shape-divider-top-1689621122 svg {
+	.custom-shape-divider-bottom-1689639136 svg {
 		position: relative;
 		display: block;
 		width: calc(157% + 1.3px);
 		height: 150px;
 	}
 	
-	.custom-shape-divider-top-1689621122 .shape-fill {
+	.custom-shape-divider-bottom-1689639136 .shape-fill {
 		fill: #FFFFFF;
 	}
-
-	/* Custom shape for the bottom of the pillars section */
-
-	.custom-shape-divider-bottom-1689621078 {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		overflow: hidden;
-		line-height: 0;
-	}
-	
-	.custom-shape-divider-bottom-1689621078 svg {
-		position: relative;
-		display: block;
-		width: calc(157% + 1.3px);
-		height: 150px;
-	}
-	
-	.custom-shape-divider-bottom-1689621078 .shape-fill {
-		fill: #FFFFFF;
-	}
-
 	.intro-section {
-		height: 100vh;
+		min-height: 100vh;
 		background: #fff;
 		background-image: var(--gradient);
 		background-size: 300%;
 		animation: bg-animation-top 10s infinite alternate;
-	}
-
-	.worked-at-section {
-		position: relative;
-		background: #fff;
-		background-image: var(--gradient);
-		background-size: 300%;
-		animation: bg-animation-bottom 20s infinite alternate;
-		height: 50vh;
 	}
 
 	@keyframes bg-animation-top {
@@ -9550,26 +9540,39 @@ input, select, textarea {
 
 	@keyframes bg-animation-bottom {
 		0% {
-			background-position: right;
+			background-position: 65%;
 		}
 		100% {
 			background-position: left;
 		}
 	}
 
+	.worked-at-section {
+		position: relative;
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation-bottom 20s infinite alternate;
+	}
+
 	.presidents-welcome-section {
 		position: relative;
-		height: 50vh;
+		min-height: 50vh;
 	}
 
 	.container.president {
 		position: relative;
-		margin-top: 15vh;
-		margin-bottom: 10vh;
+		margin-top: 10vh;
+		margin-bottom: 5vh;
+		padding: 15px;
 		/* top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%); */
 	  }
+
+	.col-md-6.extra-padding {
+		padding: 20px;
+	}
 
 	.container.values {
 		position: relative;
@@ -9585,14 +9588,74 @@ input, select, textarea {
 		margin-left: 0;
 	}
 
-	.values.section-bg {
-		height: 100vh;
-	}
 
 	img.rounded-corners {
 		border-radius: 30px;
+		box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
+		max-width: 100%;
+		width: auto;
 	}
 
 	.invert-photo { 
 		filter: invert(100%); 
 	}
+
+
+
+
+
+	
+	/* Values Section */
+	#values {
+		padding: 60px 0 40px 0;
+	  }
+	  
+	  #values .box {
+		padding: 30px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		margin: 0 10px 40px 10px;
+		background: var(--white);
+		box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+		transition: all 0.3s ease-in-out;
+		text-align: center;
+	  }
+	  
+	  #values .box:hover {
+		transform: scale(1.1);
+	  }
+	  
+	  #values .icon {
+		margin: 0 auto 15px auto;
+		padding-top: 12px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	  }
+	  
+	  #values .icon {
+		font-size: 36px;
+		line-height: 1;
+	  }
+	  
+	  #values .title {
+		font-weight: 700;
+		margin-bottom: 15px;
+		font-size: 18px;
+	  }
+	  
+	  #values .title a {
+		color: #111;
+	  }
+	  
+	  #values .description {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: center;
+	  }
+	/* End Values Section */
+	  
