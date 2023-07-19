@@ -337,10 +337,6 @@ input, select, textarea {
 			font-size: 1.25rem;
 		}
 
-		h4 {
-			font-size: 1rem;
-		}
-
 	}
 
 	input, select, textarea {
@@ -9610,11 +9606,16 @@ input, select, textarea {
 		background-image: var(--gradient);
 		background-size: 300%;
 		animation: bg-animation-bottom 20s infinite alternate;
+		min-height: 50vh;
 	}
 
 	.presidents-welcome-section {
 		position: relative;
 		min-height: 50vh;
+	}
+
+	.col-md-6.extra-padding {
+		padding: 20px;
 	}
 
 	.container.president {
@@ -9627,23 +9628,50 @@ input, select, textarea {
 		transform: translate(-50%, -50%); */
 	  }
 
-	.col-md-6.extra-padding {
-		padding: 20px;
-	}
-
 	.container.values {
 		position: relative;
 		padding: 10vh;
 		margin-bottom: 10vh;
 	}
 
-	.container.worked-at {
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		margin-left: 0;
+	.container.worked-at-y {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		align-items: center;
+		height: 50vh;
+		width: 100vw;
 	}
+
+	.container.worked-at-x {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.worked-at {
+		color: white;
+		font-size: 1.4rem;
+		height: 40px;
+	}
+
+		/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+		@media screen and (min-width: 451px) {
+			.worked-at {
+				height: 40px;
+			}
+		}
+			
+		/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+		@media screen and (max-width: 450px) {
+			.worked-at {
+				height: 25px;
+			}
+		}
 
 
 	img.rounded-corners {
