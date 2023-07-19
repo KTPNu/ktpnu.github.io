@@ -9659,14 +9659,14 @@ input, select, textarea {
 		height: 40px;
 	}
 
-		/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+		/* If the screen size is 451 wide or more, set the img height to 40px */
 		@media screen and (min-width: 451px) {
 			.worked-at {
 				height: 40px;
 			}
 		}
 			
-		/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+		/* If the screen size is 450 wide or less, set the img height to 25px */
 		@media screen and (max-width: 450px) {
 			.worked-at {
 				height: 25px;
