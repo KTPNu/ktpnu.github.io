@@ -9408,6 +9408,13 @@ input, select, textarea {
 				}
 			}
 
+		.gradient-text {
+			background: linear-gradient(to right, #ffefba, #ffffff);
+			-webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+
+
 	  .infobox-p2 {
 		position: relative;
 		max-width: 900px;
