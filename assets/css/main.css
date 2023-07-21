@@ -2260,7 +2260,7 @@ input, select, textarea {
 		@media screen and (min-width: 601px) {
 			button.primary,
 			.button.primary {
-				margin-left:17%;
+				margin-left:13%;
 			}
 		}
 		
@@ -8938,14 +8938,39 @@ input, select, textarea {
  
 /* Sections Header
 --------------------------------*/
-.section-header h2 {
-	font-size: 40px;
-	color: var(--primary-dark);
+.section-header h2.center {
+	font-size: 32px;
+	color: black;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 600;
 	position: relative;
 	padding-bottom: 20px;
   }
+
+.section-header h2.left-pres {
+	font-size: 32px;
+	color: black;
+	text-align: left;
+	font-weight: 600;
+	position: relative;
+  }
+
+	/* If the screen size is 601px wide or more, set the padding for row elements */
+	@media screen and (min-width: 601px) {
+		.section-header h2.left-pres {
+			padding-bottom: 0px;
+		}
+	}
+
+	/* If the screen size is 600px wide or less, set the padding for stacked elements */
+	@media screen and (max-width: 600px) {
+		.section-header h2.left-pres {
+			padding-top: 40px;
+			padding-bottom: 10px;
+			margin-left: 7px;
+		}
+	}
+
 
 .section-header h3 {
 	font-size: 32px;
@@ -9276,46 +9301,6 @@ input, select, textarea {
 		height: 32px;
 	  }
 
-	  .headshot-info {
-		display: flex;
-  		justify-content: center;
-	  }
-
-
-	  .headshot-info .circle-crop {
-		width: 115px;
-		height: 115px;
-		position: relative;
-		overflow: hidden;
-		border-radius: 50%;
-	  }
-
-	  .headshot-info .circle-crop img {
-		display: inline;
-		margin: -25px 0 0 0;
-		height: 150%;
-		width: auto;
-		position: relative;
-	  }
-
-	  .headshot-info .headshot-text {
-		font-size: 1rem;
-		align-items: center;
-		color: var(--primary-dark);
-		font-weight: 500;
-		margin-top: 10px;
-		position: absolute;
-	  }
-
-	  .headshot-info .headshot-text .role {
-		font-size: small;
-		align-items: center;
-		color: #6e6e73;
-		font-weight: 400;
-		position: relative;
-	}
-
-
 	.infobox{
 		position: absolute;
 		max-width: 1100px;
@@ -9430,7 +9415,7 @@ input, select, textarea {
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 			@media screen and (min-width: 601px) {
 				.infobox-p2 {
-				font-size: 1.5rem;
+				font-size: 1.4rem;
 				}
 			}
 			
@@ -9473,9 +9458,7 @@ input, select, textarea {
 
 	.circle-square-crop {
 		position: absolute;
-		border-radius: 15px;
-
-		
+		border-radius: 15px;	
 	}
 
 	.container2 {
@@ -9508,9 +9491,11 @@ input, select, textarea {
 		background-color: #F5F8FD;
 	}
 
+	/* Shape for the bottom of the hero section */
+
 	.custom-shape-divider-bottom-1689620053 {
 		position: absolute;
-		bottom: 0;
+		bottom: -3px;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -9534,7 +9519,7 @@ input, select, textarea {
 
 	.custom-shape-divider-top-1689639178 {
 		position: absolute;
-		top: 0;
+		top: -3px;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -9556,7 +9541,7 @@ input, select, textarea {
 
 	.custom-shape-divider-bottom-1689639136 {
 		position: absolute;
-		bottom: 0;
+		bottom: -3px;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -9628,6 +9613,20 @@ input, select, textarea {
 		transform: translate(-50%, -50%); */
 	  }
 
+	p.president {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+	} 
+
+		/* If the screen size is 600px wide or less, set the padding for stacked elements */
+		@media screen and (max-width: 600px) {
+			p.president {
+				margin-left: 7px;
+			}
+		}
+
 	.container.values {
 		position: relative;
 		padding: 10vh;
@@ -9650,7 +9649,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
-		gap: 20px;
+		gap: 30px;
 	}
 
 	.worked-at {
@@ -9685,7 +9684,15 @@ input, select, textarea {
 		filter: invert(100%); 
 	}
 
+	.blue-bold {
+		color: var(--primary-dark);
+		font-weight: 300;
+	}
 
+	.br-small {
+		display: block;
+        margin-bottom: -.9em;
+	}
 
 
 
@@ -9744,3 +9751,105 @@ input, select, textarea {
 	  }
 	/* End Values Section */
 	  
+
+	/* Start Meet the exec board Section */
+
+	.meet-exec-section {
+		min-height: 100vh;
+		margin-top: 10vh;
+	}
+
+	.container.exec-y {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		align-items: center;
+		min-height: 50vh;
+
+		/* border-style: solid; */
+	}
+
+	.container.exec-x {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+
+		/* border-style: solid;
+		border-color: var(--secondary-light) */
+	}
+
+	.container.profile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 250px;
+		margin-top: 40px;
+
+		/* border-style: solid;
+		border-color: var(--primary-light) */
+	}
+		
+
+		/* If the screen size is 450 wide or less, set the profile width to 135px so it keeps 2 profile containers on each line*/
+		@media screen and (max-width: 795px) {
+			.container.profile {
+				width: 135px;
+			}
+		}
+
+	img.profile {
+		border-radius: 50%;
+		opacity: 1;
+		display: block;
+		transition: .3s ease;
+		backface-visibility: hidden;
+	}
+
+	.headshot-text {
+		font-size: 1rem;
+		text-align: center;
+		color: black;
+		font-weight: 500;
+		margin-top: 10px;
+	  }
+
+	  .role {
+		font-size: small;
+		text-align: center;
+		color: var(--primary-dark);
+		font-weight: 400;
+		max-width: 165px;
+	}
+
+	/* Hover Effects */
+
+	.linkedin-icon {
+		transition: .3s ease;
+		opacity: 0;
+		position: relative;
+		top: -50px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 
+	}
+
+	.to-linkedin {
+		max-height: 100px;
+	}
+
+	.to-linkedin:hover img.profile {
+		opacity: 0.3;
+	}
+
+	.to-linkedin:hover .linkedin-icon {
+		opacity: 1;
+	}
+
+	/* End Meet the exec section */
+
+	
