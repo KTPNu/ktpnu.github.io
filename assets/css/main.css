@@ -9686,7 +9686,7 @@ input, select, textarea {
 
 	.blue-bold {
 		color: var(--primary-dark);
-		font-weight: 300;
+		font-weight: 400;
 	}
 
 	.br-small {
@@ -9811,10 +9811,10 @@ input, select, textarea {
 	}
 
 	.headshot-text {
-		font-size: 1rem;
+		font-size: 0.9rem;
 		text-align: center;
 		color: black;
-		font-weight: 500;
+		font-weight: 450;
 		margin-top: 10px;
 	  }
 
