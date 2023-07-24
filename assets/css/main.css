@@ -9454,14 +9454,6 @@ input, select, textarea {
 			background-position: right;
 		}
 	}
-
-	
-@media (max-width: 480px) {
-    $el {
-        margin: 0 !important;
-    }
-}
-
 	/*
 			--primary-light: #8bb9ff;
 	--primary-medium: #458fff;
