@@ -9466,7 +9466,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
    	 	width: 100%;
-    	min-height: 90vh;
+    	min-height: 99vh;
 	}
 
 	
@@ -9519,7 +9519,7 @@ input, select, textarea {
 			max-width: 48rem;
 			margin: 0 auto;
 			font-size: 40px;
-			min-height: 90vh;
+			min-height: 100vh;
 			position: fixed
 
 		}
