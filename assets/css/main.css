@@ -2214,11 +2214,10 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
+		background-color: transparent;
 		/*box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);*/
-		color: #000000;
+		color: #000000 !important;
 	}
-
-
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2226,7 +2225,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			/*box-shadow: inset 0 0 0 1px #47D3E5;*/
-			color: black !important;
+			color: #47D3E5 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2236,7 +2235,7 @@ input, select, textarea {
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
 			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5;
+			color: #47D3E5 !important;
 		}
 
 		input[type="submit"].primary,
@@ -2244,60 +2243,17 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			border: none;
-			outline: none;
-			position: absolute;
-			left:0;
-			right:0;
-			margin-left:auto;
-			margin-right:auto;
-			z-index: 1;
-			border-radius: 5px;
-			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-			cursor: pointer;
+			background-color: #000000;
+			box-shadow: none;
+			color: #ffffff !important;
 		}
 
-		button.primary,
-		.button.primary::before {
-			content: "";
-			position: absolute;
-			left: 1px;
-			right: 1px;
-			top: 1px;
-			bottom: 1px;
-			border-radius: 4px;
-			background-color: white;
-			z-index: -1;
-			transition: 200ms
-		}
-
-		button.primary,
-		.button.primary::after {
-			content: attr(data);
-			font-size: 16px;
-			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-			-webkit-background-clip: text;
-			color: transparent;
-			transition: 200ms
-		}
-		
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			button.primary:hover,
-			.button.primary:hover::before {
-				opacity: 50%;
-				top: 0px;
-				right: 0px;
-				bottom: 0px;
-				left: 0px;
-			}
-
-
-			button.primary:hover,
-			.button.primary:hover::after {
-				color: black !important;
-				
+			.button.primary:hover {
+				background-color: #47D3E5;
 			}
 
 			input[type="submit"].primary:active,
@@ -3528,7 +3484,6 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
-		overflow-y: hidden;
 	}
 
 		.banner.style1 .content {
@@ -9016,7 +8971,7 @@ input, select, textarea {
 	text-align: center;
 	position: relative;
 	padding-bottom: 20px;
-	padding-left: 50px;
+	padding-left: 50px; 
 	padding-right: 50px;
   }
 
@@ -9129,7 +9084,6 @@ input, select, textarea {
   
 
 /*Desktop Navigation*/
-
 .navbar, .navbar * {
 	margin: 0;
 	padding: 0;
@@ -9252,7 +9206,6 @@ input, select, textarea {
 		justify-content: center;
 		border: none;
 		border-radius: 30px;
-		
 	  }
 	
 	  .feather-32{
@@ -9338,55 +9291,6 @@ input, select, textarea {
 		font-weight: lighter;
 	  }
 
-	  .infobox2{
-		position: absolute;
-		max-width: 800px;
-		height: 400px;
-		padding: 40px;
-		font-size: 14px;
-		line-height: 1.7;
-		margin: 50px auto;
-		box-sizing: border-box;
-		border-radius: 15px;
-		background-color: rgb(255, 255, 255, 0);
-		z-index: 1;
-		overflow: hidden;
-		left: 50%;
-		top: 40%;
-		transform: translate(-50%, -50%);
-	  }
-
-	  .infobox-h2 {
-		position: relative;
-		margin: 0;
-		border: none;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-		font-size: 5.5rem;
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-		z-index: 1;
-		top: -15px;
-	  }
-	  
-	  .infobox-p2 {
-		position: relative;
-		max-width: 900px;
-		margin: 0;
-		border: none;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-		font-size: 1.5rem;
-		color: white;
-		font-weight: lighter;
-		text-align: center;
-		z-index: 1;
-		top: -10px;
-	  }
-
 	  .clipshit1 {
 		/* clip-path: polygon(21% 11%, 6% 70%, 33% 50%, 88% 55%, 56% 73%, 78% 83%);
 		background-color: white; */
@@ -9433,6 +9337,7 @@ input, select, textarea {
 		padding-bottom: 1cm;
 		padding-left: 50px;
 		padding-right: 50px;
+
 	}
 
 	.about-us-h h3{
@@ -9556,3 +9461,25 @@ input, select, textarea {
         margin: 0 !important;
     }
 }
+
+	/*
+			--primary-light: #8bb9ff;
+	--primary-medium: #458fff;
+	--primary-dark: #234c8b;
+	*/
+
+	.about-us-h h3{
+		font-size: 32px;
+		text-align: left;
+		font-weight: 600;
+		padding-bottom: 20px;
+		background: -webkit-linear-gradient(45deg, #234c8b, #458fff);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	  }
+
+	.about-us-h p {
+		text-align: left;
+		color: #6e6e73;
+	}
+
