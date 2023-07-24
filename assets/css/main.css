@@ -9466,7 +9466,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
    	 	width: 100%;
-    	min-height: 650px;
+    	min-height: 90vh;
 	}
 
 	
@@ -9519,12 +9519,12 @@ input, select, textarea {
 			max-width: 48rem;
 			margin: 0 auto;
 			font-size: 40px;
-			min-height: 75%;
+			min-height: 90vh;
 			position: fixed
 
 		}
 		.rush-landing .content h2{
-			font-size: 75px;
+			font-size: 65px;
 			color: white;
 			text-align: left;
 			font-weight: 200;
@@ -9533,16 +9533,12 @@ input, select, textarea {
 		}
 
 
-		.rush-landing.fullscreen {
-			min-height: 75%;
-		}
-		
+
 		.rush-landing .curves svg{
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			overflow: hidden;
 			line-height: 0;
 		}
 @keyframes bg-animation-top {
@@ -9553,3 +9549,10 @@ input, select, textarea {
 			background-position: right;
 		}
 	}
+
+	
+@media (max-width: 480px) {
+    $el {
+        margin: 0 !important;
+    }
+}
