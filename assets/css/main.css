@@ -2214,9 +2214,10 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
 		/*box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);*/
-		color: #000000 !important;
+		color: var(--primary-dark);
+		font-weight: bold;
+		font-size: 0.8rem;
 	}
 
 		input[type="submit"]:hover,
@@ -2225,7 +2226,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			/*box-shadow: inset 0 0 0 1px #47D3E5;*/
-			color: #47D3E5 !important;
+			color: white;
 		}
 
 		input[type="submit"]:active,
@@ -2235,7 +2236,7 @@ input, select, textarea {
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
 			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			color: #47D3E5;
 		}
 
 		input[type="submit"].primary,
@@ -2243,9 +2244,17 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000000;
-			box-shadow: none;
-			color: #ffffff !important;
+			border: none;
+			outline: none;
+			position: absolute;
+			left:0;
+			right:0;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 1;
+			border-radius: 5px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			cursor: pointer;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2264,6 +2273,58 @@ input, select, textarea {
 				background-color: #1ebdd1;
 			}
 
+			
+
+			button.primary,
+		.button.primary::before {
+			content: "";
+			position: absolute;
+			left: 1px;
+			right: 1px;
+			top: 1px;
+			bottom: 1px;
+			border-radius: 4px;
+			background-color: white;
+			z-index: -1;
+			transition: 200ms
+		}
+
+		button.primary,
+		.button.primary::after {
+			content: attr(data);
+			font-size: 16px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			-webkit-background-clip: text;
+			color: transparent;
+			transition: 200ms
+		}
+		
+			input[type="submit"].primary:hover,
+			input[type="reset"].primary:hover,
+			input[type="button"].primary:hover,
+			button.primary:hover,
+			.button.primary:hover::before {
+				opacity: 50%;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+			}
+
+
+			button.primary:hover,
+			.button.primary:hover::after {
+				color: white;
+
+			}
+
+			input[type="submit"].primary:active,
+			input[type="reset"].primary:active,
+			input[type="button"].primary:active,
+			button.primary:active,
+			.button.primary:active {
+				background-color: #1ebdd1;
+			}
 /* Form */
 
 	form {
@@ -9475,3 +9536,529 @@ input, select, textarea {
 		color: #6e6e73;
 	}
 
+/*Will CSS*/
+/* Shape for the bottom of the hero section */
+
+.custom-shape-divider-bottom-1689620053 {
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1689620053 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 154px;
+}
+
+.custom-shape-divider-bottom-1689620053 .shape-fill {
+	fill: #FFFFFF;
+}
+
+
+/* Custom shape for the top of the pillars section */
+
+.custom-shape-divider-top-1689639178 {
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1689639178 svg {
+	position: relative;
+	display: block;
+	width: calc(157% + 1.3px);
+	height: 150px;
+}
+
+.custom-shape-divider-top-1689639178 .shape-fill {
+	fill: #FFFFFF;
+}
+
+/* Custom shape for the bottom of the pillars section */
+
+.custom-shape-divider-bottom-1689639136 {
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1689639136 svg {
+	position: relative;
+	display: block;
+	width: calc(157% + 1.3px);
+	height: 150px;
+}
+
+.custom-shape-divider-bottom-1689639136 .shape-fill {
+	fill: #FFFFFF;
+}
+
+/* Custom shape for the top of the footer  */
+
+.custom-shape-divider-top-1690136100 {
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1690136100 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 150px;
+}
+
+.custom-shape-divider-top-1690136100 .shape-fill {
+	fill: #FFFFFF;
+}
+
+.hero-section {
+	min-height: 100vh;
+	background: #fff;
+	background-image: var(--gradient);
+	background-size: 300%;
+	animation: bg-animation-top 10s infinite alternate;
+}
+
+@keyframes bg-animation-top {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+@keyframes bg-animation-bottom {
+	0% {
+		background-position: 30%;
+	}
+	100% {
+		background-position: 65%;
+	}
+}
+
+.worked-at-section {
+	position: relative;
+	background: #fff;
+	background-image: var(--gradient);
+	background-size: 300%;
+	animation: bg-animation-bottom 20s infinite alternate;
+	min-height: 50vh;
+}
+
+.presidents-welcome-section {
+	position: relative;
+	min-height: 50vh;
+}
+
+.col-md-6.extra-padding {
+	padding: 20px;
+}
+
+.container.president {
+	position: relative;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	padding: 15px;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+  }
+
+p.president {
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 0;
+	text-align: left;
+} 
+
+	/* If the screen size is 600px wide or less, set the padding for stacked elements */
+	@media screen and (max-width: 600px) {
+		p.president {
+			margin-left: 7px;
+		}
+	}
+
+.container.values {
+	position: relative;
+	padding: 10vh;
+	margin-bottom: 10vh;
+}
+
+.container.worked-at-y {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	height: 50vh;
+	width: 100vw;
+}
+
+.container.worked-at-x {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 30px;
+}
+
+.worked-at {
+	color: white;
+	font-size: 1.4rem;
+	height: 40px;
+}
+
+	/* If the screen size is 451 wide or more, set the img height to 40px */
+	@media screen and (min-width: 451px) {
+		.worked-at {
+			height: 40px;
+		}
+	}
+		
+	/* If the screen size is 450 wide or less, set the img height to 25px */
+	@media screen and (max-width: 450px) {
+		.worked-at {
+			height: 25px;
+		}
+	}
+
+
+img.rounded-corners {
+	border-radius: 30px;
+	box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
+	max-width: 100%;
+	width: auto;
+}
+
+.invert-photo { 
+	filter: invert(100%); 
+}
+
+.blue-bold {
+	color: var(--primary-dark);
+	font-weight: 400;
+}
+
+.br-small {
+	display: block;
+	margin-bottom: -.9em;
+}
+
+
+
+
+/* Values Section */
+#values {
+	padding: 60px 0 40px 0;
+  }
+  
+  #values .box {
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: 0 10px 40px 10px;
+	background: var(--white);
+	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+  }
+  
+  #values .box:hover {
+	transform: scale(1.1);
+  }
+  
+  #values .icon {
+	margin: 0 auto 15px auto;
+	padding-top: 12px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+  }
+  
+  #values .icon {
+	font-size: 36px;
+	line-height: 1;
+  }
+  
+  #values .title {
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 18px;
+  }
+  
+  #values .title a {
+	color: #111;
+  }
+  
+  #values .description {
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 0;
+	text-align: center;
+  }
+/* End Values Section */
+  
+
+/* Start Meet the exec board Section */
+
+.meet-exec-section {
+	min-height: 80vh;
+	margin-top: 10vh;
+}
+
+.container.exec-y {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	min-height: 50vh;
+	padding: 30px;
+
+
+	/* border-style: solid; */
+}
+
+.container.exec-x {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+
+	/* border-style: solid;
+	border-color: var(--secondary-light) */
+}
+
+.container.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	margin-top: 40px;
+
+	/* border-style: solid;
+	border-color: var(--primary-light) */
+}
+	
+
+	/* If the screen size is 450 wide or less, set the profile width to 135px so it keeps 2 profile containers on each line*/
+	@media screen and (max-width: 795px) {
+		.container.profile {
+			width: 135px;
+		}
+	}
+
+img.profile {
+	border-radius: 50%;
+	opacity: 1;
+	display: block;
+	transition: .3s ease;
+	backface-visibility: hidden;
+}
+
+.headshot-text {
+	font-size: 0.9rem;
+	text-align: center;
+	color: black;
+	font-weight: 450;
+	margin-top: 10px;
+  }
+
+  .role {
+	font-size: small;
+	text-align: center;
+	color: var(--primary-dark);
+	font-weight: 400;
+	max-width: 165px;
+}
+
+/* Hover Effects */
+
+.linkedin-icon {
+	transition: .3s ease;
+	opacity: 0;
+	position: relative;
+	top: -50px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%); 
+}
+
+.to-linkedin {
+	max-height: 100px;
+}
+
+.to-linkedin:hover img.profile {
+	opacity: 0.3;
+}
+
+.to-linkedin:hover .linkedin-icon {
+	opacity: 1;
+}
+
+/* End Meet the exec section */
+
+/* Start footer */
+
+.footer-section {
+	background: #fff;
+	background-image: var(--gradient);
+	background-size: 300%;
+	animation: bg-animation-footer 20s infinite alternate;
+	min-height: 30vh;
+}
+
+@keyframes bg-animation-footer {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: 20%;
+	}
+}
+
+.container.footer-x {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 5vw;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+.container.footer-x-links {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 10px;
+	padding: 30px;
+}
+
+.container.footer-y-left {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 40vw;
+	align-content: flex-start;
+	margin-left: 0;
+	padding: 0;
+	margin-top: 15px;
+}
+
+.container.footer-y-right {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 10vw;
+	align-content: flex-start;
+	margin-left: 0;
+	padding: 0;
+	margin-right: 0;
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 990px) {
+	.container.footer-y-left {
+		width: 80vw;
+	}
+	.container.footer-y-right {
+		width: 30vw;
+	}
+}
+
+.container.footer-links {
+	margin-left: auto;
+}
+
+.container.link-groups {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 7px;
+	margin-left: auto;
+	margin-top: 3px;
+	padding: 0;
+}
+
+.underline-link {
+	color: white;
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 0;
+	margin-right: auto;
+	text-decoration: underline;
+}
+
+p.footer {
+	color: white;
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 0;
+	text-align: left;
+	margin-right: auto;
+}
+
+p.footer-credits {
+	color: white;
+	font-size: 12px;
+	line-height: 28px;
+	margin-bottom: 0;
+	text-align: left;
+	margin-right: auto;
+}
+
+p.footer-links {
+	color: white;
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 0;
+	text-align: left;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+h3.footer {
+	color: white;
+	font-size: 1.4rem;
+}
+
+a.footer {
+	color: white;
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 0;
+	text-align: left;
+	margin-right: auto;
+	text-decoration: underline;
+}
+
+a.footer:hover {
+	color: var(--secondary-light);
+	text-decoration: underline;
+	transition: 50ms;
+}
