@@ -337,10 +337,6 @@ input, select, textarea {
 			font-size: 1.25rem;
 		}
 
-		h4 {
-			font-size: 1rem;
-		}
-
 	}
 
 	input, select, textarea {
@@ -2096,6 +2092,7 @@ input, select, textarea {
 		border: solid 1px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
+		background-color: white;
 	}
 
 		.box > :last-child,
@@ -2214,11 +2211,13 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		/*box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);*/
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 		color: var(--primary-dark);
 		font-weight: bold;
 		font-size: 0.8rem;
 	}
+
+
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2249,7 +2248,7 @@ input, select, textarea {
 			position: absolute;
 			left:0;
 			right:0;
-			margin-left: auto;
+			margin-left: 20%;
 			margin-right: auto;
 			z-index: 1;
 			border-radius: 5px;
@@ -2257,25 +2256,24 @@ input, select, textarea {
 			cursor: pointer;
 		}
 
-			input[type="submit"].primary:hover,
-			input[type="reset"].primary:hover,
-			input[type="button"].primary:hover,
-			button.primary:hover,
-			.button.primary:hover {
-				background-color: #47D3E5;
-			}
-
-			input[type="submit"].primary:active,
-			input[type="reset"].primary:active,
-			input[type="button"].primary:active,
-			button.primary:active,
-			.button.primary:active {
-				background-color: #1ebdd1;
-			}
-
-			
-
+		/* If the screen size is 601px wide or more, set the button to be aligned with the text */
+		@media screen and (min-width: 601px) {
 			button.primary,
+			.button.primary {
+				margin-left:13%;
+			}
+		}
+		
+		/* If the screen size is 600px wide or less, set the the button to be aligned to the left */
+		@media screen and (max-width: 600px) {
+			button.primary,
+			.button.primary {
+				margin-left:18px;
+				border-radius: 5px;
+			}
+		}
+
+		button.primary,
 		.button.primary::before {
 			content: "";
 			position: absolute;
@@ -2325,6 +2323,7 @@ input, select, textarea {
 			.button.primary:active {
 				background-color: #1ebdd1;
 			}
+
 /* Form */
 
 	form {
@@ -3545,6 +3544,7 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
+		overflow-y: hidden;
 	}
 
 		.banner.style1 .content {
@@ -8759,7 +8759,7 @@ input, select, textarea {
 		}
 
 		#wrapper.divided > * {
-			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
+			/* box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075); */
 		}
 
 			#wrapper.divided > *:first-child {
@@ -8818,7 +8818,7 @@ input, select, textarea {
   background-color: #ffffff;
   min-height: 100vh;
   padding: 100px 0;
-  font-family: (var(--font-title));
+  font-family: Jost;
 }
 
 .design {
@@ -8828,9 +8828,9 @@ input, select, textarea {
 }
 
 .timeline {
-  width: 80%;
+  width: 90%;
   height: auto;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8839,8 +8839,8 @@ input, select, textarea {
 .timeline-content {
   padding: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 4px 4px 8px var(--primary-dark), -4px -4px 8px var(--primary-dark);
-          box-shadow: 4px 4px 8px var(--primary-dark), -4px -4px 8px var(--primary-dark);
+  -webkit-box-shadow: 5px 5px 10px var(--primary-dark), -5px -5px 10px var(--primary-dark);
+          box-shadow: 5px 5px 10px var(--primary-dark), -5px -5px 10px var(--primary-dark);
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
@@ -8938,15 +8938,39 @@ input, select, textarea {
  
 /* Sections Header
 --------------------------------*/
-.section-header h2 {
-	font-size: 40px;
-	color: var(--primary-dark);
+.section-header h2.center {
+	font-size: 32px;
+	color: black;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 600;
 	position: relative;
 	padding-bottom: 20px;
-	padding-top: 0%;
   }
+
+.section-header h2.left-pres {
+	font-size: 32px;
+	color: black;
+	text-align: left;
+	font-weight: 600;
+	position: relative;
+  }
+
+	/* If the screen size is 601px wide or more, set the padding for row elements */
+	@media screen and (min-width: 601px) {
+		.section-header h2.left-pres {
+			padding-bottom: 0px;
+		}
+	}
+
+	/* If the screen size is 600px wide or less, set the padding for stacked elements */
+	@media screen and (max-width: 600px) {
+		.section-header h2.left-pres {
+			padding-top: 40px;
+			padding-bottom: 10px;
+			margin-left: 7px;
+		}
+	}
+
 
 .section-header h3 {
 	font-size: 32px;
@@ -9145,6 +9169,7 @@ input, select, textarea {
   
 
 /*Desktop Navigation*/
+
 .navbar, .navbar * {
 	margin: 0;
 	padding: 0;
@@ -9263,56 +9288,18 @@ input, select, textarea {
       }
       #featured-image {
         z-index: 10;
-        margin-top: -70px;
-		justify-content: center;
+		top: 50%;
+		bottom: 50%;
+
 		border: none;
 		border-radius: 30px;
+		
 	  }
 	
 	  .feather-32{
 		width: 32px;
 		height: 32px;
 	  }
-
-	  .headshot-info {
-		display: flex;
-  		justify-content: center;
-	  }
-
-
-	  .headshot-info .circle-crop {
-		width: 115px;
-		height: 115px;
-		position: relative;
-		overflow: hidden;
-		border-radius: 50%;
-	  }
-
-	  .headshot-info .circle-crop img {
-		display: inline;
-		margin: -25px 0 0 0;
-		height: 150%;
-		width: auto;
-		position: relative;
-	  }
-
-	  .headshot-info .headshot-text {
-		font-size: 1rem;
-		align-items: center;
-		color: var(--primary-dark);
-		font-weight: 500;
-		margin-top: 10px;
-		position: absolute;
-	  }
-
-	  .headshot-info .headshot-text .role {
-		font-size: small;
-		align-items: center;
-		color: #6e6e73;
-		font-weight: 400;
-		position: relative;
-	}
-
 
 	.infobox{
 		position: absolute;
@@ -9352,6 +9339,95 @@ input, select, textarea {
 		font-weight: lighter;
 	  }
 
+	  .infobox2{
+		position: absolute;
+		max-width: 800px;
+		height: 400px;
+		padding: 40px;
+		font-size: 14px;
+		line-height: 1.7;
+		margin: 50px auto;
+		box-sizing: border-box;
+		border-radius: 15px;
+		background-color: rgb(255, 255, 255, 0);
+		z-index: 1;
+		overflow: hidden;
+		left: 50%;
+		top: 40%;
+		transform: translate(-50%, -50%);
+	  }
+
+	  .infobox-h2 {
+		position: relative;
+		margin: 0;
+		border: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-size: 5.5rem;
+		color: white;
+		font-weight: bolder;
+		text-align: left;
+		z-index: 1;
+		top: -15px;
+		line-height: 1;
+		padding: 10px;
+	  }
+
+			/* If the screen size is 601px wide or more, set the font-size of <div> to 5.5rem */
+			@media screen and (min-width: 601px) {
+				.infobox-h2 {
+				font-size: 5.5rem;
+				}
+			}
+			
+			/* If the screen size is 600px wide or less, set the font-size of <div> to 4.5rem */
+			@media screen and (max-width: 600px) {
+				.infobox-h2 {
+				font-size: 4.5rem;
+				margin-left: 10px;
+				}
+			}
+
+		.gradient-text {
+			background: linear-gradient(to right, #ffefba, #ffffff);
+			-webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+
+
+	  .infobox-p2 {
+		position: relative;
+		max-width: 900px;
+		margin: 0;
+		border: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-size: 1.5rem;
+		color: white;
+		font-weight: normal;
+		text-align: left;
+		z-index: 1;
+		top: -10px;
+	  }
+
+			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+			@media screen and (min-width: 601px) {
+				.infobox-p2 {
+				font-size: 1.4rem;
+				}
+			}
+			
+			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+			@media screen and (max-width: 600px) {
+				.infobox-p2 {
+				font-size: 1.3rem;
+				margin-left: 10px;
+				padding: 10px;
+				}
+			}
+
 	  .clipshit1 {
 		/* clip-path: polygon(21% 11%, 6% 70%, 33% 50%, 88% 55%, 56% 73%, 78% 83%);
 		background-color: white; */
@@ -9382,9 +9458,7 @@ input, select, textarea {
 
 	.circle-square-crop {
 		position: absolute;
-		border-radius: 15px;
-
-		
+		border-radius: 15px;	
 	}
 
 	.container2 {
@@ -9398,7 +9472,6 @@ input, select, textarea {
 		padding-bottom: 1cm;
 		padding-left: 50px;
 		padding-right: 50px;
-
 	}
 
 	.about-us-h h3{
@@ -9417,97 +9490,107 @@ input, select, textarea {
 	.history {
 		background-color: #F5F8FD;
 	}
-	.rush-landing {
+
+	/* Shape for the bottom of the hero section */
+
+	.custom-shape-divider-bottom-1689620053 {
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+	
+	.custom-shape-divider-bottom-1689620053 svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 154px;
+	}
+	
+	.custom-shape-divider-bottom-1689620053 .shape-fill {
+		fill: #FFFFFF;
+	}
+	
+
+	/* Custom shape for the top of the pillars section */
+
+	.custom-shape-divider-top-1689639178 {
+		position: absolute;
+		top: -3px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+	
+	.custom-shape-divider-top-1689639178 svg {
+		position: relative;
+		display: block;
+		width: calc(157% + 1.3px);
+		height: 150px;
+	}
+	
+	.custom-shape-divider-top-1689639178 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+	/* Custom shape for the bottom of the pillars section */
+
+	.custom-shape-divider-bottom-1689639136 {
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+	
+	.custom-shape-divider-bottom-1689639136 svg {
+		position: relative;
+		display: block;
+		width: calc(157% + 1.3px);
+		height: 150px;
+	}
+	
+	.custom-shape-divider-bottom-1689639136 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+	/* Custom shape for the top of the footer  */
+
+	.custom-shape-divider-top-1690136100 {
+		position: absolute;
+		top: -3px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+	
+	.custom-shape-divider-top-1690136100 svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 150px;
+	}
+	
+	.custom-shape-divider-top-1690136100 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+	.hero-section {
+		min-height: 100vh;
 		background: #fff;
 		background-image: var(--gradient);
 		background-size: 300%;
 		animation: bg-animation-top 10s infinite alternate;
-		font-family: var(--font-title);
-		font-style: var(--font-title);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 40px;
-		text-align: center;
-		font-weight: 700;
-		margin: 0;
-   	 	width: 100%;
-    	min-height: 99vh;
 	}
 
-	
-	.rush.style1 {
-		-moz-align-items: -moz-stretch;
-		-webkit-align-items: -webkit-stretch;
-		-ms-align-items: -ms-stretch;
-		align-items: stretch;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-moz-justify-content: -moz-flex-end;
-		-webkit-justify-content: -webkit-flex-end;
-		-ms-justify-content: -ms-flex-end;
-		justify-content: flex-end;
-		position: relative;
-		text-align: left;
-		font-family: var(--font-title);
-		overflow-x: hidden;
-		font-size: 40px;
-		text-align: center;
-		font-weight: 700;
-		position: relative;
-		padding-bottom: 20px;
-		max-height: fit-content;
-		overflow: hidden;
-		background: radial-gradient(var(--primary-medium) 25%, var(--primary-light) 75%);
-	}
-
-		.rush.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
-			-moz-align-self: center;
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			align-self: center;
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
-			-moz-flex-shrink: 1;
-			-webkit-flex-shrink: 1;
-			-ms-flex-shrink: 1;
-			flex-shrink: 1;
-			width: 50%;
-			max-width: 48rem;
-			margin: 0 auto;
-			font-size: 40px;
-			min-height: 100vh;
-			position: fixed
-
-		}
-		.rush-landing .content h2{
-			font-size: 65px;
-			color: white;
-			text-align: left;
-			font-weight: 200;
-			padding-bottom: 20px;
-	
-		}
-
-
-
-		.rush-landing .curves svg{
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			line-height: 0;
-		}
-@keyframes bg-animation-top {
+	@keyframes bg-animation-top {
 		0% {
 			background-position: left;
 		}
@@ -9515,550 +9598,421 @@ input, select, textarea {
 			background-position: right;
 		}
 	}
-	/*
-			--primary-light: #8bb9ff;
-	--primary-medium: #458fff;
-	--primary-dark: #234c8b;
-	*/
 
-	.about-us-h h3{
-		font-size: 32px;
-		text-align: left;
-		font-weight: 600;
-		padding-bottom: 20px;
-		background: -webkit-linear-gradient(45deg, #234c8b, #458fff);
-  		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
+	@keyframes bg-animation-bottom {
+		0% {
+			background-position: 30%;
+		}
+		100% {
+			background-position: 65%;
+		}
+	}
+
+	.worked-at-section {
+		position: relative;
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation-bottom 20s infinite alternate;
+		min-height: 50vh;
+	}
+
+	.presidents-welcome-section {
+		position: relative;
+		min-height: 50vh;
+	}
+
+	.col-md-6.extra-padding {
+		padding: 20px;
+	}
+
+	.container.president {
+		position: relative;
+		margin-top: 10vh;
+		margin-bottom: 5vh;
+		padding: 15px;
+		/* top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); */
 	  }
 
-	.about-us-h p {
+	p.president {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
 		text-align: left;
-		color: #6e6e73;
-	}
+	} 
 
-/*Will CSS*/
-/* Shape for the bottom of the hero section */
-
-.custom-shape-divider-bottom-1689620053 {
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1689620053 svg {
-	position: relative;
-	display: block;
-	width: calc(100% + 1.3px);
-	height: 154px;
-}
-
-.custom-shape-divider-bottom-1689620053 .shape-fill {
-	fill: #FFFFFF;
-}
-
-
-/* Custom shape for the top of the pillars section */
-
-.custom-shape-divider-top-1689639178 {
-	position: absolute;
-	top: -3px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-}
-
-.custom-shape-divider-top-1689639178 svg {
-	position: relative;
-	display: block;
-	width: calc(157% + 1.3px);
-	height: 150px;
-}
-
-.custom-shape-divider-top-1689639178 .shape-fill {
-	fill: #FFFFFF;
-}
-
-/* Custom shape for the bottom of the pillars section */
-
-.custom-shape-divider-bottom-1689639136 {
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1689639136 svg {
-	position: relative;
-	display: block;
-	width: calc(157% + 1.3px);
-	height: 150px;
-}
-
-.custom-shape-divider-bottom-1689639136 .shape-fill {
-	fill: #FFFFFF;
-}
-
-/* Custom shape for the top of the footer  */
-
-.custom-shape-divider-top-1690136100 {
-	position: absolute;
-	top: -3px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-}
-
-.custom-shape-divider-top-1690136100 svg {
-	position: relative;
-	display: block;
-	width: calc(100% + 1.3px);
-	height: 150px;
-}
-
-.custom-shape-divider-top-1690136100 .shape-fill {
-	fill: #FFFFFF;
-}
-
-.hero-section {
-	min-height: 100vh;
-	background: #fff;
-	background-image: var(--gradient);
-	background-size: 300%;
-	animation: bg-animation-top 10s infinite alternate;
-}
-
-@keyframes bg-animation-top {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
-	}
-}
-
-@keyframes bg-animation-bottom {
-	0% {
-		background-position: 30%;
-	}
-	100% {
-		background-position: 65%;
-	}
-}
-
-.worked-at-section {
-	position: relative;
-	background: #fff;
-	background-image: var(--gradient);
-	background-size: 300%;
-	animation: bg-animation-bottom 20s infinite alternate;
-	min-height: 50vh;
-}
-
-.presidents-welcome-section {
-	position: relative;
-	min-height: 50vh;
-}
-
-.col-md-6.extra-padding {
-	padding: 20px;
-}
-
-.container.president {
-	position: relative;
-	margin-top: 10vh;
-	margin-bottom: 5vh;
-	padding: 15px;
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
-  }
-
-p.president {
-	font-size: 14px;
-	line-height: 28px;
-	margin-bottom: 0;
-	text-align: left;
-} 
-
-	/* If the screen size is 600px wide or less, set the padding for stacked elements */
-	@media screen and (max-width: 600px) {
-		p.president {
-			margin-left: 7px;
+		/* If the screen size is 600px wide or less, set the padding for stacked elements */
+		@media screen and (max-width: 600px) {
+			p.president {
+				margin-left: 7px;
+			}
 		}
+
+	.container.values {
+		position: relative;
+		padding: 10vh;
+		margin-bottom: 10vh;
 	}
 
-.container.values {
-	position: relative;
-	padding: 10vh;
-	margin-bottom: 10vh;
-}
+	.container.worked-at-y {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		align-items: center;
+		height: 50vh;
+		width: 100vw;
+	}
 
-.container.worked-at-y {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 30px;
-	align-items: center;
-	height: 50vh;
-	width: 100vw;
-}
+	.container.worked-at-x {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		gap: 30px;
+	}
 
-.container.worked-at-x {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	gap: 30px;
-}
+	.worked-at {
+		color: white;
+		font-size: 1.4rem;
+		height: 40px;
+	}
 
-.worked-at {
-	color: white;
-	font-size: 1.4rem;
-	height: 40px;
-}
-
-	/* If the screen size is 451 wide or more, set the img height to 40px */
-	@media screen and (min-width: 451px) {
-		.worked-at {
-			height: 40px;
+		/* If the screen size is 451 wide or more, set the img height to 40px */
+		@media screen and (min-width: 451px) {
+			.worked-at {
+				height: 40px;
+			}
 		}
+			
+		/* If the screen size is 450 wide or less, set the img height to 25px */
+		@media screen and (max-width: 450px) {
+			.worked-at {
+				height: 25px;
+			}
+		}
+
+
+	img.rounded-corners {
+		border-radius: 30px;
+		box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
+		max-width: 100%;
+		width: auto;
+	}
+
+	.invert-photo { 
+		filter: invert(100%); 
+	}
+
+	.blue-bold {
+		color: var(--primary-dark);
+		font-weight: 400;
+	}
+
+	.br-small {
+		display: block;
+        margin-bottom: -.9em;
+	}
+
+
+
+	
+	/* Values Section */
+	#values {
+		padding: 60px 0 40px 0;
+	  }
+	  
+	  #values .box {
+		padding: 30px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		margin: 0 10px 40px 10px;
+		background: var(--white);
+		box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+		transition: all 0.3s ease-in-out;
+		text-align: center;
+	  }
+	  
+	  #values .box:hover {
+		transform: scale(1.1);
+	  }
+	  
+	  #values .icon {
+		margin: 0 auto 15px auto;
+		padding-top: 12px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	  }
+	  
+	  #values .icon {
+		font-size: 36px;
+		line-height: 1;
+	  }
+	  
+	  #values .title {
+		font-weight: 700;
+		margin-bottom: 15px;
+		font-size: 18px;
+	  }
+	  
+	  #values .title a {
+		color: #111;
+	  }
+	  
+	  #values .description {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: center;
+	  }
+	/* End Values Section */
+	  
+
+	/* Start Meet the exec board Section */
+
+	.meet-exec-section {
+		min-height: 80vh;
+		margin-top: 10vh;
+	}
+
+	.container.exec-y {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		align-items: center;
+		min-height: 50vh;
+		padding: 30px;
+
+	
+		/* border-style: solid; */
+	}
+
+	.container.exec-x {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+
+		/* border-style: solid;
+		border-color: var(--secondary-light) */
+	}
+
+	.container.profile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 250px;
+		margin-top: 40px;
+
+		/* border-style: solid;
+		border-color: var(--primary-light) */
 	}
 		
-	/* If the screen size is 450 wide or less, set the img height to 25px */
-	@media screen and (max-width: 450px) {
-		.worked-at {
-			height: 25px;
+
+		/* If the screen size is 450 wide or less, set the profile width to 135px so it keeps 2 profile containers on each line*/
+		@media screen and (max-width: 795px) {
+			.container.profile {
+				width: 135px;
+			}
+		}
+
+	img.profile {
+		border-radius: 50%;
+		opacity: 1;
+		display: block;
+		transition: .3s ease;
+		backface-visibility: hidden;
+	}
+
+	.headshot-text {
+		font-size: 0.9rem;
+		text-align: center;
+		color: black;
+		font-weight: 450;
+		margin-top: 10px;
+	  }
+
+	  .role {
+		font-size: small;
+		text-align: center;
+		color: var(--primary-dark);
+		font-weight: 400;
+		max-width: 165px;
+	}
+
+	/* Hover Effects */
+
+	.linkedin-icon {
+		transition: .3s ease;
+		opacity: 0;
+		position: relative;
+		top: -50px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 
+	}
+
+	.to-linkedin {
+		max-height: 100px;
+	}
+
+	.to-linkedin:hover img.profile {
+		opacity: 0.3;
+	}
+
+	.to-linkedin:hover .linkedin-icon {
+		opacity: 1;
+	}
+
+	/* End Meet the exec section */
+
+	/* Start footer */
+
+	.footer-section {
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation-footer 20s infinite alternate;
+		min-height: 30vh;
+	}
+
+	@keyframes bg-animation-footer {
+		0% {
+			background-position: left;
+		}
+		100% {
+			background-position: 20%;
 		}
 	}
 
-
-img.rounded-corners {
-	border-radius: 30px;
-	box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
-	max-width: 100%;
-	width: auto;
-}
-
-.invert-photo { 
-	filter: invert(100%); 
-}
-
-.blue-bold {
-	color: var(--primary-dark);
-	font-weight: 400;
-}
-
-.br-small {
-	display: block;
-	margin-bottom: -.9em;
-}
-
-
-
-
-/* Values Section */
-#values {
-	padding: 60px 0 40px 0;
-  }
-  
-  #values .box {
-	padding: 30px;
-	position: relative;
-	overflow: hidden;
-	border-radius: 10px;
-	margin: 0 10px 40px 10px;
-	background: var(--white);
-	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-	transition: all 0.3s ease-in-out;
-	text-align: center;
-  }
-  
-  #values .box:hover {
-	transform: scale(1.1);
-  }
-  
-  #values .icon {
-	margin: 0 auto 15px auto;
-	padding-top: 12px;
-	display: inline-block;
-	text-align: center;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-  }
-  
-  #values .icon {
-	font-size: 36px;
-	line-height: 1;
-  }
-  
-  #values .title {
-	font-weight: 700;
-	margin-bottom: 15px;
-	font-size: 18px;
-  }
-  
-  #values .title a {
-	color: #111;
-  }
-  
-  #values .description {
-	font-size: 14px;
-	line-height: 28px;
-	margin-bottom: 0;
-	text-align: center;
-  }
-/* End Values Section */
-  
-
-/* Start Meet the exec board Section */
-
-.meet-exec-section {
-	min-height: 80vh;
-	margin-top: 10vh;
-}
-
-.container.exec-y {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 30px;
-	align-items: center;
-	min-height: 50vh;
-	padding: 30px;
-
-
-	/* border-style: solid; */
-}
-
-.container.exec-x {
-	display: flex;
-	flex-flow: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	gap: 10px;
-
-	/* border-style: solid;
-	border-color: var(--secondary-light) */
-}
-
-.container.profile {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 250px;
-	margin-top: 40px;
-
-	/* border-style: solid;
-	border-color: var(--primary-light) */
-}
-	
-
-	/* If the screen size is 450 wide or less, set the profile width to 135px so it keeps 2 profile containers on each line*/
-	@media screen and (max-width: 795px) {
-		.container.profile {
-			width: 135px;
-		}
+	.container.footer-x {
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 5vw;
+		padding: 30px;
+		margin-top: 30px;
 	}
 
-img.profile {
-	border-radius: 50%;
-	opacity: 1;
-	display: block;
-	transition: .3s ease;
-	backface-visibility: hidden;
-}
-
-.headshot-text {
-	font-size: 0.9rem;
-	text-align: center;
-	color: black;
-	font-weight: 450;
-	margin-top: 10px;
-  }
-
-  .role {
-	font-size: small;
-	text-align: center;
-	color: var(--primary-dark);
-	font-weight: 400;
-	max-width: 165px;
-}
-
-/* Hover Effects */
-
-.linkedin-icon {
-	transition: .3s ease;
-	opacity: 0;
-	position: relative;
-	top: -50px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%); 
-}
-
-.to-linkedin {
-	max-height: 100px;
-}
-
-.to-linkedin:hover img.profile {
-	opacity: 0.3;
-}
-
-.to-linkedin:hover .linkedin-icon {
-	opacity: 1;
-}
-
-/* End Meet the exec section */
-
-/* Start footer */
-
-.footer-section {
-	background: #fff;
-	background-image: var(--gradient);
-	background-size: 300%;
-	animation: bg-animation-footer 20s infinite alternate;
-	min-height: 30vh;
-}
-
-@keyframes bg-animation-footer {
-	0% {
-		background-position: left;
+	.container.footer-x-links {
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 10px;
+		padding: 30px;
 	}
-	100% {
-		background-position: 20%;
-	}
-}
 
-.container.footer-x {
-	position: relative;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 5vw;
-	padding: 30px;
-	margin-top: 30px;
-}
-
-.container.footer-x-links {
-	position: relative;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 10px;
-	padding: 30px;
-}
-
-.container.footer-y-left {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 40vw;
-	align-content: flex-start;
-	margin-left: 0;
-	padding: 0;
-	margin-top: 15px;
-}
-
-.container.footer-y-right {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 10vw;
-	align-content: flex-start;
-	margin-left: 0;
-	padding: 0;
-	margin-right: 0;
-	margin-top: 15px;
-}
-
-@media screen and (max-width: 990px) {
 	.container.footer-y-left {
-		width: 80vw;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
+		align-content: flex-start;
+		margin-left: 0;
+		padding: 0;
+		margin-top: 15px;
 	}
+
 	.container.footer-y-right {
-		width: 30vw;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 10vw;
+		align-content: flex-start;
+		margin-left: 0;
+		padding: 0;
+		margin-right: 0;
+		margin-top: 15px;
 	}
-}
 
-.container.footer-links {
-	margin-left: auto;
-}
+	@media screen and (max-width: 990px) {
+		.container.footer-y-left {
+			width: 80vw;
+		}
+		.container.footer-y-right {
+			width: 30vw;
+		}
+	}
 
-.container.link-groups {
-	position: relative;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 7px;
-	margin-left: auto;
-	margin-top: 3px;
-	padding: 0;
-}
+	.container.footer-links {
+		margin-left: auto;
+	}
 
-.underline-link {
-	color: white;
-	font-size: 14px;
-	line-height: 28px;
-	margin-bottom: 0;
-	margin-right: auto;
-	text-decoration: underline;
-}
+	.container.link-groups {
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 7px;
+		margin-left: auto;
+		margin-top: 3px;
+		padding: 0;
+	}
 
-p.footer {
-	color: white;
-	font-size: 14px;
-	line-height: 28px;
-	margin-bottom: 0;
-	text-align: left;
-	margin-right: auto;
-}
+	.underline-link {
+		color: white;
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		margin-right: auto;
+		text-decoration: underline;
+	}
 
-p.footer-credits {
-	color: white;
-	font-size: 12px;
-	line-height: 28px;
-	margin-bottom: 0;
-	text-align: left;
-	margin-right: auto;
-}
+	p.footer {
+		color: white;
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+		margin-right: auto;
+	}
 
-p.footer-links {
-	color: white;
-	font-size: 14px;
-	line-height: 28px;
-	margin-bottom: 0;
-	text-align: left;
-	margin-left: auto;
-	margin-right: 20px;
-}
+	p.footer-credits {
+		color: white;
+		font-size: 12px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+		margin-right: auto;
+	}
 
-h3.footer {
-	color: white;
-	font-size: 1.4rem;
-}
+	p.footer-links {
+		color: white;
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+		margin-left: auto;
+		margin-right: 20px;
+	}
 
-a.footer {
-	color: white;
-	font-size: 14px;
-	line-height: 28px;
-	margin-bottom: 0;
-	text-align: left;
-	margin-right: auto;
-	text-decoration: underline;
-}
+	h3.footer {
+		color: white;
+		font-size: 1.4rem;
+	}
 
-a.footer:hover {
-	color: var(--secondary-light);
-	text-decoration: underline;
-	transition: 50ms;
-}
+	a.footer {
+		color: white;
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+		margin-right: auto;
+		text-decoration: underline;
+	}
+
+	a.footer:hover {
+		color: var(--secondary-light);
+		text-decoration: underline;
+		transition: 50ms;
+	}
