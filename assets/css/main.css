@@ -10051,7 +10051,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
    	width: 100%;
-		min-height: 100vh;
+		min-height: 97vh;
 	}
 
 
@@ -10209,4 +10209,12 @@ input, select, textarea {
 			min-height: 40vh;
 		}
 	  }
+
+	  .about-us-landing .content h2 {
+		font-size: 65px;
+		color: white;
+		text-align: left;
+		font-weight: 200;
+		padding-bottom: 20px;
+	}
 
