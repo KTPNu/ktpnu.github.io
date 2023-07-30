@@ -9491,6 +9491,12 @@ input, select, textarea {
 				}
 			}
 
+			@media (min-width: 770px) {
+				.hidden-ss {
+				display: none !important;
+				}
+			}
+
 		.gradient-text {
 			background: linear-gradient(to right, #ffefba, #ffffff);
 			-webkit-text-fill-color: transparent;
@@ -9584,7 +9590,7 @@ input, select, textarea {
 		background-color: #F5F8FD;
 	}
 
-	/* Shape for the bottom of the hero section */
+	/* Shape for the bottom of the desktop hero section */
 
 	.custom-shape-divider-bottom-1689620053 {
 		position: absolute;
@@ -9606,6 +9612,41 @@ input, select, textarea {
 	.custom-shape-divider-bottom-1689620053 .shape-fill {
 		fill: #FFFFFF;
 	}
+
+	/* Shape for the bottom of the mobile hero section */
+
+	.custom-shape-divider-bottom-1690747630 {
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+	
+	.custom-shape-divider-bottom-1690747630 svg {
+		position: relative;
+		display: block;
+		width: calc(188% + 1.3px);
+		height: 99px;
+		transform: rotateY(180deg);
+	}
+	
+	.custom-shape-divider-bottom-1690747630 .shape-fill {
+		fill: #FFFFFF;
+	}
+
+
+		/* Changes the svg for mobile view so it's not as spiky ewwww */
+		@media screen and (max-width: 600px) {
+			.custom-shape-divider-bottom-1689620053 {
+				display: none;
+			}
+			.custom-shape-divider-bottom-1690747630 {
+				display: initial;
+			}
+		}
 	
 
 	/* Custom shape for the top of the pillars section */
