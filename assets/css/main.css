@@ -2247,7 +2247,7 @@ input, select, textarea {
 			position: absolute;
 			left:0;
 			right:0;
-			/*margin-left: 20%;*/
+			margin-left: 20%;
 			margin-right: auto;
 			z-index: 1;
 			border-radius: 5px;
@@ -2320,6 +2320,110 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
+				background-color: #1ebdd1;
+			}
+
+			input[type="submit"].primary,
+		input[type="reset"].primary,
+		input[type="button"].primary,
+		button.primary,
+		.button.primary {
+			border: none;
+			outline: none;
+			position: absolute;
+			left:0;
+			right:0;
+			margin-left: 20%;
+			margin-right: auto;
+			z-index: 1;
+			border-radius: 5px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			cursor: pointer;
+		}
+
+		/* If the screen size is 601px wide or more, set the button to be aligned with the text */
+		@media screen and (min-width: 601px) {
+			button.primary,
+			.button.primary {
+				margin-left:13%;
+			}
+		}
+		
+		/* If the screen size is 600px wide or less, set the the button to be aligned to the left */
+		@media screen and (max-width: 600px) {
+			button.primary,
+			.button.primary {
+				margin-left:18px;
+				border-radius: 5px;
+			}
+		}
+
+		input[type="submit"].rush,
+		input[type="reset"].rush,
+		input[type="button"].rush,
+		button.rush,
+		.button.rush {
+			border: none;
+			outline: none;
+			position: absolute;
+			left:0;
+			margin-left: 25%;
+			right: 0;
+			margin-right: auto;
+			z-index: 1;
+			border-radius: 5px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			cursor: pointer;
+		}
+
+		button.rush,
+		.button.rush::before {
+			content: "";
+			position: absolute;
+			left: 1px;
+			right: 1px;
+			top: 1px;
+			bottom: 1px;
+			border-radius: 4px;
+			background-color: white;
+			z-index: -1;
+			transition: 200ms
+		}
+
+		button.rush,
+		.button.rush::after {
+			content: attr(data);
+			font-size: 16px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			-webkit-background-clip: text;
+			color: transparent;
+			transition: 200ms
+		}
+		
+			input[type="submit"].rush:hover,
+			input[type="reset"].rush:hover,
+			input[type="button"].rush:hover,
+			button.rush:hover,
+			.button.rush:hover::before {
+				opacity: 50%;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+			}
+
+
+			button.rush:hover,
+			.button.rush:hover::after {
+				color: white;
+
+			}
+
+			input[type="submit"].rush:active,
+			input[type="reset"].rush:active,
+			input[type="button"].rush:active,
+			button.rush:active,
+			.button.rush:active {
 				background-color: #1ebdd1;
 			}
 
@@ -10059,7 +10163,7 @@ input, select, textarea {
 		font-size: 65px;
 		color: white;
 		text-align: left;
-		font-weight: 200;
+		font-weight: 600;
 		padding-bottom: 20px;
 	}
 
