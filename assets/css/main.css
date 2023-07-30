@@ -2229,7 +2229,6 @@ input, select, textarea {
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
-		input[type="button"]:active,
 		button:active,
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
@@ -2247,7 +2246,7 @@ input, select, textarea {
 			position: absolute;
 			left:0;
 			right:0;
-			/*margin-left: 20%;*/
+			margin-left: 20%;
 			margin-right: auto;
 			z-index: 1;
 			border-radius: 5px;
@@ -2320,6 +2319,110 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
+				background-color: #1ebdd1;
+			}
+
+			input[type="submit"].primary,
+		input[type="reset"].primary,
+		input[type="button"].primary,
+		button.primary,
+		.button.primary {
+			border: none;
+			outline: none;
+			position: absolute;
+			left:0;
+			right:0;
+			margin-left: 20%;
+			margin-right: auto;
+			z-index: 1;
+			border-radius: 5px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			cursor: pointer;
+		}
+
+		/* If the screen size is 601px wide or more, set the button to be aligned with the text */
+		@media screen and (min-width: 601px) {
+			button.primary,
+			.button.primary {
+				margin-left:13%;
+			}
+		}
+		
+		/* If the screen size is 600px wide or less, set the the button to be aligned to the left */
+		@media screen and (max-width: 600px) {
+			button.primary,
+			.button.primary {
+				margin-left:18px;
+				border-radius: 5px;
+			}
+		}
+
+		input[type="submit"].rush,
+		input[type="reset"].rush,
+		input[type="button"].rush,
+		button.rush,
+		.button.rush {
+			border: none;
+			outline: none;
+			position: absolute;
+			left:0;
+			margin-left: 25%;
+			right: 0;
+			margin-right: auto;
+			z-index: 1;
+			border-radius: 5px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			cursor: pointer;
+		}
+
+		button.rush,
+		.button.rush::before {
+			content: "";
+			position: absolute;
+			left: 1px;
+			right: 1px;
+			top: 1px;
+			bottom: 1px;
+			border-radius: 4px;
+			background-color: white;
+			z-index: -1;
+			transition: 200ms
+		}
+
+		button.rush,
+		.button.rush::after {
+			content: attr(data);
+			font-size: 16px;
+			background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+			-webkit-background-clip: text;
+			color: transparent;
+			transition: 200ms
+		}
+		
+			input[type="submit"].rush:hover,
+			input[type="reset"].rush:hover,
+			input[type="button"].rush:hover,
+			button.rush:hover,
+			.button.rush:hover::before {
+				opacity: 50%;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+			}
+
+
+			button.rush:hover,
+			.button.rush:hover::after {
+				color: white;
+
+			}
+
+			input[type="submit"].rush:active,
+			input[type="reset"].rush:active,
+			input[type="button"].rush:active,
+			button.rush:active,
+			.button.rush:active {
 				background-color: #1ebdd1;
 			}
 
@@ -9129,7 +9232,7 @@ input, select, textarea {
 	z-index: 9998;
 	border: 0;
 	background: none;
-	font-size: 24px;
+	font-size: 18.5px;
 	transition: all 0.4s;
 	outline: none !important;
 	line-height: 1;
@@ -9138,7 +9241,7 @@ input, select, textarea {
   }
   
   .mobile-nav-toggle i {
-	margin: 0 0;
+	margin: 8px -7px 0 0;
 	color: #065e77;
   }
   
@@ -9473,22 +9576,13 @@ input, select, textarea {
 	}
 
 	.about-us-h {
-		padding-top: 1cm;
-		padding-bottom: 1cm;
 		padding-left: 50px;
 		padding-right: 50px;
 	}
 
-	.about-us-h h3{
-		font-size: 32px;
-		color: var(--primary-dark);
-		text-align: center;
-		font-weight: 600;
-		padding-bottom: 20px;
-	  }
 
 	.about-us-h p {
-		text-align: center;
+		text-align: left;
 		color: #6e6e73;
 	}
 
@@ -9690,6 +9784,10 @@ input, select, textarea {
 		width: 100vw;
 	}
 
+
+
+
+
 	.container.worked-at-x {
 		display: flex;
 		flex-direction: row;
@@ -9819,6 +9917,7 @@ input, select, textarea {
 		/* border-style: solid; */
 	}
 
+
 	.container.exec-x {
 		display: flex;
 		flex-flow: row;
@@ -9830,6 +9929,15 @@ input, select, textarea {
 		/* border-style: solid;
 		border-color: var(--secondary-light) */
 	}
+
+	.about-us-landing .curves svg{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			line-height: 0;
+		}
+
 
 	.container.profile {
 		display: flex;
@@ -10001,6 +10109,19 @@ input, select, textarea {
 		margin-right: auto;
 	}
 
+  .about-us-h h3{
+		font-size: 32px;            
+		text-align: left;
+		font-weight: 600;
+		padding-bottom: 20px;
+		background: -webkit-linear-gradient(45deg, var(--primary-dark) 25%,var(--primary-medium));
+  	-webkit-background-clip: text;
+		background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	}
+
+
+
 	p.footer-credits {
 		color: white;
 		font-size: 12px;
@@ -10049,6 +10170,7 @@ input, select, textarea {
 		font-family: var(--font-title);
 		font-style: var(--font-title);
 		display: flex;
+		margin: auto;
 		justify-content: center;
 		align-items: center;
 		font-size: 40px;
@@ -10056,14 +10178,34 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
 		width: 100%;
-		min-height: 99vh;
+		min-height: 100vh;
 	}
+
+	.about-us-landing {
+		background: #fff;
+		background-image: var(--gradient);
+		background-size: 300%;
+		animation: bg-animation-top 10s infinite alternate;
+		font-family: var(--font-title);
+		font-style: var(--font-title);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 40px;
+		text-align: center;
+		font-weight: 700;
+		margin: 0;
+   		width: 100%;
+		min-height: 97vh;
+	}
+
 
 	.rush-landing .content h2 {
 		font-size: 65px;
 		color: white;
 		text-align: left;
-		font-weight: 200;
+		margin: auto;
+		font-weight: 600;
 		padding-bottom: 20px;
 	}
 
@@ -10102,3 +10244,124 @@ input, select, textarea {
 			background-position: 65%;
 		}
 	}
+
+  .about-us-h img {
+		width: 75%;
+	}
+
+	.member-card {
+		text-align: center;
+		margin: 20px;
+	}
+
+	.member-image {
+		position: relative;
+		width: 100%;
+	}
+
+	.member-image img {
+		width: 100%;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.member-image:hover img {
+		filter: grayscale(100%);
+	}
+
+	.icons {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+		opacity: 0;
+		transition: all .3s ease-in-out;
+	  }
+	  
+	  .member-image:hover .icons {
+		visibility: visible;
+		opacity: 1;
+	  }
+	  
+	  .icons a {
+		color: white;  /* change color of the icons */
+		font-size: 1.5rem;  /* adjust the size of the icons */
+		margin: 0 10px;
+	  }
+	  
+	  .member-info {
+		padding: 10px;
+	  }
+	  
+	  .member-name {
+		margin: 0;
+		font-size: 1.2em;
+		text-align: center;
+	  }
+	  
+	  .about-us-h .member-title {
+		margin: 0;
+		text-align: center;
+	  }
+
+	  @media (max-width: 768px) {
+		.about-us-h p {
+			text-align: center;
+			color: #6e6e73;
+		}
+		.about-us-h h3{
+			text-align: center;
+		}
+		.rush-landing {
+			background: #fff;
+			background-image: var(--gradient);
+			background-size: 300%;
+			animation: bg-animation-top 10s infinite alternate;
+			font-family: var(--font-title);
+			font-style: var(--font-title);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 40px;
+			text-align: center;
+			font-weight: 700;
+			margin: auto;
+			width: 100%;
+			min-height: 99vh;
+		}
+	  }
+
+	  @media (max-width: 1280px) and (min-width: 768px) {
+		.rush-landing {
+			background: #fff;
+			background-image: var(--gradient);
+			background-size: 300%;
+			animation: bg-animation-top 10s infinite alternate;
+			font-family: var(--font-title);
+			font-style: var(--font-title);
+			display: flex;
+			margin: auto;
+			justify-content: center;
+			align-items: center;
+			font-size: 40px;
+			text-align: center;
+			font-weight: 700;
+			margin: 0;
+			width: 100%;
+			min-height: 99vh;
+		}
+	  }
+
+	  .about-us-landing .content h2 {
+		font-size: 65px;
+		color: white;
+		text-align: left;
+		font-weight: 200;
+		padding-bottom: 20px;
+	}
+
