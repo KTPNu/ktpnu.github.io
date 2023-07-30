@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Hannah Yoon",
+        "title": "President",
+        "image": "images/headshots/hannah_y.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Jaden Snell",
+        "title": "Vice President of External Affairs",
+        "image": "images/headshots/member2.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      },
+      {
+        "name": "Wesley Allen",
+        "title": "Vice President of Technical Developement",
+        "image": "images/headshots/member2.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      },
+      {
+        "name": "Hannah Yoon",
+        "title": "President",
+        "image": "images/headshots/hannah_y.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Jaden Snell",
+        "title": "Vice President of External Affairs",
+        "image": "images/headshots/member2.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      },
+      {
+        "name": "Wesley Allen",
+        "title": "Vice President of Technical Developement",
+        "image": "images/headshots/member2.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      },
+      {
+        "name": "Hannah Yoon",
+        "title": "President",
+        "image": "images/headshots/hannah_y.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Jaden Snell",
+        "title": "Vice President of External Affairs",
+        "image": "images/headshots/member2.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      },
+      {
+        "name": "Wesley Allen",
+        "title": "Vice President of Technical Developement",
+        "image": "images/headshots/member2.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      }
+    ]
+  }
