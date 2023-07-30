@@ -10130,6 +10130,7 @@ input, select, textarea {
 		font-family: var(--font-title);
 		font-style: var(--font-title);
 		display: flex;
+		margin: auto;
 		justify-content: center;
 		align-items: center;
 		font-size: 40px;
@@ -10137,7 +10138,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
 		width: 100%;
-		min-height: 99vh;
+		min-height: 100vh;
 	}
 
 	.about-us-landing {
@@ -10154,7 +10155,7 @@ input, select, textarea {
 		text-align: center;
 		font-weight: 700;
 		margin: 0;
-   	width: 100%;
+   		width: 100%;
 		min-height: 97vh;
 	}
 
@@ -10163,6 +10164,7 @@ input, select, textarea {
 		font-size: 65px;
 		color: white;
 		text-align: left;
+		margin: auto;
 		font-weight: 600;
 		padding-bottom: 20px;
 	}
@@ -10288,9 +10290,9 @@ input, select, textarea {
 			font-size: 40px;
 			text-align: center;
 			font-weight: 700;
-			margin: 0;
+			margin: auto;
 			width: 100%;
-			min-height: 40vh;
+			min-height: 99vh;
 		}
 	  }
 
@@ -10303,6 +10305,7 @@ input, select, textarea {
 			font-family: var(--font-title);
 			font-style: var(--font-title);
 			display: flex;
+			margin: auto;
 			justify-content: center;
 			align-items: center;
 			font-size: 40px;
@@ -10310,7 +10313,7 @@ input, select, textarea {
 			font-weight: 700;
 			margin: 0;
 			width: 100%;
-			min-height: 40vh;
+			min-height: 99vh;
 		}
 	  }
 
