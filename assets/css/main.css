@@ -10201,12 +10201,14 @@ input, select, textarea {
 
 
 	.rush-landing .content h2 {
-		font-size: 65px;
+		font-size: 60px;
 		color: white;
 		text-align: left;
 		margin: auto;
 		font-weight: 600;
 		padding-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.rush-landing .curves svg {
