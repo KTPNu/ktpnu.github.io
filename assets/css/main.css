@@ -2229,7 +2229,6 @@ input, select, textarea {
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
-		input[type="button"]:active,
 		button:active,
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
@@ -9233,7 +9232,7 @@ input, select, textarea {
 	z-index: 9998;
 	border: 0;
 	background: none;
-	font-size: 24px;
+	font-size: 18.5px;
 	transition: all 0.4s;
 	outline: none !important;
 	line-height: 1;
@@ -9242,7 +9241,7 @@ input, select, textarea {
   }
   
   .mobile-nav-toggle i {
-	margin: 0 0;
+	margin: 8px -7px 0 0;
 	color: #065e77;
   }
   
