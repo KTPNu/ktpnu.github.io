@@ -15,6 +15,10 @@ fetch('/assets/members.json')
     // Iterate over each member
     for(let i = 0; i < members.length; i++){
       // Generate HTML for each member
+      if(i % 4 === 0 && i !== 0) {
+        html += '</div><div class="row justify-content-center about-us-h">';
+      }
+
       html += `
         <div class="col">
           <div class="member-card">
@@ -32,6 +36,8 @@ fetch('/assets/members.json')
           </div>
         </div>`;
     }
+
+    html += '</div>';
 
     // Add the generated HTML to the document
     document.getElementById('members').innerHTML = html;
