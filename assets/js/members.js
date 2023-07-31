@@ -17,12 +17,13 @@ fetch('/assets/members.json')
       // Generate HTML for each member 
       console.log(html);
       if(i % 4 === 0) {
-        html += `<div class="row">`;
+        html += `
+    <div class="row">`;
         row=true
       }
 
       html += `
-        <div class="col">
+        <div class="col-3">
           <div class="member-card">
             <div class="member-image">
               <img src="${members[i].image}" alt="${members[i].name}">
@@ -45,7 +46,7 @@ fetch('/assets/members.json')
     }
 
 
-    
+    html += '</div>';
     console.log(html);
     // Add the generated HTML to the document
     document.getElementById('members').innerHTML = html;
