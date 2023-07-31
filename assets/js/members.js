@@ -38,7 +38,7 @@ fetch('/assets/members.json')
           </div>
         </div>`;
 
-        if((++i) % 4 == 0 && i != 0 && row) {
+        if((i+1) % 4 == 0 && i != 0 && row) {
             html += '</div>';
             row = false;
         }
