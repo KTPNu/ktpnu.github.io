@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Hannah Yoon",
+        "title": "President",
+        "image": "images/headshots/hannah_y.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Jaden Snell",
+        "title": "Vice President of External Affairs",
+        "image": "images/headshots/jaden_s.png",
+        "github": "path/to/github2",
+        "linkedin": "path/to/linkedin2"
+      },
+      {
+        "name": "Will Van Vuuren",
+        "title": "Vice President of Engagement",
+        "image": "images/headshots/areeb.jpeg",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Wesley Allen",
+        "title": "Vice President of Technical Development",
+        "image": "images/headshots/areeb.jpeg",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Daniil Garusov",
+        "title": "Vice President of Finance",
+        "image": "images/headshots/daniil_g.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Will Dravenstott",
+        "title": "Vice President of Professional Development",
+        "image": "images/headshots/will_drav.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Erin Ochs",
+        "title": "Vice President of Marketing",
+        "image": "images/headshots/areeb.jpeg",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Ali Haroon",
+        "title": "Vice President of Membership",
+        "image": "images/headshots/areeb.jpeg",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      },
+      {
+        "name": "Audrey Deck",
+        "title": "Member",
+        "image": "images/headshots/audrey_d.png",
+        "github": "path/to/github",
+        "linkedin": "path/to/linkedin"
+      }
+    ]
+  }
