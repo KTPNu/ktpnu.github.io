@@ -35,12 +35,14 @@ fetch('/assets/members.json')
             </div>
           </div>
         </div>`;
+
+        if(i % 4 == 0 && i != 0) {
+            html += '</div>';
+        }
     }
 
 
-    if(i % 4 == 0 && i != 0) {
-        html += '</div>';
-    }
+    
     console.log(html);
     // Add the generated HTML to the document
     document.getElementById('members').innerHTML = html;
