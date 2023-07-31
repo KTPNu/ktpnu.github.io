@@ -15,6 +15,7 @@ fetch('/assets/members.json')
     // Iterate over each member
     for(let i = 0; i < members.length; i++){
       // Generate HTML for each member 
+      console.log(html);
       if(i % 4 === 0) {
         html += `<div class="row">`;
         row=true
