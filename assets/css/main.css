@@ -9058,6 +9058,15 @@ input, select, textarea {
 	position: relative;
   }
 
+.section-header h2.left-rush {
+	font-size: 32px;
+	color: black;
+	text-align: right;
+	font-weight: 600;
+	position: relative;
+}
+
+
 	/* If the screen size is 601px wide or more, set the padding for row elements */
 	@media screen and (min-width: 601px) {
 		.section-header h2.left-pres {
@@ -9070,9 +9079,44 @@ input, select, textarea {
 		.section-header h2.left-pres {
 			padding-top: 40px;
 			padding-bottom: 10px;
-			margin-left: 7px;
+			margin-left: 7px
 		}
 	}
+
+	/* If the screen size is 601px wide or more, set the padding for row elements */
+	@media screen and (min-width: 601px) {
+		.section-header h2.left-rush {
+			padding-bottom: 0px;
+			text-align: right;
+		}
+	}
+
+	/* If the screen size is 600px wide or less, set the padding for stacked elements */
+	@media screen and (max-width: 600px) {
+		.section-header h2.left-rush {
+			padding-top: 40px;
+			padding-bottom: 10px;
+			margin-left: 7px;
+			text-align: center;
+		}
+	}
+
+	/* If the screen size is 601px wide or more, set the padding for row elements */
+	@media screen and (min-width: 601px) {
+		.rush-mid {
+			text-align: right;
+			margin-left: 22%; 
+			margin-right: 10px;
+		}
+	}
+
+	/* If the screen size is 600px wide or less, set the padding for stacked elements */
+	@media screen and (max-width: 600px) {
+		.rush-mid {
+			text-align: center
+		}
+	}
+
 
 
 .section-header h3 {
