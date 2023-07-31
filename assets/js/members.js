@@ -15,8 +15,8 @@ fetch('/assets/members.json')
     // Iterate over each member
     for(let i = 0; i < members.length; i++){
       // Generate HTML for each member
-      if(i % 4 === 0 && i !== 0) {
-        html += '<br><br>';
+      if(i % 4 === 0) {
+        html += `<div class="row">`;
       }
 
       html += `
@@ -37,8 +37,11 @@ fetch('/assets/members.json')
         </div>`;
     }
 
-    html += '</div>';
 
+    if(i % 4 == 0 && i != 0) {
+        html += '</div>';
+    }
+    console.log(html);
     // Add the generated HTML to the document
     document.getElementById('members').innerHTML = html;
   });
