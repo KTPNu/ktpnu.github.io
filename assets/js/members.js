@@ -28,8 +28,14 @@ fetch('/assets/members.json')
             <div class="member-image">
               <img src="${members[i].image}" alt="${members[i].name}">
               <div class="icons">
-                <a href="${members[i].github}"><i class="bi bi-github"></i></a>
-                <a href="${members[i].linkedin}"><i class="bi bi-linkedin"></i></a>
+                <a href="${members[i].github}"><i class="bi bi-github"></i></a>`;
+
+      if (members[i].github) { // Check if the Github URL exists
+          html += `<a href="${members[i].github}"><i class="bi bi-github"></i></a>`;
+      }
+      
+      html += `
+      <a href="${members[i].linkedin}"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info">
