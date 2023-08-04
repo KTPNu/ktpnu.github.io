@@ -22,6 +22,7 @@ fetch('/assets/members.json')
       }
 
       html += `
+
         <div class="col-lg-3 col-sm-12">
           <div class="member-card">
             <div class="member-image">
