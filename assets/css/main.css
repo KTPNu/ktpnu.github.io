@@ -10240,7 +10240,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
    		width: 100%;
-		min-height: 97vh;
+		min-height: 99vh;
 	}
 
 
@@ -10355,6 +10355,13 @@ input, select, textarea {
 		text-align: center;
 	  }
 
+	  .wes-image {
+		border-radius: 30px;
+		box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
+		max-width: 100%;
+		width: 90%;
+	  }
+
 	  @media (max-width: 768px) {
 		.about-us-h p {
 			text-align: center;
@@ -10379,6 +10386,12 @@ input, select, textarea {
 			margin: auto;
 			width: 100%;
 			min-height: 99vh;
+		}
+		.wes-image {
+			border-radius: 30px;
+			box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
+			max-width: 100%;
+			margin: auto;
 		}
 	  }
 
