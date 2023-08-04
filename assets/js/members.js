@@ -25,10 +25,18 @@ fetch('/assets/members.json')
 
         <div class="col-lg-3 col-sm-12">
           <div class="member-card">
-            <div class="member-image">
-              <img src="${members[i].image}" alt="${members[i].name}">
-              <div class="icons">`;
+            <div class="member-image">`;
+              // <img src="${members[i].image}" alt="${members[i].name}">
+              // <div class="icons">`;
+      if (members[i].image) { // Check if the image URL exists
+          html += `<img src="${members[i].image}" alt="${members[i].name}">
+          <div class="icons">`;
+      } else {
+          html += `<img src="images/headshots/empty_headshot.webp" alt="${members[i].name}">
+          <div class="icons">`;
+      }
 
+             
       if (members[i].github) { // Check if the Github URL exists
           html += `<a href="${members[i].github}"><i class="bi bi-github"></i></a>`;
       }
