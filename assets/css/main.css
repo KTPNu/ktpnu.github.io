@@ -9565,18 +9565,23 @@ input, select, textarea {
 	  }
 
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+			@media screen and (min-width: 1100px) {
+				.infobox-p2 {
+					font-size: 1.7rem;
+				}
+			}
 			@media screen and (min-width: 601px) {
 				.infobox-p2 {
-				font-size: 1.4rem;
+					font-size: 1.4rem;
 				}
 			}
 			
 			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 			@media screen and (max-width: 600px) {
 				.infobox-p2 {
-				font-size: 1.3rem;
-				margin-left: 10px;
-				padding: 10px;
+					font-size: 1.3rem;
+					margin-left: 10px;
+					padding: 10px;
 				}
 			}
 
@@ -10060,7 +10065,7 @@ input, select, textarea {
 		background-image: var(--gradient);
 		background-size: 300%;
 		animation: bg-animation-footer 20s infinite alternate;
-		min-height: 30vh;
+		min-height: 20vh;
 	}
 
 	@keyframes bg-animation-footer {
@@ -10422,5 +10427,15 @@ input, select, textarea {
 		text-align: left;
 		font-weight: 600;
 		padding-bottom: 20px;
+	}
+
+
+	@media screen and (min-width: 1100px) {
+		.container.landing, 
+		.container.footer-x,
+		.container.footer-x-links {
+			min-width: 76%;
+		}
+
 	}
 
