@@ -9106,13 +9106,15 @@ input, select, textarea {
 			text-align: right;
 			margin-left: 22%; 
 			margin-right: 10px;
+			font-size: 18px;
 		}
 	}
 
 	/* If the screen size is 600px wide or less, set the padding for stacked elements */
 	@media screen and (max-width: 600px) {
 		.rush-mid {
-			text-align: center
+			text-align: left;
+			font-size: 18px;
 		}
 	}
 
@@ -9520,10 +9522,15 @@ input, select, textarea {
 		padding: 10px;
 	  }
 
+
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 5.5rem */
 			@media screen and (min-width: 601px) {
 				.infobox-h2 {
 				font-size: 5.5rem;
+				}
+				.infobox-h2.rush {
+					font-size: 5rem;
+					text-align: center;
 				}
 			}
 			
@@ -9532,6 +9539,10 @@ input, select, textarea {
 				.infobox-h2 {
 				font-size: 4.5rem;
 				margin-left: 10px;
+				}
+				.infobox-h2.rush {
+					font-size: 3.8rem;
+					margin-left: 10px;
 				}
 			}
 
@@ -9625,8 +9636,7 @@ input, select, textarea {
 	}
 
 	.about-us-h {
-		padding-left: 50px;
-		padding-right: 50px;
+		text-align: left!
 	}
 
 
@@ -9789,6 +9799,19 @@ input, select, textarea {
 		min-height: 50vh;
 	}
 
+	.our-story {
+		position: relative;
+		min-height: 50vh;
+	}
+
+	.container.story {
+		position: relative;
+		margin-top: 10vh;
+		margin-bottom: 5vh;
+		padding: 15px;
+		min-height: 40vh;
+	}
+
 	.col-md-6.extra-padding {
 		padding: 20px;
 	}
@@ -9804,7 +9827,7 @@ input, select, textarea {
 	  }
 
 	p.president {
-		font-size: 14px;
+		font-size: 17px;
 		line-height: 28px;
 		margin-bottom: 0;
 		text-align: left;
@@ -10364,12 +10387,22 @@ input, select, textarea {
 		border-radius: 30px;
 		box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
 		max-width: 100%;
-		width: 90%;
+		width: 100%;
+	  }
+
+	  .image-banner {
+		min-height: 50vh;
+		background-image: url(../../images/cu3.jpeg);
+		background-position: center center;
+		background-size: cover;
 	  }
 
 	  @media (max-width: 768px) {
+		.image-banner {
+			background-position: 65% 35%;
+		}
 		.about-us-h p {
-			text-align: center;
+			text-align: left;
 			color: #6e6e73;
 		}
 		.about-us-h h3{
