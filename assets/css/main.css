@@ -10002,7 +10002,7 @@ input, select, textarea {
 		border-color: var(--secondary-light) */
 	}
 
-	.about-us-landing .curves svg{
+	.about-us-landing .curves{
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -10283,7 +10283,7 @@ input, select, textarea {
 		margin-right: 10px;
 	}
 
-	.rush-landing .curves svg {
+	.rush-landing .curves {
 		position: absolute;
 		bottom: 0px;
 		left: 0px;
