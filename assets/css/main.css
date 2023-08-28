@@ -10008,6 +10008,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			line-height: 0;
+			overflow: hidden;
 		}
 
 
@@ -10285,9 +10286,10 @@ input, select, textarea {
 
 	.rush-landing .curves {
 		position: absolute;
-		bottom: 0px;
+		bottom: -3px;
 		left: 0px;
 		width: 100%;
+		overflow: hidden;
 		line-height: 0;
 	}
 
