@@ -10008,6 +10008,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			line-height: 0;
+			display: block;
 			overflow: hidden;
 		}
 
@@ -10288,6 +10289,7 @@ input, select, textarea {
 		position: absolute;
 		bottom: -3px;
 		left: 0px;
+		display: block;
 		width: 100%;
 		overflow: hidden;
 		line-height: 0;
