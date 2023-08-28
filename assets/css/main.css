@@ -10464,6 +10464,9 @@ input, select, textarea {
 		.rush-landing {
 			min-height: 88vh;
 		}
+		.about-us-landing {
+			min-height: 88vh;
+		}
 		.curves svg{
 			bottom: -64 px;
 		}
