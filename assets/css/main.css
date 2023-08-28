@@ -10270,7 +10270,7 @@ input, select, textarea {
 		font-weight: 700;
 		margin: 0;
    		width: 100%;
-		min-height: 99vh;
+		height: 100vh;
 		overflow-y: hidden;
 	}
 
