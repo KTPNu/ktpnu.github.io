@@ -10478,9 +10478,9 @@ input, select, textarea {
 
 	@media screen and (max-width: 600px) {
 		.rush-landing {
-			min-height: 85vh;
+			min-height: 90vh;
 		}
-		.about-us-landing{
+		.about-us-landing {
 			min-height: 90vh;
 		}
 	}
