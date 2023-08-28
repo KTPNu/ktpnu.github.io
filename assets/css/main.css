@@ -10412,31 +10412,12 @@ input, select, textarea {
 		.about-us-h h3{
 			text-align: center;
 		}
-		.rush-landing {
-			background: #fff;
-			background-image: var(--gradient);
-			background-size: 300%;
-			animation: bg-animation-top 10s infinite alternate;
-			font-family: var(--font-title);
-			font-style: var(--font-title);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 40px;
-			text-align: center;
-			font-weight: 700;
-			margin: auto;
-			width: 100%;
-			min-height: 100vh;
-		}
+		
 		.wes-image {
 			border-radius: 30px;
 			box-shadow: rgba(44, 44, 44, 0.35) 0px 5px 15px;
 			max-width: 100%;
 			margin: auto;
-		}
-		.curves svg{
-			bottom: -64 px;
 		}
 	  }
 
@@ -10478,4 +10459,13 @@ input, select, textarea {
 		}
 
 	}
+
+	@media screen and (max-width: 600px) {
+		.rush-landing {
+			min-height: 100vh;
+		}
+		.curves svg{
+			bottom: -64 px;
+		}
+	}	
 
