@@ -10271,8 +10271,11 @@ input, select, textarea {
 		margin: 0;
    		width: 100%;
 		min-height: 99vh;
+		overflow-y: hidden;
 	}
 
+		
+	
 
 	.rush-landing .content h2 {
 		font-size: 60px;
