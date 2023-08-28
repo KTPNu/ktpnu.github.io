@@ -10427,7 +10427,7 @@ input, select, textarea {
 			font-weight: 700;
 			margin: auto;
 			width: 100%;
-			min-height: 99vh;
+			min-height: 100vh;
 		}
 		.wes-image {
 			border-radius: 30px;
@@ -10436,7 +10436,7 @@ input, select, textarea {
 			margin: auto;
 		}
 		.curves svg{
-			bottom: -104 px;
+			bottom: -64 px;
 		}
 	  }
 
