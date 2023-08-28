@@ -10480,5 +10480,7 @@ input, select, textarea {
 		.rush-landing {
 			min-height: 85vh;
 		}
-		
+		.about-us-landing{
+			min-height: 90vh;
+		}
 	}
