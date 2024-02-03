@@ -3,7 +3,7 @@
       {
         "name": "Hannah Yoon",
         "title": "President",
-        "image": "images/headshots/hannah_y.png",
+        "image": "images/Headshots/hannah_y.png",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/yoonhannah/"
       },
@@ -24,7 +24,7 @@
       {
         "name": "Wesley Allen",
         "title": "Vice President of Technical Development",
-        "image": "",
+        "image": "images/Headshots/wes_comp.png",
         "github": "https://github.com/weal2937",
         "linkedin": "https://www.linkedin.com/in/wesley-a-allen/"
       },
@@ -45,7 +45,7 @@
       {
         "name": "Tavin Turner",
         "title": "Vice President of Marketing",
-        "image": "",
+        "image": "images/Headshots/taving_comp.png",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/erinochs/"
       },
@@ -66,7 +66,7 @@
       {
         "name": "Cole Younoszai",
         "title": "Secretary",
-        "image": "",
+        "image": "images/Headshots/cole_comp.png",
         "github": "",
         "linkedin": ""
       }
