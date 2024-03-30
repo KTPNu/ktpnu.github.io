@@ -2722,19 +2722,19 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(0, 0, 0, 0.75) !important;
+		color: #939393 !important;
 	}
 
 	:-moz-placeholder {
-		color: rgba(0, 0, 0, 0.75) !important;
+		color: #939393 !important;
 	}
 
 	::-moz-placeholder {
-		color: rgba(0, 0, 0, 0.75) !important;
+		color: #939393 !important;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(0, 0, 0, 0.75) !important;
+		color: #939393 !important;
 	}
 
 /* Icon */
@@ -10749,4 +10749,184 @@ input, select, textarea {
 	.reg-input:focus {
 		border-color: #3671CD;
 		box-shadow: 0 0 0 1px #3671CD;
+	}
+
+	/* Points Page */
+
+	.points-body {
+		display: flex;
+		min-width: 100vw;
+		min-height: 100vh;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.points-header {
+		display: flex;
+		align-items: center;
+		min-height: 10vh;
+		min-width: 100vw;
+		background-color: #142848;
+	}
+
+	.points-header > a {
+		padding: 0px 1vw;
+	}
+	
+	.points-header > a.nav-link1 {
+		color: white;
+		margin-left: auto;
+	}
+
+	.points-header > a.nav-link2 {
+		color: white;
+		margin-right: 4vw;
+	}
+
+	.member-logo-points {
+		position: absolute;
+		max-height: 10vh;
+		max-width: 10vh;
+		margin-left: 4vw;
+	}
+
+	.points-content {
+		min-height: 90vh;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		min-width: 55vw;
+	}
+
+	.points-row {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		min-width: 55vw;
+	}
+
+	/* Profile settings form */
+
+	.points-form {
+		row-gap: 2vh;
+		width: 20vw;
+		margin: 0;
+		/* min-height: 25vh; */
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
+	select,
+	.points-input {
+		width: 100%;
+		border: 1px;
+  		/* border-bottom: 2px solid black; */
+		border-radius: 5px;
+		height: 2rem;
+		border-color: #D9D9D9;
+		box-shadow: 0 0 0 1px #D9D9D9;
+		margin-bottom: 1vh;
+		font-size: 0.8rem;
+	}
+
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	input[type="tel"]:focus,
+	input[type="search"]:focus,
+	input[type="url"]:focus,
+	select:focus,
+	textarea:focus,
+	.points-input:focus {
+		border-color: #3671CD;
+		box-shadow: 0 0 0 1px #3671CD;
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button.points-button {
+		color: #3671CD;
+		font-size: 0.75rem;
+		font-weight: 400;
+		padding: 0;
+		/* margin: 0 auto; */
+		line-height: 0;
+		border-radius: 0;
+		letter-spacing: 0.05em;
+		text-transform: none;
+		background-color: white;
+	}
+
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover,
+	button:hover,
+	.button.points-button:hover {
+		color:  #142848;
+		background-color: white;
+	}
+
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active,
+	button:active,
+	.button.points-button:active {
+		color:  #142848;
+		background-color: white;
+		outline: none;
+		box-shadow: none;
+	}
+
+	.points-label {
+		color: black;
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 4px;
+	}
+	
+	.points-outline {
+		box-shadow: 0 0 0 1px #dedede;
+		/* width: 25vw; */
+		/* min-height: 25vh; */
+		padding: 3vh 2.5vw;
+		border-radius: 5px;
+		border-color: #dedede;
+	}
+
+	.points-outline > h {
+		font-weight: 700;
+		padding-bottom: 2vh;
+	}
+
+	.points-profile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.points-profile > img.profile {
+		height: 23vw;
+	}
+
+	.points-profile > h1 {
+		text-align: center;
+		color: #142848;
+		font-weight: 600;
+		font-size: 2rem;
+		margin-top: 2vh;
+		margin-bottom: 5px;
+	}
+
+	.points-profile > p {
+		text-align: center;
+		color: var(--secondary-dark);
+		font-weight: 500;
+		font-size: 1.1rem;
 	}
