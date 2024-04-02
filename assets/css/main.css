@@ -10804,6 +10804,7 @@ input, select, textarea {
 		justify-content: space-between;
 		flex-direction: row;
 		min-width: 55vw;
+		padding-top: 4vh;
 	}
 
 	/* Profile settings form */
@@ -10929,4 +10930,49 @@ input, select, textarea {
 		color: var(--secondary-dark);
 		font-weight: 500;
 		font-size: 1.1rem;
+	}
+
+	.points-count {
+		color: green;
+	}
+
+	.points-outline.stats {
+		display: flex;
+		flex-direction: column;
+		width: 55vw;
+	}
+
+	.stats-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.points-table {
+		display: flex;
+		flex-direction: column;
+		width: 22vw;
+	}
+
+	.points-table-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 22vw;
+		
+	}
+
+	.points-table-row > p {
+		margin-bottom: 0;
+	}
+
+	.piechart {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-image: conic-gradient(
+			pink 70deg,
+			lightblue 0 235deg,
+			orange 0
+		);
 	}
