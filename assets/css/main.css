@@ -10804,7 +10804,7 @@ input, select, textarea {
 		justify-content: space-between;
 		flex-direction: row;
 		min-width: 55vw;
-		padding-top: 4vh;
+		padding-top: 10vh;
 	}
 
 	/* Profile settings form */
@@ -10964,6 +10964,7 @@ input, select, textarea {
 
 	.points-table-row > p {
 		margin-bottom: 0;
+		font-size: 0.9rem;
 	}
 
 	.piechart {
@@ -10976,3 +10977,46 @@ input, select, textarea {
 			orange 0
 		);
 	}
+
+	.points-footer {
+		margin-top: 20vh;
+		min-height: 20vh;
+		background-image: var(--gradient);
+		background-size: 300%;
+		min-width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.points-footer-content {
+		display: flex;
+		justify-content: center; 
+		flex-direction: row;
+		align-items: top;
+		width: 70vw;
+		min-height: 1vh;
+	}
+
+	.points-footer-content > p.footer-credits {
+		color: white;
+		font-size: 0.7rem;
+	}
+
+	.points-footer-stack > p.footer-links {
+		color: white;
+		text-align: right;
+		font-size: 0.7rem;
+	}
+
+	/* .footer-links > a {
+		color: white;
+		text-decoration: underline;
+	} */
+
+
+	.points-footer-stack {
+		display: flex;
+		flex-direction: column;
+	}
+	
