@@ -11144,3 +11144,9 @@ input, select, textarea {
 		position: absolute;
 		z-index: 1;
 	}
+
+	.points-table-row > p.blue {
+		color: #014C8D;
+		font-weight: 700;
+		margin-bottom: 1vh;
+	}
