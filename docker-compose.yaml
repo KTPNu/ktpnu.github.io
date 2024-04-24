@@ -4,7 +4,7 @@ services:
     db:
         image: "postgres:14"
         env_file: .env
-        expose:
+        ports:
             - "5432"
         volumes:
             - server:/var/lib/postgresql/data

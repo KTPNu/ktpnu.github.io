@@ -1,12 +1,9 @@
 DROP TABLE IF EXISTS members CASCADE;
 CREATE TABLE members (
-    identikey VARCHAR(100) NOT NULL PRIMARY KEY,
     firstName VARCHAR(100) NOT NULL,
     lastName VARCHAR(100) NOT NULL,
-    nickName VARCHAR(100),
-    email VARCHAR(100) NOT NULL,
-    phone CHAR(14) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    identikey VARCHAR(100) NOT NULL PRIMARY KEY,
+    password CHAR(60) NOT NULL
 );
 
 DROP TABLE IF EXISTS events CASCADE;
@@ -47,17 +44,19 @@ CREATE TABLE points(
 
 DROP TABLE IF EXISTS memberdata CASCADE;
 CREATE TABLE memberdata(
-    id BIGINT NOT NULL PRIMARY KEY,
     picture VARCHAR(100),
-    membertype CHAR(1) NOT NULL,
-    birthday DATE NOT NULL,
-    graduationDate DATE NOT NULL,
-    pledgeclass VARCHAR(100) NOT NULL,
-    major VARCHAR(100) NOT NULL,
+    membertype CHAR(1),
+    birthday DATE,
+    graduationYear VARCHAR(100),
+    pledgeclass VARCHAR(100),
+    major VARCHAR(100),
     minor VARCHAR(100),
-    member_id VARCHAR(100) NOT NULL, 
+    member_id VARCHAR(100), 
     group_id BIGINT,
     points_id BIGINT,
+    firstName VARCHAR(100),
+    lastName VARCHAR(100),
+    username VARCHAR(100),
     FOREIGN KEY (member_id) REFERENCES members (identikey),
     FOREIGN KEY (group_id) REFERENCES projects (id),
     FOREIGN KEY (points_id) REFERENCES points (id)
