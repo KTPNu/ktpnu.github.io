@@ -11147,3 +11147,31 @@ input, select, textarea {
 		font-weight: 700;
 		margin-bottom: 1vh;
 	}
+
+	.points-header.main {
+		background-color: white;
+		min-height: 9vh;
+	}
+
+	.points-header.main > .member-logo-points {
+		margin-left: 7vw;
+	}
+
+	.points-header.main > a.nav-link1 {
+		color: var(--primary-dark);
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	.points-header.main > a.nav-link2 {
+		color: var(--primary-dark);
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	.points-header.main > a.nav-link3 {
+		color: var(--primary-dark);
+		margin-right: 7vw;
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
