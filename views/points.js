@@ -62,16 +62,6 @@ projectcompletionElem.innerHTML = projectcompletion;
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    var coffeechats = 10;
-    var interviews = 12;
-    var socialmediapost = 13;
-    var chapterattendance = 14;
-    var rushattendance = 4;
-    var serviceevent = 5;
-    var pledgesocials = 3;
-    var workshops = 22;
-    var projectcompletion = 0;
-
     // Calculate total points
     var totalpoints = coffeechats + interviews + socialmediapost + chapterattendance +
                       rushattendance + serviceevent + pledgesocials + workshops + projectcompletion;
@@ -87,27 +77,29 @@ document.addEventListener('DOMContentLoaded', function() {
             data: [coffeechats, interviews, socialmediapost, chapterattendance, 
                    rushattendance, serviceevent, pledgesocials, workshops, projectcompletion],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(199, 199, 199, 0.2)',
-                'rgba(83, 102, 255, 0.2)',
-                'rgba(40, 159, 44, 0.2)'
+                'rgba(0, 123, 255, 0.6)',   // Blue
+                'rgba(75, 192, 192, 0.6)',   // Medium Sea Green
+                'rgba(23, 162, 184, 0.6)',   // Light Blue
+                'rgba(40, 167, 69, 0.6)',    // Green
+                'rgba(0, 123, 255, 0.6)',    // Blue
+                'rgba(75, 192, 192, 0.6)',   // Medium Sea Green
+                'rgba(23, 162, 184, 0.6)',   // Light Blue
+                'rgba(40, 167, 69, 0.6)',    // Green
+                'rgba(0, 123, 255, 0.6)'     // Blue
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
+                'rgba(0, 123, 255, 1)',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(199, 199, 199, 1)',
-                'rgba(83, 102, 255, 1)',
-                'rgba(40, 159, 44, 1)'
+                'rgba(23, 162, 184, 1)',
+                'rgba(40, 167, 69, 1)',
+                'rgba(0, 123, 255, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(23, 162, 184, 1)',
+                'rgba(40, 167, 69, 1)',
+                'rgba(0, 123, 255, 1)'
             ],
+    
+
             borderWidth: 1
         }]
     };

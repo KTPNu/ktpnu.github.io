@@ -10909,6 +10909,7 @@ input, select, textarea {
 	.points-outline > h {
 		font-weight: 700;
 		padding-bottom: 2vh;
+		color: #142848;
 	}
 
 	.points-profile {
@@ -10945,6 +10946,20 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		width: 55vw;
+		color: #142848;
+	}
+
+	.points-needed {
+		background-color: green;
+		height: 5vh;
+		/* position: absolute; */
+		bottom: 0px;
+		margin-bottom: 0;
+		padding: 0;
+		width: 55vw;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		margin-left: 0;
 	}
 
 	.stats-row {
@@ -10970,6 +10985,12 @@ input, select, textarea {
 	.points-table-row > p {
 		margin-bottom: 0;
 		font-size: 0.9rem;
+	}
+
+	.points-table-row > h {
+		font-weight: 700;
+		padding-bottom: 2vh;
+
 	}
 
 	.piechart {
