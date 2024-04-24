@@ -2135,7 +2135,7 @@ input, select, textarea {
 		white-space: nowrap;
 		font-size: 0.75rem;
 		max-width: 20rem;
-		height: 3em;
+		height: 3.75em;
 		line-height: 3.75em;
 		border-radius: 3.75em;
 		padding: 0 2.5em;
@@ -2210,7 +2210,7 @@ input, select, textarea {
 	button,
 	.button {
 		color: var(--primary-dark);
-		font-weight: normal;
+		font-weight: bold;
 		font-size: 0.8rem;
 	}
 
@@ -2978,7 +2978,7 @@ input, select, textarea {
 		}
 
 			ul.actions.stacked li {
-				padding: 1.3rem 0 0 0;
+				padding: 0 0 0 0;
 			}
 
 				ul.actions.stacked li:first-child {
