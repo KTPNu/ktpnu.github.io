@@ -61,22 +61,79 @@ workshopsElem.innerHTML = workshops;
 projectcompletionElem.innerHTML = projectcompletion;
 
 
-// let pointsVals = [totalpoints, coffeechats, interviews, socialmediapost, chapterattendance, rushattendance, serviceevent, pledgesocials, workshops, projectcompletion];
-// let pointsColors = ["willwuzhere", "#C47DE7", "#E87CC3", "#E87C7D", "#E8C47C", "#C4E87D", "#7EE87C", "#7EE8C4", "#7DC4E8", "#7D7DE8"];
-// var pieChartElem = document.getElementById("pie-chart");
+document.addEventListener('DOMContentLoaded', function() {
+    var coffeechats = 10;
+    var interviews = 12;
+    var socialmediapost = 13;
+    var chapterattendance = 14;
+    var rushattendance = 4;
+    var serviceevent = 5;
+    var pledgesocials = 3;
+    var workshops = 22;
+    var projectcompletion = 0;
 
-/* Takes in a list of point values and sets modifies the corresponding angles in the pie chart for each category */
-// function calcPieChart(pointsVals, pointsColors, pieChartElem) {
-//     var tot = 0;
-//     var modifier = "conic-gradient(";
-//     for (let i = 1; i < pointsVals.length; i++) {
-//         var angle = Math.floor(pointsVals[i] / 52);
-//         tot += angle;
-//         var newSeg = " " + pointsColors[i] + " " + angle + "deg,";
-//         modifier += newSeg;
-//     }
-//     var pointsRem = " grey " + (52 - tot) + "deg";
-//     modifier += pointsRem;
-//     pieChartElem.style.background-image = modifier;
-//     return;
-// }
+    // Calculate total points
+    var totalpoints = coffeechats + interviews + socialmediapost + chapterattendance +
+                      rushattendance + serviceevent + pledgesocials + workshops + projectcompletion;
+
+    // Data for the pie chart
+    var data = {
+        labels: [
+            'Coffee Chats', 'Interviews', 'Social Media Posts', 'Chapter Attendance',
+            'Rush Attendance', 'Service Event', 'Pledge Socials', 'Workshops', 'Project Completion'
+        ],
+        datasets: [{
+            label: 'Point Distribution',
+            data: [coffeechats, interviews, socialmediapost, chapterattendance, 
+                   rushattendance, serviceevent, pledgesocials, workshops, projectcompletion],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(199, 199, 199, 0.2)',
+                'rgba(83, 102, 255, 0.2)',
+                'rgba(40, 159, 44, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(199, 199, 199, 1)',
+                'rgba(83, 102, 255, 1)',
+                'rgba(40, 159, 44, 1)'
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    // Options for the chart
+    var options = {
+        responsive: false,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            tooltip: {
+                enabled: true,
+                mode: 'index',
+                intersect: false,
+            },
+        }
+    };
+
+    // Render the pie chart
+    var ctx = document.getElementById('pointsChart').getContext('2d');
+    var pointsChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options
+    });
+});
+
+
