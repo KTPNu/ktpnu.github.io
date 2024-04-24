@@ -1,11 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
 :root {
 	--primary-light: #8bb9ff;
 	--primary-medium: #458fff;
@@ -8910,7 +8908,6 @@ input, select, textarea {
 
 /*---------------------Timeline Section-------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 .design-section {
   display: flex;
   flex-direction: column;
@@ -10567,7 +10564,7 @@ input, select, textarea {
 	.right-login {
 		width: 60vw;
 		height: 100vh;
-		background-color: #142848; 
+		background-image: linear-gradient(150deg, var(--primary-dark) 0%, #142848 80%); 
 	}
 
 	.login-title {
@@ -10781,6 +10778,11 @@ input, select, textarea {
 
 	.points-header > a.nav-link2 {
 		color: white;
+		/* margin-left: auto; */
+	}
+
+	.points-header > a.nav-link3 {
+		color: white;
 		margin-right: 4vw;
 	}
 
@@ -10904,6 +10906,7 @@ input, select, textarea {
 	.points-outline > h {
 		font-weight: 700;
 		padding-bottom: 2vh;
+		color: #142848;
 	}
 
 	.points-profile {
@@ -10940,6 +10943,20 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		width: 55vw;
+		color: #142848;
+	}
+
+	.points-needed {
+		background-color: green;
+		height: 5vh;
+		/* position: absolute; */
+		bottom: 0px;
+		margin-bottom: 0;
+		padding: 0;
+		width: 55vw;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		margin-left: 0;
 	}
 
 	.stats-row {
@@ -10967,21 +10984,21 @@ input, select, textarea {
 		font-size: 0.9rem;
 	}
 
+	.points-table-row > h {
+		font-weight: 700;
+		padding-bottom: 2vh;
+
+	}
+
 	.piechart {
 		width: 200px;
 		height: 200px;
-		border-radius: 50%;
-		background-image: conic-gradient(
-			pink 70deg,
-			lightblue 0 235deg,
-			orange 0
-		);
 	}
 
 	.points-footer {
 		margin-top: 20vh;
 		min-height: 20vh;
-		background-image: var(--gradient);
+		background-image: linear-gradient(150deg, var(--primary-dark) 0%, #142848 35%);
 		background-size: 300%;
 		min-width: 100vw;
 		display: flex;
@@ -11019,4 +11036,114 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 	}
+
+	/* Calendar Page  */
+
+	.calendar-body {
+		min-height: 50vh;
+		display: flex;
+		flex-direction: column;
+		width: 42vw;
+		margin-top: 10vh;
+	}
 	
+	.points-footer.calendar {
+		margin-top: 10vh;
+	}
+
+	.calendar-event {
+		width: 42vw;
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 5vh;
+		z-index: 2;
+	}
+
+	.event-left { 
+		background-color: #004c8d;
+		width: 6vw;
+		min-height: 16vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.event-left > h.month {
+		font-size: 1.5rem;
+		color: white;
+		font-weight: 300;
+		margin-bottom: 0;
+	}
+
+	.event-left > h.date {
+		font-size: 2rem;
+		color: white;
+		font-weight: 800;
+		line-height: 90%;
+	}
+
+
+	.event-right { 
+		background-color: #ececec;
+		width:36vw;
+		min-height: 16vh;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		justify-content: center;
+
+	}
+
+	.event-right > p.type {
+		font-size: 0.9rem;
+		color: #0263FF;
+		font-weight: 300;
+		margin-left: 2vw;
+		margin-bottom: 0;
+	}
+
+	.event-right > h.title {
+		font-size: 1.25rem;
+		color: black;
+		font-weight: 600;
+		margin-left: 2vw;
+	}
+
+	.time {
+		width: 8vw;
+		height: 3.5vh;
+		margin-left: 2vw;
+		margin-top: 1vh;
+		border-radius: 5px;
+		background-color: #d9d9d9;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: left;
+	}
+
+	.time > .idfk {
+		color: black;
+		height: 3.5vh;
+		margin-left: 0.5vw;
+	}
+
+	.time > p.hour {
+		color: black;
+		font-size: 0.9rem;
+		margin-left: 0.5vw;
+		margin-bottom: 0;
+		font-weight: 500;
+	}
+
+	.no-events {
+		position: absolute;
+		z-index: 1;
+	}
+
+	.points-table-row > p.blue {
+		color: #014C8D;
+		font-weight: 700;
+		margin-bottom: 1vh;
+	}
