@@ -37,16 +37,17 @@
                 <div class="login-title">Welcome to the KTP Nu Member Portal</div>
                 <div class="login-text">Please sign into or register an account with your identikey as the username</div>
                 <!-- ADD STUFF TO MAKE THIS FORM ACTUALLY DO SOMETHING -->
-                <form class="logreg-form" action="/POST"> 
-                    <label class="logreg-label" for="fusername">Username</label></br>
-                    <input class="logreg-input" type="text" id="fusername" name="fusername" value="" pattern="^[A-Za-z]{4}\d{4}$" required>
-                    <label class="logreg-label" for="fpassword">Password</label></br>
-                    <input class="logreg-input" type="password" id="fpassword" name="fpassword" value="" required>
-                    <div class="button-top-margin">
-                        <input class="logreg-button" type="submit" value="Sign in">
-                    </div>
+                <form class="logreg-form" action="/login" method="post">
+                  <label class="logreg-label" for="fusername">Username</label></br>
+                  <input class="logreg-input" type="text" id="fidentikey" name="identikey" value="" pattern="^[A-Za-z]{4}\d{4}$" required>
+                  <label class="logreg-label" for="fpassword">Password</label></br>
+                  <input class="logreg-input" type="password" id="fpassword" name="password" value="" required>
+                  <div class="button-top-margin">
+                      <input class="logreg-button" type="submit" value="Sign in">
+                  </div>
                 </form>
-                <div class="reg-redirect">Don’t have an account? <a href="register.html">Register</a></div>
+                <div class="reg-redirect">Don’t have an account? <a href="/register">Register</a></div>
+                
             </div>
             <div class="right-login">
 
