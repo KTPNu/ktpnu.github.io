@@ -9896,6 +9896,17 @@ input, select, textarea {
 		max-width: 100%;
 		width: auto;
 	}
+		@media screen and (min-width: 771px) {
+			img.rounded-corners.big{
+				max-width: 130%;
+			}
+		}
+
+		@media screen and (max-width: 770px) {
+			img.rounded-corners.big{
+				max-width: 100%;
+			}
+		}
 
 	.invert-photo { 
 		filter: invert(100%); 
@@ -10256,10 +10267,9 @@ input, select, textarea {
 	}
 
 	.about-us-landing {
-		background: #fff;
-		background-image: var(--gradient);
-		background-size: 300%;
-		animation: bg-animation-top 10s infinite alternate;
+		background-image: url("../../images/rand/20240414_090928_D37A88.png");
+		background-size: 100vw, 99vh;
+		background-position: center;
 		font-family: var(--font-title);
 		font-style: var(--font-title);
 		display: flex;
@@ -10272,6 +10282,33 @@ input, select, textarea {
    		width: 100%;
 		min-height: 99vh;
 	}
+
+	@media (min-width: 1297px) {
+		.about-us-landing {
+			background-size: 100%;
+		}
+	}
+
+	@media (max-width: 1296px) and (min-width: 845px) {
+		.about-us-landing {
+			background-size: 150%;
+		}
+	}
+
+	@media (max-width: 844px) and (min-width: 584px) {
+		.about-us-landing {
+			background-size: 200%;
+		}
+	}
+
+	@media (max-width: 583px) {
+		.about-us-landing {
+			background-size: 300%;
+		}
+	}
+
+	
+
 
 
 	.rush-landing .content h2 {
