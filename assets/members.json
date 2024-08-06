@@ -1,15 +1,8 @@
 {
     "members": [
       {
-        "name": "Hannah Yoon",
-        "title": "President",
-        "image": "images/Headshots/spring2024/hannah_comp.jpg",
-        "github": "",
-        "linkedin": "https://www.linkedin.com/in/yoonhannah/"
-      },
-      {
         "name": "Jaden Snell",
-        "title": "Executive Vice President",
+        "title": "Member",
         "image": "images/headshots/jaden_s.png",
         "github": "https://github.com/JadenSnellCU",
         "linkedin": "https://www.linkedin.com/in/jaden-snell/"
@@ -23,49 +16,42 @@
       },
       {
         "name": "Wesley Allen",
-        "title": "Vice President of Technical Development",
+        "title": "Executive Vice President",
         "image": "images/Headshots/spring2024/wes_comp.jpg",
         "github": "https://github.com/weal2937",
         "linkedin": "https://www.linkedin.com/in/wesley-a-allen/"
       },
       {
-        "name": "Daniil Garusov",
-        "title": "Vice President of Finance",
-        "image": "images/headshots/daniil_g.png",
-        "github": "https://github.com/Daniil-Garusov",
-        "linkedin": "https://www.linkedin.com/in/daniil-garusov-106111211?trk=contact-info"
-      },
-      {
         "name": "Will Dravenstott",
-        "title": "Vice President of Professional Development",
+        "title": "Member",
         "image": "images/headshots/will_drav.png",
         "github": "https://github.com/wdrav",
         "linkedin": "https://www.linkedin.com/in/williamdravenstott720"
       },
       {
         "name": "Tavin Turner",
-        "title": "Vice President of Marketing",
+        "title": "Member",
         "image": "images/Headshots/spring2024/tavin_comp.jpg",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/erinochs/"
       },
       {
         "name": "Ali Haroon",
-        "title": "Vice President of Membership",
+        "title": "President",
         "image": "images/Headshots/haroon.JPG",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/aliharoon-/"
       },
       {
         "name": "Audrey Deck",
-        "title": "Vice President of Internal Affairs",
+        "title": "Vice President of Finance",
         "image": "images/headshots/audrey_d.png",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/audreydeck/"
       },
       {
         "name": "Cole Younoszai",
-        "title": "Secretary",
+        "title": "Vice President of Internal Affairs",
         "image": "images/Headshots/spring2024/cole_comp.jpg",
         "github": "",
         "linkedin": ""
