@@ -51,7 +51,7 @@
     {
       "name": "Will van Vuuren",
       "title": "Vice President of Engagement",
-      "image": "images/headshots/van_vuuren.JPG",
+      "image": "images/Headshots/van_vuuren.JPG",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
       "exec": true
@@ -99,7 +99,7 @@
     {
       "name": "Tavin Turner",
       "title": "Member",
-      "image": "images/headshots/spring2024/tavin.jpg",
+      "image": "images/Headshots/spring2024/tavin.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/tavin-turner/",
       "exec": false
@@ -139,7 +139,7 @@
     {
       "name": "Will Dravenstott",
       "title": "Member",
-      "image": "images/headshots/spring2024/willdrav.jpg",
+      "image": "images/Headshots/spring2024/willdrav.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamdravenstott720/",
       "exec": false
