@@ -1,60 +1,87 @@
 {
-    "members": [
-      {
-        "name": "Jaden Snell",
-        "title": "Member",
-        "image": "images/headshots/jaden_s.png",
-        "github": "https://github.com/JadenSnellCU",
-        "linkedin": "https://www.linkedin.com/in/jaden-snell/"
-      },
-      {
-        "name": "William Van Vuuren",
-        "title": "Vice President of Engagement",
-        "image": "images/Headshots/van_vuuren.JPG",
-        "github": "https://github.com/willvanvuuren",
-        "linkedin": "https://www.linkedin.com/in/williamvanvuuren/"
-      },
-      {
-        "name": "Wesley Allen",
-        "title": "Executive Vice President",
-        "image": "images/Headshots/spring2024/wes_comp.jpg",
-        "github": "https://github.com/weal2937",
-        "linkedin": "https://www.linkedin.com/in/wesley-a-allen/"
-      },
-      {
-        "name": "Will Dravenstott",
-        "title": "Member",
-        "image": "images/headshots/will_drav.png",
-        "github": "https://github.com/wdrav",
-        "linkedin": "https://www.linkedin.com/in/williamdravenstott720"
-      },
-      {
-        "name": "Tavin Turner",
-        "title": "Member",
-        "image": "images/Headshots/spring2024/tavin_comp.jpg",
-        "github": "",
-        "linkedin": "https://www.linkedin.com/in/erinochs/"
-      },
-      {
-        "name": "Ali Haroon",
-        "title": "President",
-        "image": "images/Headshots/haroon.JPG",
-        "github": "",
-        "linkedin": "https://www.linkedin.com/in/aliharoon-/"
-      },
-      {
-        "name": "Audrey Deck",
-        "title": "Vice President of Finance",
-        "image": "images/headshots/audrey_d.png",
-        "github": "",
-        "linkedin": "https://www.linkedin.com/in/audreydeck/"
-      },
-      {
-        "name": "Cole Younoszai",
-        "title": "Vice President of Internal Affairs",
-        "image": "images/Headshots/spring2024/cole_comp.jpg",
-        "github": "",
-        "linkedin": ""
-      }
-    ]
-  }
+  "members": [
+    {
+      "name": "Ali Haroon",
+      "title": "President",
+      "image": "images/Headshots/haroon.JPG",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/aliharoon-/",
+      "exec": true
+    },
+    {
+      "name": "Wesley Allen",
+      "title": "Executive Vice President",
+      "image": "images/Headshots/spring2024/wes_comp.jpg",
+      "github": "https://github.com/weal2937",
+      "linkedin": "https://www.linkedin.com/in/wesley-a-allen/",
+      "exec": true
+    },
+    {
+      "name": "Cole Younoszai",
+      "title": "Vice President of Internal Affairs",
+      "image": "images/Headshots/spring2024/cole_comp.jpg",
+      "github": "",
+      "linkedin": "",
+      "exec": true
+    },
+    {
+      "name": "Audrey Deck",
+      "title": "Vice President of Finance",
+      "image": "images/headshots/audrey_d.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/audreydeck/",
+      "exec": true
+    },
+    {
+      "name": "Joanna Wang",
+      "title": "Vice President of Technical Development",
+      "image": "placeholder.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/jaden-snell/",
+      "exec": true
+    },
+    {
+      "name": "Langston Denning",
+      "title": "Vice President of Professional Development",
+      "image": "images/headshots/placeholder.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
+      "exec": true
+    },
+    {
+      "name": "Will van Vuuren",
+      "title": "Vice President of Engagement",
+      "image": "images/headshots/van_vuuren.JPG",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
+      "exec": true
+    },
+    {
+      "name": "Parker Allen",
+      "title": "Vice President of Marketing",
+      "image": "images/headshots/placeholder.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/erinochs/",
+      "exec": true
+    },
+    {
+      "name": "Kaya Walker",
+      "title": "Vice President of Membership",
+      "image": "images/headshots/placeholder.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/audreydeck/",
+      "exec": true
+    },
+    {
+      "name": "Dalton Ford",
+      "title": "Secretary",
+      "image": "images/headshots/placeholder.png",
+      "github": "",
+      "linkedin": "",
+      "exec": true
+    }
+
+
+  ]
+}
+
