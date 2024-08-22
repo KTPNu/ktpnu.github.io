@@ -3,7 +3,7 @@
     {
       "name": "Ali Haroon",
       "title": "President",
-      "image": "images/member_headshots/fall24/ali.jpg",
+      "image": "images/member_headshots/fall2024/ali.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/aliharoon-/",
       "exec": true
@@ -19,7 +19,7 @@
     {
       "name": "Cole Younoszai",
       "title": "Vice President of Internal Affairs",
-      "image": "images/headshots/fall2024/cole.jpg",
+      "image": "images/member_headshots/fall2024/cole.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/cole-younoszai-407006290/",
       "exec": true
@@ -27,7 +27,7 @@
     {
       "name": "Audrey Deck",
       "title": "Vice President of Finance",
-      "image": "images/member_headshots/audrey.jpg",
+      "image": "images/member_headshots/fall2024/audrey.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/audreydeck/",
       "exec": true
@@ -75,7 +75,7 @@
     {
       "name": "Dalton Ford",
       "title": "Secretary",
-      "image": "images/member_headshots/fall2024/dalton.jpeg",
+      "image": "images/member_headshots/fall2024/dalton_f.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
       "exec": true
@@ -139,7 +139,7 @@
     {
       "name": "Will Dravenstott",
       "title": "Member",
-      "image": "images/Headshots/fall2024/will_drav.jpg",
+      "image": "images/member_headshots/fall2024/will_drav.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamdravenstott720/",
       "exec": false
@@ -155,7 +155,7 @@
     {
       "name": "Michael Freeman",
       "title": "Member",
-      "image": "images/Headshots/fall2024/michael_f.jpg",
+      "image": "images/member_headshots/fall2024/michael_f.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/michael-freeman-68018026b/",
       "exec": false
@@ -179,7 +179,7 @@
     {
       "name": "Jacob Sadler",
       "title": "Member",
-      "image": "images/Headshots/fall2024/jacob_s.jpg",
+      "image": "images/member_headshots/fall2024/jacob_s.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jacob-sadler-2153582b0/",
       "exec": false
