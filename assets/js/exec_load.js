@@ -1,6 +1,6 @@
 let execDiv = document.getElementById('execDiv');
 
-fetch('assets/members.json')
+fetch('/assets/members.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
