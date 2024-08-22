@@ -3,7 +3,7 @@
     {
       "name": "Ali Haroon",
       "title": "President",
-      "image": "images/Headshots/haroon.JPG",
+      "image": "images/member_headshots/fall24/ali.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/aliharoon-/",
       "exec": true
@@ -11,7 +11,7 @@
     {
       "name": "Wesley Allen",
       "title": "Executive Vice President",
-      "image": "images/Headshots/spring2024/wes_comp.jpg",
+      "image": "images/member_headshots/fall2024/wes.jpg",
       "github": "https://github.com/weal2937",
       "linkedin": "https://www.linkedin.com/in/wesley-a-allen/",
       "exec": true
@@ -19,7 +19,7 @@
     {
       "name": "Cole Younoszai",
       "title": "Vice President of Internal Affairs",
-      "image": "images/Headshots/spring2024/cole_comp.jpg",
+      "image": "images/headshots/fall2024/cole.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/cole-younoszai-407006290/",
       "exec": true
@@ -27,7 +27,7 @@
     {
       "name": "Audrey Deck",
       "title": "Vice President of Finance",
-      "image": "images/headshots/audrey_d.png",
+      "image": "images/member_headshots/audrey.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/audreydeck/",
       "exec": true
@@ -35,7 +35,7 @@
     {
       "name": "Joanna Wang",
       "title": "Vice President of Technical Development",
-      "image": "",
+      "image": "images/member_headshots/fall2024/joanna.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/joanna-wanglp/",
       "exec": true
@@ -43,7 +43,7 @@
     {
       "name": "Langston Denning",
       "title": "Vice President of Professional Development",
-      "image": "",
+      "image": "images/member_headshots/fall2024/langston.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/edward-l-denning/",
       "exec": true
@@ -51,7 +51,7 @@
     {
       "name": "Will van Vuuren",
       "title": "Vice President of Engagement",
-      "image": "images/Headshots/van_vuuren.JPG",
+      "image": "images/member_headshots/fall2024/willv.JPG",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
       "exec": true
@@ -59,7 +59,7 @@
     {
       "name": "Parker Allen",
       "title": "Vice President of Marketing",
-      "image": "",
+      "image": "images/member_headshots/fall2024/parker.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/parker-alllen/",
       "exec": true
@@ -67,7 +67,7 @@
     {
       "name": "Kaya Walker",
       "title": "Vice President of Membership",
-      "image": "",
+      "image": "images/member_headshots/fall2024/kaya.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/kaya-walker/",
       "exec": true
@@ -75,7 +75,7 @@
     {
       "name": "Dalton Ford",
       "title": "Secretary",
-      "image": "",
+      "image": "images/member_headshots/fall2024/dalton.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
       "exec": true
@@ -83,7 +83,7 @@
     {
       "name": "Jaden Snell",
       "title": "Member",
-      "image": "images/headshots/jaden_s.png",
+      "image": "images/member_headshots/fall2024/jaden_s.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jaden-snell/",
       "exec": false
@@ -91,7 +91,7 @@
     {
       "name": "Ryan Falender",
       "title": "Member",
-      "image": "",
+      "image": "images/member_headshots/fall2024/ryan_f.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/ryan-falender/",
       "exec": false
@@ -99,7 +99,7 @@
     {
       "name": "Tavin Turner",
       "title": "Member",
-      "image": "images/Headshots/spring2024/tavin.jpg",
+      "image": "images/member_headshots/fall2024/tavin.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/tavin-turner/",
       "exec": false
@@ -139,7 +139,7 @@
     {
       "name": "Will Dravenstott",
       "title": "Member",
-      "image": "images/Headshots/spring2024/willdrav.jpg",
+      "image": "images/Headshots/fall2024/will_drav.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamdravenstott720/",
       "exec": false
@@ -155,7 +155,7 @@
     {
       "name": "Michael Freeman",
       "title": "Member",
-      "image": "",
+      "image": "images/Headshots/fall2024/michael_f.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/michael-freeman-68018026b/",
       "exec": false
@@ -179,7 +179,7 @@
     {
       "name": "Jacob Sadler",
       "title": "Member",
-      "image": "",
+      "image": "images/Headshots/fall2024/jacob_s.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jacob-sadler-2153582b0/",
       "exec": false
