@@ -16,7 +16,7 @@ fetch('/assets/members.json')
                 linkedin_link = execMembers[i].linkedin;
                 github_link = execMembers[i].github;
                 title = execMembers[i].title;
-                headshot = execMembers[i].image;
+                headshot = execMembers[i].image ? execMembers[i].image : "images/headshots/placeholder.png";
                 exec_name = execMembers[i].name;
 
                 html += `
