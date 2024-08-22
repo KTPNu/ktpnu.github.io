@@ -21,7 +21,7 @@
       "title": "Vice President of Internal Affairs",
       "image": "images/Headshots/spring2024/cole_comp.jpg",
       "github": "",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/cole-younoszai-407006290/",
       "exec": true
     },
     {
@@ -35,17 +35,17 @@
     {
       "name": "Joanna Wang",
       "title": "Vice President of Technical Development",
-      "image": "placeholder.png",
+      "image": "",
       "github": "",
-      "linkedin": "https://www.linkedin.com/in/jaden-snell/",
+      "linkedin": "https://www.linkedin.com/in/joanna-wanglp/",
       "exec": true
     },
     {
       "name": "Langston Denning",
       "title": "Vice President of Professional Development",
-      "image": "images/headshots/placeholder.png",
+      "image": "",
       "github": "",
-      "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
+      "linkedin": "https://www.linkedin.com/in/edward-l-denning/",
       "exec": true
     },
     {
@@ -59,26 +59,138 @@
     {
       "name": "Parker Allen",
       "title": "Vice President of Marketing",
-      "image": "images/headshots/placeholder.png",
+      "image": "",
       "github": "",
-      "linkedin": "https://www.linkedin.com/in/erinochs/",
+      "linkedin": "https://www.linkedin.com/in/parker-alllen/",
       "exec": true
     },
     {
       "name": "Kaya Walker",
       "title": "Vice President of Membership",
-      "image": "images/headshots/placeholder.png",
+      "image": "",
       "github": "",
-      "linkedin": "https://www.linkedin.com/in/audreydeck/",
+      "linkedin": "https://www.linkedin.com/in/kaya-walker/",
       "exec": true
     },
     {
       "name": "Dalton Ford",
       "title": "Secretary",
-      "image": "images/headshots/placeholder.png",
+      "image": "",
       "github": "",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
       "exec": true
+    },
+    {
+      "name": "Jaden Snell",
+      "title": "Member",
+      "image": "images/headshots/jaden_s.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/jaden-snell/",
+      "exec": false
+    },
+    {
+      "name": "Ryan Falender",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/ryan-falender/",
+      "exec": false
+    },
+    {
+      "name": "Tavin Turner",
+      "title": "Member",
+      "image": "images/headshots/spring2024/tavin.jpg",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/tavin-turner/",
+      "exec": false
+    }, 
+    {
+      "name": "Tanvi Rami",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/tanvi-rami-159649226/",
+      "exec": false
+    }, 
+    {
+      "name": "Tristan Barnes",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/tristanbarnes13/",
+      "exec": false
+    }, 
+    {
+      "name": "Kayo Abdi",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/abdirahman-kayo-abdi/",
+      "exec": false
+    },
+    {
+      "name": "Jasdeep Singh",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/jasdeeps8/",
+      "exec": false
+    },
+    {
+      "name": "Will Dravenstott",
+      "title": "Member",
+      "image": "images/headshots/spring2024/willdrav.jpg",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/williamdravenstott720/",
+      "exec": false
+    }, 
+    {
+      "name": "Tai Karuna",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/matayay/",
+      "exec": false
+    }, 
+    {
+      "name": "Michael Freeman",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/michael-freeman-68018026b/",
+      "exec": false
+    },
+    {
+      "name": "Abbi Marzolf",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/abbi-marzolf-a7b183318/",
+      "exec": false
+    },
+    {
+      "name": "Dip Thapa",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/dip-thapa-aa4040269/",
+      "exec": false
+    },
+    {
+      "name": "Jacob Sadler",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/jacob-sadler-2153582b0/",
+      "exec": false
+    },
+    {
+      "name": "Mateo Ruby",
+      "title": "Member",
+      "image": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/mateo-ruby/",
+      "exec": false
     }
 
 
