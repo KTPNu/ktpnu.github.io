@@ -2,11 +2,11 @@
   "members": [
     {
       "name": "Ali Harron",
-      "title": "President",
+      "title": "",
       "image": "images/member_headshots/fall2024/ali.jpg",
       "github": "https://github.com/Ali-Haroon3",
       "linkedin": "https://www.linkedin.com/in/aliharoon-/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Wesley Allen",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Langston Denning",
-      "title": "Vice President of Professional Development",
+      "title": "President",
       "image": "images/member_headshots/fall2024/langston.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/edward-l-denning/",
@@ -66,7 +66,7 @@
     },
     {
       "name": "Kaya Walker",
-      "title": "Vice President of Membership",
+      "title": "",
       "image": "images/member_headshots/fall2024/kaya.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/kaya-walker/",

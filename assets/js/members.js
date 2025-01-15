@@ -46,12 +46,21 @@ fetch('/assets/members.json')
               </div>
             </div>
             <div class="member-info">
-              <h4 class="member-name">${members[i].name}</h4>
+              <h4 class="member-name">${members[i].name}</h4>`
+      if (members[i].title) {
+        html += `
               <p class="member-title">${members[i].title}</p>
             </div>
           </div>
         </div>`;
-
+      }
+      else {
+        html += `
+              <p class="member-title>Member</p>
+            </div>
+          </div>
+        </div>`;
+      }
         if((i+1) % 4 == 0 && i != 0 && row) {
             html += '</div>';
             row = false;
