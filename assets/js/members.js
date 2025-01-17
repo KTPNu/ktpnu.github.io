@@ -9,7 +9,20 @@ fetch('/assets/members.json')
     return response.json();
   })
   .then(data => {
-    const members = data.members;
+    const members = data.members.sort((a, b) => {
+      const rank = {
+        "President": 1,
+        "Executive Vice President": 2
+      };
+
+      // Assign rank to titles or default value for no title
+      const rankA = rank[a.title] || (a.title ? 3 : 4);
+      const rankB = rank[b.title] || (b.title ? 3 : 4);
+
+      return rankA - rankB; // Sort by rank
+    });
+
+
     let html = '';
 
     // Iterate over each member
@@ -56,7 +69,7 @@ fetch('/assets/members.json')
       }
       else {
         html += `
-              <p class="member-title>Member</p>
+              <p class="member-title">Member</p>
             </div>
           </div>
         </div>`;

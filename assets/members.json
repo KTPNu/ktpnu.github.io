@@ -82,7 +82,7 @@
     },
     {
       "name": "Jaden Snell",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/jaden_s.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jaden-snell/",
@@ -90,7 +90,7 @@
     },
     {
       "name": "Ryan Falender",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/ryan_f.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/ryan-falender/",
@@ -114,7 +114,7 @@
     }, 
     {
       "name": "Tristan Barnes",
-      "title": "Member",
+      "title": "",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/tristanbarnes13/",
@@ -122,7 +122,7 @@
     }, 
     {
       "name": "Kayo Abdi",
-      "title": "Member",
+      "title": "",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/abdirahman-kayo-abdi/",
@@ -130,7 +130,7 @@
     },
     {
       "name": "Jasdeep Singh",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/jasdeep_s.jpg",
       "github": "https://github.com/jasi5951",
       "linkedin": "https://www.linkedin.com/in/jasdeeps8/",
@@ -138,7 +138,7 @@
     },
     {
       "name": "Will Dravenstott",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/will_drav.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamdravenstott720/",
@@ -146,7 +146,7 @@
     }, 
     {
       "name": "Tai Karuna",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/tai_k.jpg",
       "github": "https://github.com/matayay",
       "linkedin": "https://www.linkedin.com/in/matayay/",
@@ -154,7 +154,7 @@
     }, 
     {
       "name": "Michael Freeman",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/michael_f.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/michael-freeman-68018026b/",
@@ -162,7 +162,7 @@
     },
     {
       "name": "Abbi Marzolf",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/abbi_m.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/abbi-marzolf-a7b183318/",
@@ -170,7 +170,7 @@
     },
     {
       "name": "Dip Thapa",
-      "title": "Member",
+      "title": "",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/dip-thapa-aa4040269/",
@@ -178,7 +178,7 @@
     },
     {
       "name": "Jacob Sadler",
-      "title": "Member",
+      "title": "",
       "image": "images/member_headshots/fall2024/jacob_s.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jacob-sadler-2153582b0/",
@@ -186,14 +186,156 @@
     },
     {
       "name": "Mateo Ruby",
-      "title": "Member",
+      "title": "",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/mateo-ruby/",
       "exec": false
+    },
+    {
+      "name": "Keira Wagstaff",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Aleqzander Baker",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Lizzie Ruff",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Austin Lammers",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Mark Tezak",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Nick Close",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Sonia Purisai",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Sergio Bocci",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Preston Tateyama",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Tatum Mendelsburg",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Elia Tracy",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Shaela Rhodes",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Linley Denslow",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Bhargav Sairam",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Aaron Duong",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Cadence Fong",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Kenzo Schwab",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Wei Jiang",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
     }
-
-
   ]
 }
 

@@ -8,16 +8,27 @@ fetch('/assets/members.json')
         return response.json();
     })
     .then(data => {
-        const execMembers = data.members;
+        const members = data.members.sort((a, b) => {
+            const rank = {
+              "President": 1,
+              "Executive Vice President": 2
+            };
+      
+            // Assign rank to titles or default value for no title
+            const rankA = rank[a.title] || (a.title ? 3 : 4);
+            const rankB = rank[b.title] || (b.title ? 3 : 4);
+      
+            return rankA - rankB; // Sort by rank
+          });
         let html = '';
 
-        for (let i = 0; i < execMembers.length; i++){
-            if (execMembers[i].exec == true) {
-                linkedin_link = execMembers[i].linkedin;
-                github_link = execMembers[i].github;
-                title = execMembers[i].title;
-                headshot = execMembers[i].image ? execMembers[i].image : "images/Headshots/placeholder.png";
-                exec_name = execMembers[i].name;
+        for (let i = 0; i < members.length; i++){
+            if (members[i].title) {
+                linkedin_link = members[i].linkedin;
+                github_link = members[i].github;
+                title = members[i].title;
+                headshot = members[i].image ? members[i].image : "images/Headshots/placeholder.png";
+                exec_name = members[i].name;
 
                 html += `
                 <div class="container profile">
