@@ -33,14 +33,6 @@
       "exec": false
     },
     {
-      "name": "Joanna Wang",
-      "title": "",
-      "image": "images/member_headshots/fall2024/joanna.jpeg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/joanna-wanglp/",
-      "exec": false
-    },
-    {
       "name": "Langston Denning",
       "title": "",
       "image": "images/member_headshots/fall2024/langston.jpeg",
@@ -65,28 +57,12 @@
       "exec": false
     },
     {
-      "name": "Kaya Walker",
-      "title": "",
-      "image": "images/member_headshots/fall2024/kaya.jpeg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/kaya-walker/",
-      "exec": false
-    },
-    {
       "name": "Dalton Ford",
       "title": "Executive Vice President",
       "image": "images/member_headshots/fall2024/dalton_f.jpg",
       "github": "https://github.com/DaltonRFM",
       "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
       "exec": true
-    },
-    {
-      "name": "Jaden Snell",
-      "title": "",
-      "image": "images/member_headshots/fall2024/jaden_s.png",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/jaden-snell/",
-      "exec": false
     },
     {
       "name": "Ryan Falender",
@@ -137,14 +113,6 @@
       "exec": false
     },
     {
-      "name": "Will Dravenstott",
-      "title": "",
-      "image": "images/member_headshots/fall2024/will_drav.png",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/williamdravenstott720/",
-      "exec": false
-    }, 
-    {
       "name": "Tai Karuna",
       "title": "",
       "image": "images/member_headshots/fall2024/tai_k.jpg",
@@ -152,14 +120,6 @@
       "linkedin": "https://www.linkedin.com/in/matayay/",
       "exec": false
     }, 
-    {
-      "name": "Michael Freeman",
-      "title": "",
-      "image": "images/member_headshots/fall2024/michael_f.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/michael-freeman-68018026b/",
-      "exec": false
-    },
     {
       "name": "Abbi Marzolf",
       "title": "Vice President of Internal Affairs",
@@ -174,14 +134,6 @@
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/dip-thapa-aa4040269/",
-      "exec": false
-    },
-    {
-      "name": "Jacob Sadler",
-      "title": "",
-      "image": "images/member_headshots/fall2024/jacob_s.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/jacob-sadler-2153582b0/",
       "exec": false
     },
     {
@@ -281,14 +233,6 @@
       "exec": false
     },
     {
-      "name": "Shaela Rhodes",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "",
-      "exec": false
-    },
-    {
       "name": "Linley Denslow",
       "title": "Secretary",
       "image": "",
@@ -343,6 +287,70 @@
       "github": "",
       "linkedin": "https://linkedin.com/in/weijiang08",
       "exec": true
+    },
+    {
+      "name": "Emi Takaoka",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "Erasmia Poulassichidis",
+      "title": "",
+      "image": "",
+      "github": "https://mr2wei.github.io",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "David Tran",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "Sam Kutcipal",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "Riddic Pollard",
+      "title": "",
+      "image": "",
+      "github": "https://mr2wei.github.io",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "Justin Rhee",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "Mansour Al-subaie",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
+    },
+    {
+      "name": "Adithya Narayanan",
+      "title": "",
+      "image": "",
+      "github": "https://mr2wei.github.io",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": false
     }
 
 
