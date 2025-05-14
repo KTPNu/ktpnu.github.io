@@ -1,7 +1,7 @@
 {
   "members": [
     {
-      "name": "Ali Harron",
+      "name": "Ali Haroon",
       "title": "",
       "image": "images/member_headshots/fall2024/ali.jpg",
       "github": "https://github.com/Ali-Haroon3",
@@ -59,7 +59,7 @@
     {
       "name": "Dalton Ford",
       "title": "Executive Vice President",
-      "image": "images/member_headshots/fall2024/dalton_f.jpg",
+      "image": "images/member_headshots/fall2024/DaltonFord.png",
       "github": "https://github.com/DaltonRFM",
       "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
       "exec": true
@@ -67,18 +67,10 @@
     {
       "name": "Grace Dickinson",
       "title": "Vice President of Finance",
-      "image": "",
+      "image": "images/member_headshots/fall2024/Grace.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/grace-dickinson-/",
       "exec": true
-    },
-    {
-      "name": "Ryan Falender",
-      "title": "",
-      "image": "images/member_headshots/fall2024/ryan_f.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/ryan-falender/",
-      "exec": false
     },
     {
       "name": "Tanvi Rami",
@@ -96,14 +88,6 @@
       "linkedin": "https://www.linkedin.com/in/tristanbarnes13/",
       "exec": false
     }, 
-    {
-      "name": "Kayo Abdi",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/abdirahman-kayo-abdi/",
-      "exec": false
-    },
     {
       "name": "Jasdeep Singh",
       "title": "",
@@ -136,14 +120,6 @@
       "linkedin": "https://www.linkedin.com/in/tavin-turner/",
       "exec": true
     }, 
-    {
-      "name": "Dip Thapa",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/dip-thapa-aa4040269/",
-      "exec": false
-    },
     {
       "name": "Mateo Ruby",
       "title": "",
@@ -251,7 +227,7 @@
     {
       "name": "Cadence Fong",
       "title": "Vice President of Engagement",
-      "image": "",
+      "image": "images/member_headshots/fall2024/Cadence.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/cadence-fong-035200267/",
       "exec": true
@@ -275,7 +251,7 @@
     {
       "name": "Linley Denslow",
       "title": "Secretary",
-      "image": "",
+      "image": "images/member_headshots/fall2024/Linley.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/linley-denslow/",
       "exec": true
