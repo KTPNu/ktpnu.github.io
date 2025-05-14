@@ -26,11 +26,11 @@
     },
     {
       "name": "Audrey Deck",
-      "title": "Vice President of Finance",
+      "title": "",
       "image": "images/member_headshots/fall2024/audrey.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/audreydeck/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Joanna Wang",
@@ -338,11 +338,11 @@
     },
     {
       "name": "Grace Dickinson",
-      "title": "",
+      "title": "Vice President of Finance",
       "image": "",
       "github": "",
       "linkedin": "https://linkedin.com/in/weijiang08",
-      "exec": false
+      "exec": true
     }
 
 
