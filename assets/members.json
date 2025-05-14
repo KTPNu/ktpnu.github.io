@@ -10,15 +10,15 @@
     },
     {
       "name": "Wesley Allen",
-      "title": "Executive Vice President",
+      "title": "",
       "image": "images/member_headshots/fall2024/wes.jpg",
       "github": "https://github.com/weal2937",
       "linkedin": "https://www.linkedin.com/in/wesley-a-allen/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Cole Younoszai",
-      "title": "Vice President of Internal Affairs",
+      "title": "President",
       "image": "images/member_headshots/fall2024/cole.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/cole-younoszai-407006290/",
@@ -34,35 +34,35 @@
     },
     {
       "name": "Joanna Wang",
-      "title": "Vice President of Technical Development",
+      "title": "",
       "image": "images/member_headshots/fall2024/joanna.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/joanna-wanglp/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Langston Denning",
-      "title": "President",
+      "title": "",
       "image": "images/member_headshots/fall2024/langston.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/edward-l-denning/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Will van Vuuren",
-      "title": "Vice President of Engagement",
+      "title": "",
       "image": "images/member_headshots/fall2024/willv.JPG",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Parker Allen",
-      "title": "Vice President of Marketing",
+      "title": "",
       "image": "images/member_headshots/fall2024/parker.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/parker-alllen/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Kaya Walker",
@@ -70,11 +70,11 @@
       "image": "images/member_headshots/fall2024/kaya.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/kaya-walker/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Dalton Ford",
-      "title": "Secretary",
+      "title": "Executive Vice President",
       "image": "images/member_headshots/fall2024/dalton_f.jpg",
       "github": "https://github.com/DaltonRFM",
       "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
@@ -102,11 +102,11 @@
       "image": "images/member_headshots/fall2024/tavin.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/tavin-turner/",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Tanvi Rami",
-      "title": "Vice President of Membership",
+      "title": "",
       "image": "images/member_headshots/fall2024/tanvi_r.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/tanvi-rami-159649226/",
@@ -162,11 +162,11 @@
     },
     {
       "name": "Abbi Marzolf",
-      "title": "",
+      "title": "Vice President of Internal Affairs",
       "image": "images/member_headshots/fall2024/abbi_m.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/abbi-marzolf-a7b183318/",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Dip Thapa",
@@ -210,11 +210,11 @@
     },
     {
       "name": "Lizzie Ruff",
-      "title": "",
+      "title": "Vice President of Technical Development",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Austin Lammers",
@@ -242,11 +242,11 @@
     },
     {
       "name": "Sonia Purisai",
-      "title": "",
+      "title": "Vice President of Membership",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Sergio Bocci",
@@ -290,11 +290,11 @@
     },
     {
       "name": "Linley Denslow",
-      "title": "",
+      "title": "Secretary",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Bhargav Sairam",
@@ -314,11 +314,11 @@
     },
     {
       "name": "Cadence Fong",
-      "title": "",
+      "title": "Vice President of Engagement",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Kenzo Schwab",
@@ -330,11 +330,11 @@
     },
     {
       "name": "Wei Jiang",
-      "title": "",
+      "title": "Vice President of Marketing",
       "image": "",
       "github": "https://mr2wei.github.io",
       "linkedin": "https://linkedin.com/in/weijiang08",
-      "exec": false
+      "exec": true
     }
   ]
 }
