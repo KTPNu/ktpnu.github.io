@@ -65,6 +65,14 @@
       "exec": true
     },
     {
+      "name": "Grace Dickinson",
+      "title": "Vice President of Finance",
+      "image": "",
+      "github": "",
+      "linkedin": "https://linkedin.com/in/weijiang08",
+      "exec": true
+    },
+    {
       "name": "Ryan Falender",
       "title": "",
       "image": "images/member_headshots/fall2024/ryan_f.jpg",
@@ -72,14 +80,6 @@
       "linkedin": "https://www.linkedin.com/in/ryan-falender/",
       "exec": false
     },
-    {
-      "name": "Tavin Turner",
-      "title": "Vice President of Professional Development",
-      "image": "images/member_headshots/fall2024/tavin.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/tavin-turner/",
-      "exec": true
-    }, 
     {
       "name": "Tanvi Rami",
       "title": "",
@@ -128,6 +128,14 @@
       "linkedin": "https://www.linkedin.com/in/abbi-marzolf-a7b183318/",
       "exec": true
     },
+    {
+      "name": "Tavin Turner",
+      "title": "Vice President of Professional Development",
+      "image": "images/member_headshots/fall2024/tavin.jpg",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/tavin-turner/",
+      "exec": true
+    }, 
     {
       "name": "Dip Thapa",
       "title": "",
@@ -225,22 +233,6 @@
       "exec": false
     },
     {
-      "name": "Elia Tracy",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "",
-      "exec": false
-    },
-    {
-      "name": "Linley Denslow",
-      "title": "Secretary",
-      "image": "",
-      "github": "",
-      "linkedin": "",
-      "exec": true
-    },
-    {
       "name": "Bhargav Sairam",
       "title": "",
       "image": "",
@@ -281,11 +273,11 @@
       "exec": true
     },
     {
-      "name": "Grace Dickinson",
-      "title": "Vice President of Finance",
+      "name": "Linley Denslow",
+      "title": "Secretary",
       "image": "",
       "github": "",
-      "linkedin": "https://linkedin.com/in/weijiang08",
+      "linkedin": "",
       "exec": true
     },
     {
