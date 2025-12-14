@@ -225,14 +225,6 @@
       "exec": false
     },
     {
-      "name": "Linley Denslow",
-      "title": "Secretary",
-      "image": "images/member_headshots/fall2024/Linley.png",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/linley-denslow/",
-      "exec": true
-    },
-    {
       "name": "Erasmia Poulassichidis",
       "title": "",
       "image": "images/member_headshots/fall2024/Erasmia.jpg",
@@ -399,6 +391,14 @@
       "github": "",
       "linkedin": "",
       "exec": false
+    }, 
+    {
+      "name": "Linley Denslow",
+      "title": "Secretary",
+      "image": "images/member_headshots/fall2024/Linley.png",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/linley-denslow/",
+      "exec": true
     }
 
 
