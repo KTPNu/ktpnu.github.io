@@ -90,19 +90,19 @@
     }, 
     {
       "name": "Abbi Marzolf",
-      "title": "Vice President of Internal Affairs",
+      "title": "",
       "image": "images/member_headshots/fall2024/abbi_m.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/abbi-marzolf-a7b183318/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Tavin Turner",
-      "title": "Vice President of Professional Development",
+      "title": "",
       "image": "images/member_headshots/fall2024/tavin.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/tavin-turner/",
-      "exec": true
+      "exec": false
     }, 
     {
       "name": "Mateo Ruby",
@@ -114,11 +114,11 @@
     },
     {
       "name": "Keira Wagstaff",
-      "title": "",
+      "title": "Vice President of Internal Affairs",
       "image": "images/member_headshots/fall2024/keira.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/keirawagstaff/",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Aleqzander Baker",
@@ -130,7 +130,7 @@
     },
     {
       "name": "Lizzie Ruff",
-      "title": "Vice President of Technical Development",
+      "title": "Vice President of Engagement",
       "image": "images/member_headshots/fall2024/LizzieRuffimg.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/lizzie-ruff-3609a1230/",
@@ -202,11 +202,11 @@
     },
     {
       "name": "Cadence Fong",
-      "title": "Vice President of Engagement",
+      "title": "",
       "image": "images/member_headshots/fall2024/Cadence.png",
       "github": "https://cadence101004.github.io/PersonalWebsite/",
       "linkedin": "https://www.linkedin.com/in/cadence-fong-035200267/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Kenzo Schwab",
@@ -218,11 +218,11 @@
     },
     {
       "name": "Wei Jiang",
-      "title": "Vice President of Marketing",
+      "title": "",
       "image": "images/member_headshots/fall2024/Wei_J1.jpg", 
       "github": "https://mr2wei.github.io",
       "linkedin": "https://linkedin.com/in/weijiang08",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Linley Denslow",
@@ -354,19 +354,19 @@
     },
     {
       "name": "Connor Brooks",
-      "title": "",
+      "title": "Vice President of Marketing",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Ella Wynn",
-      "title": "",
+      "title": "Vice President of Professional Development",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Greyson Ono",
@@ -378,11 +378,11 @@
     }, 
     {
       "name": "Jackson Checo",
-      "title": "",
+      "title": "Vice President of Technical Development",
       "image": "",
       "github": "",
       "linkedin": "",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Jade Lerch",
