@@ -9,14 +9,6 @@
       "exec": false
     },
     {
-      "name": "Wesley Allen",
-      "title": "",
-      "image": "images/member_headshots/fall2024/wes.jpg",
-      "github": "https://github.com/weal2937",
-      "linkedin": "https://www.linkedin.com/in/wesley-a-allen/",
-      "exec": false
-    },
-    {
       "name": "Cole Younoszai",
       "title": "President",
       "image": "images/member_headshots/fall2024/cole.jpg",
@@ -201,14 +193,6 @@
       "exec": false
     },
     {
-      "name": "Tatum Mendelsburg",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/tatum-mendelsberg/",
-      "exec": false
-    },
-    {
       "name": "Bhargav Sairam",
       "title": "",
       "image": "",
@@ -319,9 +303,111 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/in/samuelbalent/",
       "exec": false
+    }, 
+    {
+      "name": "Jayce Welch",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    }, 
+    {
+      "name": "Bella Pecoraro",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Zariyat Hossain",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Vedanth Murari",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Tyler Joshi",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Ciela Heiles",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Cole Egan",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    },
+    {
+      "name": "Connor Brooks",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    }, 
+    {
+      "name": "Ella Wynn",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    }, 
+    {
+      "name": "Greyson Ono",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    }, 
+    {
+      "name": "Jackson Checo",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    }, 
+    {
+      "name": "Jade Lerch",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
+    }, 
+    {
+      "name": "Layda Estrada",
+      "title": "",
+      "image": "",
+      "github": "",
+      "linkedin": "",
+      "exec": false
     }
-
-
 
 
 
