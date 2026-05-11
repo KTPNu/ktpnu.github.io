@@ -1,43 +1,11 @@
 {
   "members": [
     {
-      "name": "Ali Haroon",
-      "title": "",
-      "image": "images/member_headshots/fall2024/ali.jpg",
-      "github": "https://github.com/Ali-Haroon3",
-      "linkedin": "https://www.linkedin.com/in/aliharoon-/",
-      "exec": false
-    },
-    {
       "name": "Cole Younoszai",
-      "title": "President",
+      "title": "",
       "image": "images/member_headshots/fall2024/cole.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/cole-younoszai-407006290/",
-      "exec": true
-    },
-    {
-      "name": "Audrey Deck",
-      "title": "",
-      "image": "images/member_headshots/fall2024/audrey.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/audreydeck/",
-      "exec": false
-    },
-    {
-      "name": "Langston Denning",
-      "title": "",
-      "image": "images/member_headshots/fall2024/langston.jpeg",
-      "github": "https://github.com/edde4107",
-      "linkedin": "https://www.linkedin.com/in/edward-l-denning/",
-      "exec": false
-    },
-    {
-      "name": "Will van Vuuren",
-      "title": "",
-      "image": "images/member_headshots/fall2024/willv.JPG",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/williamvanvuuren/",
       "exec": false
     },
     {
@@ -50,44 +18,20 @@
     },
     {
       "name": "Dalton Ford",
-      "title": "Executive Vice President",
+      "title": "",
       "image": "images/member_headshots/fall2024/DaltonFordKTP.png",
       "github": "https://github.com/DaltonRFM",
       "linkedin": "https://www.linkedin.com/in/dalton-ford-0a496a28a/",
-      "exec": true
+      "exec": false
     },
     {
       "name": "Grace Dickinson",
-      "title": "Vice President of Finance",
+      "title": "",
       "image": "images/member_headshots/fall2024/Grace.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/grace-dickinson-/",
-      "exec": true
-    },
-    {
-      "name": "Tanvi Rami",
-      "title": "",
-      "image": "images/member_headshots/fall2024/tanvi_r.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/tanvi-rami-159649226/",
-      "exec": false
-    }, 
-    {
-      "name": "Jasdeep Singh",
-      "title": "",
-      "image": "images/member_headshots/fall2024/jasdeep_s.jpg",
-      "github": "https://github.com/jasi5951",
-      "linkedin": "https://www.linkedin.com/in/jasdeeps8/",
       "exec": false
     },
-    {
-      "name": "Tai Karuna",
-      "title": "",
-      "image": "images/member_headshots/fall2024/tai_k.jpg",
-      "github": "https://github.com/matayay",
-      "linkedin": "https://www.linkedin.com/in/matayay/",
-      "exec": false
-    }, 
     {
       "name": "Abbi Marzolf",
       "title": "",
@@ -96,14 +40,6 @@
       "linkedin": "https://www.linkedin.com/in/abbi-marzolf-a7b183318/",
       "exec": false
     },
-    {
-      "name": "Tavin Turner",
-      "title": "",
-      "image": "images/member_headshots/fall2024/tavin.jpg",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/tavin-turner/",
-      "exec": false
-    }, 
     {
       "name": "Mateo Ruby",
       "title": "",
@@ -114,7 +50,7 @@
     },
     {
       "name": "Keira Wagstaff",
-      "title": "Vice President of Internal Affairs",
+      "title": "Executive Vice President",
       "image": "images/member_headshots/fall2024/keira.png",
       "github": "https://github.com/keirawagstaff ",
       "linkedin": "https://www.linkedin.com/in/keirawagstaff/",
@@ -145,14 +81,6 @@
       "exec": false
     },
     {
-      "name": "Mark Tezak",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/mark-tezak/",
-      "exec": false
-    },
-    {
       "name": "Nick Close",
       "title": "",
       "image": "",
@@ -161,35 +89,11 @@
       "exec": false
     },
     {
-      "name": "Sonia Purisai",
-      "title": "Vice President of Membership",
-      "image": "images/member_headshots/fall2024/Sonia.png",
-      "github": "https://github.com/soniapurisai",
-      "linkedin": "https://www.linkedin.com/in/sonia-purisai/",
-      "exec": true
-    },
-    {
-      "name": "Sergio Bocci",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/sergio-bocci-670313323/",
-      "exec": false
-    },
-    {
       "name": "Preston Tateyama",
       "title": "",
       "image": "images/member_headshots/fall2024/Preston_T1.jpg",
       "github": "https://github.com/Prtatey28",
       "linkedin": "https://www.linkedin.com/in/prtatey28/",
-      "exec": false
-    },
-    {
-      "name": "Bhargav Sairam",
-      "title": "",
-      "image": "",
-      "github": "",
-      "linkedin": "https://www.linkedin.com/in/bhargavsairam/",
       "exec": false
     },
     {
@@ -214,14 +118,6 @@
       "image": "images/member_headshots/fall2024/Kenzo.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/kenzo-schwab-304314302/",
-      "exec": false
-    },
-    {
-      "name": "Wei Jiang",
-      "title": "",
-      "image": "images/member_headshots/fall2024/Wei_J1.jpg", 
-      "github": "https://mr2wei.github.io",
-      "linkedin": "https://linkedin.com/in/weijiang08",
       "exec": false
     },
     {
@@ -274,27 +170,27 @@
     },
     {
       "name": "Elijah Fenner",
-      "title": "",
+      "title": "Vice President of Professional Development",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/elijah-fenner-129a9520b/",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Sam Balent",
-      "title": "",
+      "title": "Vice President of Finance",
       "image": "images/member_headshots/fall2024/SamBalent.png",
       "github": "https://github.com/sammy12bammy",
       "linkedin": "https://www.linkedin.com/in/samuelbalent/",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Jayce Welch",
-      "title": "",
+      "title": "Secretary",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jayce-welch-6063aa286/",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Bella Pecoraro",
@@ -338,23 +234,23 @@
     },
     {
       "name": "Cole Egan",
-      "title": "",
+      "title": "Vice President of Technical Development",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/cole-egan06/",
-      "exec": false
+      "exec": true
     },
     {
       "name": "Connor Brooks",
-      "title": "Vice President of Marketing",
+      "title": "",
       "image": "images/member_headshots/fall2024/Connor.jpg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/connor-brooks-ecen/",
-      "exec": true
+      "exec": false
     }, 
     {
       "name": "Ella Wynn",
-      "title": "Vice President of Professional Development",
+      "title": "Vice President of Marketing",
       "image": "images/member_headshots/fall2024/ella.jpeg",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/ella-wynn-6522741b8/",
@@ -370,7 +266,7 @@
     }, 
     {
       "name": "Jackson Checo",
-      "title": "Vice President of Technical Development",
+      "title": "President",
       "image": "images/member_headshots/fall2024/jackson.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/jackson-checo-637687327/",
@@ -386,15 +282,15 @@
     }, 
     {
       "name": "Layda Estrada",
-      "title": "",
+      "title": "Vice President of Internal Affairs",
       "image": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/layda-estrada/",
-      "exec": false
+      "exec": true
     }, 
     {
       "name": "Linley Denslow",
-      "title": "Secretary",
+      "title": "Vice President of Membership",
       "image": "images/member_headshots/fall2024/Linley.png",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/linley-denslow/",
